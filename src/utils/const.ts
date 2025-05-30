@@ -11,6 +11,7 @@ const MUNICIPALITY_CITIES_ARR = [
   '重庆市',
   '香港特别行政区',
   '澳门特别行政区',
+  '杭州市',
 ];
 const MAP_LAYER_LIST = [
   'road-label',
