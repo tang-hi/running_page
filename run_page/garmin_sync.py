@@ -16,11 +16,10 @@ from io import BytesIO
 from lxml import etree
 
 import aiofiles
-import cloudscraper
 import garth
 import httpx
-from config import FOLDER_DICT, JSON_FILE, SQL_FILE, config
-from garmin_device_adaptor import wrap_device_info
+from config import FOLDER_DICT, JSON_FILE, SQL_FILE
+from garmin_device_adaptor import process_garmin_data
 from utils import make_activities_file
 
 # logging.basicConfig(level=logging.DEBUG)
@@ -52,14 +51,13 @@ class Garmin:
         Init module
         """
         self.req = httpx.AsyncClient(timeout=TIME_OUT)
-        self.cf_req = cloudscraper.CloudScraper()
         self.URL_DICT = (
             GARMIN_CN_URL_DICT
             if auth_domain and str(auth_domain).upper() == "CN"
             else GARMIN_COM_URL_DICT
         )
         if auth_domain and str(auth_domain).upper() == "CN":
-            garth.configure(domain="garmin.cn")
+            garth.configure(domain="garmin.cn", ssl_verify=False)
         self.modern_url = self.URL_DICT.get("MODERN_URL")
         garth.client.loads(secret_string)
         if garth.client.oauth2_token.expired:
@@ -134,16 +132,11 @@ class Garmin:
             use_fake_garmin_device,
         )
         for data in datas:
-            print(data.filename)
             with open(data.filename, "wb") as f:
                 for chunk in data.content:
                     f.write(chunk)
             f = open(data.filename, "rb")
-            # wrap fake garmin device to origin fit file, current not support gpx file
-            if use_fake_garmin_device:
-                file_body = wrap_device_info(f)
-            else:
-                file_body = BytesIO(f.read())
+            file_body = process_garmin_data(f, use_fake_garmin_device)
             files = {"file": (data.filename, file_body)}
 
             try:
@@ -279,7 +272,7 @@ async def download_garmin_data(
     folder = FOLDER_DICT.get(file_type, "gpx")
     try:
         file_data = await client.download_activity(activity_id, file_type=file_type)
-        if summary_infos is not None:
+        if summary_infos is not None and file_type == "gpx":
             file_data = add_summary_info(file_data, summary_infos.get(activity_id))
         file_path = os.path.join(folder, f"{activity_id}.{file_type}")
         need_unzip = False
@@ -360,7 +353,7 @@ async def download_new_activities(
 ):
     client = Garmin(secret_string, auth_domain, is_only_running)
     # because I don't find a para for after time, so I use garmin-id as filename
-    # to find new run to generage
+    # to find new run to generate
     activity_ids = await get_activity_id_list(client)
     to_generate_garmin_ids = list(set(activity_ids) - set(downloaded_ids))
     print(f"{len(to_generate_garmin_ids)} new activities to be downloaded")
@@ -404,7 +397,7 @@ if __name__ == "__main__":
         "--is-cn",
         dest="is_cn",
         action="store_true",
-        help="if garmin accout is cn",
+        help="if garmin account is cn",
     )
     parser.add_argument(
         "--only-run",
@@ -430,9 +423,7 @@ if __name__ == "__main__":
     )
     options = parser.parse_args()
     secret_string = options.secret_string
-    auth_domain = (
-        "CN" if options.is_cn else config("sync", "garmin", "authentication_domain")
-    )
+    auth_domain = "CN" if options.is_cn else "COM"  # Default to COM if not specified
     file_type = options.download_file_type
     is_only_running = options.only_run
     if secret_string is None:
