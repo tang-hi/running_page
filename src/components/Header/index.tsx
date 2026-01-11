@@ -62,35 +62,30 @@ const Header = () => {
 
   return (
     <>
-      <nav className="mx-auto mt-12 flex w-full min-w-max max-w-screen-2xl items-center justify-between pl-6 lg:px-16">
-        <div className="w-1/4">
-          <Link to={siteUrl}>
-            <picture>
-              <img className="h-16 w-16 rounded-full" alt="logo" src={logo} />
-            </picture>
+      <nav className="mx-auto mt-8 flex w-full max-w-screen-2xl items-center justify-between px-6 lg:px-16 font-mono">
+        <div className="flex items-center">
+          <Link to={siteUrl} className={styles.navLink}>
+            HOME
           </Link>
-        </div>
-        <div className="flex w-3/4 items-center justify-end text-right">
           {navLinks.map((n, i) => (
-            <a
-              key={i}
-              href={n.url}
-              className="mr-3 text-lg lg:mr-4 lg:text-base"
-            >
-              {n.name}
-            </a>
+            <span key={i} className="flex items-center">
+              <span className={styles.pipeSeparator}>|</span>
+              <a href={n.url} className={styles.navLink}>
+                {n.name.toUpperCase()}
+              </a>
+            </span>
           ))}
-          <div className="ml-4 flex items-center space-x-2">
-            <button
-              type="button"
-              onClick={handleToggle}
-              className={`${styles.themeButton} ${styles.themeButtonActive}`}
-              aria-label={`Switch to ${currentIcon.id} theme`}
-              title={`Switch to ${currentIcon.id} theme`}
-            >
-              <div className={styles.iconWrapper}>{currentIcon.svg}</div>
-            </button>
-          </div>
+        </div>
+        <div className="flex items-center">
+          <button
+            type="button"
+            onClick={handleToggle}
+            className={`${styles.themeButton}`}
+            aria-label={`Switch to ${currentIcon.id} theme`}
+            title={`Switch to ${currentIcon.id} theme`}
+          >
+            <div className={styles.iconWrapper}>{currentIcon.svg}</div>
+          </button>
         </div>
       </nav>
     </>
