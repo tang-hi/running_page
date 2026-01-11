@@ -24,22 +24,27 @@
   /* fonts */
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
+  /* positive/negative colors for data */
+  --color-positive: #006400;
+  --color-negative: #8b0000;
+  --color-positive-bg: rgba(0, 100, 0, 0.1);
+  --color-negative-bg: rgba(139, 0, 0, 0.1);
 }
 
-/* 1. System Theme (Base) */
+/* 1. System Theme (Base) - Default to light theme style */
 @media (prefers-color-scheme: light) {
   :root {
-    --color-brand: var(--color-sky-900);
-    --color-secondary: var(--color-sky-800);
-    --color-bg: var(--color-neutral-100);
-    --color-tx: var(--color-sky-900);
-    --color-hr: var(--color-neutral-300);
-    --color-selected: var(--color-sky-900);
-    --color-run-date: var(--color-neutral-800);
-    --color-run-table-thead: var(--color-neutral-800);
-    --color-run-row-hover-background: var(--color-neutral-200);
-    --color-activity-card: var(--color-neutral-300);
-    --svg-color-active-cell: var(--color-neutral-400);
+    --color-brand: #1a1a1a;
+    --color-secondary: #333333;
+    --color-bg: #ffffff;
+    --color-tx: #1a1a1a;
+    --color-hr: #e5e5e5;
+    --color-selected: #1a1a1a;
+    --color-run-date: #1a1a1a;
+    --color-run-table-thead: #1a1a1a;
+    --color-run-row-hover-background: #fafafa;
+    --color-activity-card: #f5f5f5;
+    --svg-color-active-cell: #4a4a4a;
     --svg-special-color: #d4a574;
     --svg-special-color2: #c5756b;
     --font-sans: 'IBM Plex Sans', sans-serif;
@@ -70,18 +75,18 @@
 
 /* 2. Manual Override (Higher Priority) */
 [data-theme='light'] {
-  --color-brand: var(--color-sky-900);
-  --color-secondary: var(--color-sky-800);
-  --color-bg: var(--color-neutral-100);
-  --color-tx: var(--color-sky-900);
-  --color-hr: var(--color-neutral-300);
-  --color-selected: var(--color-sky-900);
-  --color-run-date: var(--color-neutral-800);
-  --color-run-table-thead: var(--color-neutral-800);
-  --color-run-row-hover-background: var(--color-neutral-200);
-  --color-activity-card: var(--color-neutral-300);
-  --svg-color-inactive-cell: var(--color-neutral-600);
-  --svg-color-active-cell: var(--color-neutral-400);
+  --color-brand: #1a1a1a;
+  --color-secondary: #333333;
+  --color-bg: #ffffff;
+  --color-tx: #1a1a1a;
+  --color-hr: #e5e5e5;
+  --color-selected: #1a1a1a;
+  --color-run-date: #1a1a1a;
+  --color-run-table-thead: #1a1a1a;
+  --color-run-row-hover-background: #fafafa;
+  --color-activity-card: #f5f5f5;
+  --svg-color-inactive-cell: #e0e0e0;
+  --svg-color-active-cell: #4a4a4a;
   --svg-special-color: #d4a574;
   --svg-special-color2: #c5756b;
   --font-sans: 'IBM Plex Sans', sans-serif;
