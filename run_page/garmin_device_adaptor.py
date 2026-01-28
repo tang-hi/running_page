@@ -1,10 +1,18 @@
 import traceback
-
-from fit_tool.fit_file import FitFile
-from fit_tool.fit_file_builder import FitFileBuilder
-from fit_tool.profile.messages.device_info_message import DeviceInfoMessage
-from fit_tool.profile.messages.record_message import RecordMessage
 from io import BytesIO
+
+# fit-tool is no longer available on PyPI, so we make it optional
+# If not installed, FIT file processing will be skipped
+try:
+    from fit_tool.fit_file import FitFile
+    from fit_tool.fit_file_builder import FitFileBuilder
+    from fit_tool.profile.messages.device_info_message import DeviceInfoMessage
+    from fit_tool.profile.messages.record_message import RecordMessage
+
+    FIT_TOOL_AVAILABLE = True
+except ImportError:
+    FIT_TOOL_AVAILABLE = False
+    print("Warning: fit-tool not available. FIT file processing will be skipped.")
 
 # the device manufacturer and product info can be found in github,
 # https://github.com/garmin/fit-python-sdk/blob/main/garmin_fit_sdk/profile.py
@@ -26,6 +34,12 @@ def is_fit_file(file):
 def process_garmin_data(origin_file, use_fake_garmin_device):
     try:
         origin_file_content = origin_file.read()
+
+        # If fit-tool is not available, return the original file unchanged
+        if not FIT_TOOL_AVAILABLE:
+            origin_file.seek(0)
+            return origin_file
+
         # if origin file is not fit format, skip
         if not is_fit_file(origin_file):
             return BytesIO(origin_file_content)
@@ -34,7 +48,8 @@ def process_garmin_data(origin_file, use_fake_garmin_device):
     except Exception:
         print("process garmin data failed, will use origin file")
         traceback.print_exc()
-        return BytesIO(origin_file.read())
+        origin_file.seek(0)
+        return origin_file
 
 
 def do_process_garmin_data(file_content, use_fake_garmin_device):
