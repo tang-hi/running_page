@@ -170,8 +170,9 @@ hr {
   border: var(--nb-border-width) solid var(--color-border);
   box-shadow: var(--nb-shadow-md);
   background-color: var(--color-background);
-  transition: transform 0.15s var(--nb-easing),
-              box-shadow 0.15s var(--nb-easing);
+  transition:
+    transform 0.15s var(--nb-easing),
+    box-shadow 0.15s var(--nb-easing);
 }
 
 .nb-card-hoverable:hover {
@@ -236,7 +237,8 @@ hr {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 1;
   }
@@ -275,11 +277,21 @@ hr {
 }
 
 /* Stagger animation delays */
-.stagger-1 { animation-delay: 0.05s; }
-.stagger-2 { animation-delay: 0.1s; }
-.stagger-3 { animation-delay: 0.15s; }
-.stagger-4 { animation-delay: 0.2s; }
-.stagger-5 { animation-delay: 0.25s; }
+.stagger-1 {
+  animation-delay: 0.05s;
+}
+.stagger-2 {
+  animation-delay: 0.1s;
+}
+.stagger-3 {
+  animation-delay: 0.15s;
+}
+.stagger-4 {
+  animation-delay: 0.2s;
+}
+.stagger-5 {
+  animation-delay: 0.25s;
+}
 
 /* ========================================
    Stat Card Styles

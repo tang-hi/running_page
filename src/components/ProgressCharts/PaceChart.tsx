@@ -8,7 +8,6 @@ import {
   Tooltip,
   ResponsiveContainer,
   Legend,
-  ReferenceDot,
 } from 'recharts';
 import { ProgressDataPoint, formatPace } from './useProgressData';
 import styles from './style.module.css';
