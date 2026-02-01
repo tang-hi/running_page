@@ -1,0 +1,252 @@
+.progressContainer {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+/* Filter Section */
+.filterSection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.filterGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filterLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-run-table-thead);
+  font-family: var(--font-mono);
+}
+
+.filterSelect {
+  appearance: none;
+  padding: 0.75rem 2rem 0.75rem 1rem;
+  border: var(--nb-border-width) solid var(--color-border);
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.875rem;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  box-shadow: var(--nb-shadow);
+  transition: all 0.15s ease;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%231a1a1a' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+}
+
+.filterSelect:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--nb-shadow-hover);
+}
+
+.filterSelect:focus {
+  outline: none;
+  background-color: var(--color-run-row-hover-background);
+}
+
+/* Stats Cards */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  padding: 1.5rem;
+  border: var(--nb-border-width) solid var(--color-border);
+  background-color: var(--color-background);
+  box-shadow: var(--nb-shadow);
+  transition: all 0.15s ease;
+}
+
+.statCard:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--nb-shadow-hover);
+}
+
+.statCard:nth-child(1) {
+  background-color: var(--nb-accent-coral);
+  color: #1a1a1a;
+}
+
+.statCard:nth-child(2) {
+  background-color: var(--nb-accent-cyan);
+  color: #1a1a1a;
+}
+
+.statCard:nth-child(3) {
+  background-color: var(--nb-accent-yellow);
+  color: #1a1a1a;
+}
+
+.statCard:nth-child(4) {
+  background-color: var(--color-activity-card);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+  font-family: var(--font-mono);
+  opacity: 0.8;
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.statUnit {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+
+/* Charts Grid */
+.chartsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .chartsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chartCard {
+  padding: 1.5rem;
+  border: var(--nb-border-width) solid var(--color-border);
+  background-color: var(--color-background);
+  box-shadow: var(--nb-shadow);
+}
+
+.chartTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.chartTitleIcon {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+}
+
+.chartTitleIcon.pace {
+  background-color: var(--chart-color-pace);
+}
+
+.chartTitleIcon.distance {
+  background-color: var(--chart-color-distance);
+}
+
+.chartTitleIcon.heartrate {
+  background-color: var(--chart-color-heartrate);
+}
+
+.chartTitleIcon.elevation {
+  background-color: var(--chart-color-elevation);
+}
+
+.chartWrapper {
+  height: 300px;
+  width: 100%;
+}
+
+.emptyState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: var(--color-run-table-thead);
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Tooltip Styles */
+.customTooltip {
+  padding: 1rem;
+  border: var(--nb-border-width) solid var(--color-border);
+  background-color: var(--color-background);
+  box-shadow: var(--nb-shadow);
+  font-family: var(--font-mono);
+}
+
+.tooltipLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+  color: var(--color-run-table-thead);
+}
+
+.tooltipValue {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .progressContainer {
+    padding: 0 0.5rem;
+  }
+
+  .pageTitle {
+    font-size: 1.5rem;
+  }
+
+  .filterSection {
+    flex-direction: column;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .statCard {
+    padding: 1rem;
+  }
+
+  .statValue {
+    font-size: 1.5rem;
+  }
+
+  .chartWrapper {
+    height: 250px;
+  }
+}
