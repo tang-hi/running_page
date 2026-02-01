@@ -25,12 +25,10 @@ import {
   titleForShow,
   RunIds,
 } from '@/utils/utils';
-import { useTheme, useThemeChangeCounter } from '@/hooks/useTheme';
 
 const Index = () => {
   const { siteTitle } = useSiteMetadata();
   const { activities, thisYear } = useActivities();
-  const themeChangeCounter = useThemeChangeCounter(); // Add theme change listener
   const [year, setYear] = useState(thisYear);
   const [runIndex, setRunIndex] = useState(-1);
   const [title, setTitle] = useState('');
@@ -353,12 +351,10 @@ const Index = () => {
     };
   }, [year]);
 
-  const { theme } = useTheme();
-
   return (
     <Layout>
       <Helmet>
-        <html lang="en" data-theme={theme} />
+        <html lang="en" />
       </Helmet>
       <div className="w-full lg:w-1/3">
         <h1 className="my-8 mt-4 font-mono text-3xl font-bold tracking-tight lg:text-4xl">

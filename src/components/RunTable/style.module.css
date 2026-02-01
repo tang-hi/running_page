@@ -35,20 +35,25 @@
   font-family: var(--font-mono);
   font-size: 0.8125rem;
   table-layout: auto;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: var(--nb-border-width) solid var(--color-border);
+  box-shadow: var(--nb-shadow);
 
   :is(thead) {
     color: var(--color-run-table-thead);
-    border-bottom: 1px solid var(--color-hr);
+    background-color: var(--color-activity-card);
+    border-bottom: var(--nb-border-width) solid var(--color-border);
 
     :is(th) {
-      padding: 0.75rem 1rem;
+      padding: 0.875rem 1rem;
       white-space: nowrap;
       text-align: center;
-      font-weight: 600;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       font-size: 0.75rem;
+      border-bottom: var(--nb-border-width) solid var(--color-border);
     }
 
     :is(th):first-child {
@@ -75,13 +80,14 @@
 
 .runRow {
   cursor: pointer;
-  border-bottom: 1px solid var(--color-hr);
-  transition: background-color 0.1s ease;
+  border-bottom: 2px solid var(--color-border);
+  transition: all 0.1s ease;
 
   :is(td) {
-    padding: 0.625rem 1rem;
+    padding: 0.75rem 1rem;
     border: 0;
     text-align: center;
+    border-bottom: 1px solid var(--color-border);
   }
 
   :is(td):first-child {
@@ -94,12 +100,18 @@
 
   &:hover {
     background-color: var(--color-run-row-hover-background);
+    transform: translateX(4px);
+  }
+
+  &:last-child :is(td) {
+    border-bottom: none;
   }
 }
 
 .selected {
   color: var(--color-primary);
-  font-weight: 600;
+  font-weight: 700;
+  background-color: var(--color-run-row-hover-background);
 }
 
 .tableContainer {
@@ -109,4 +121,5 @@
 
 .runDate {
   color: var(--color-run-date);
+  font-weight: 600;
 }

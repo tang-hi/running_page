@@ -6,110 +6,53 @@
 @import './mobile.css';
 
 :root {
-  /* global */
-  --color-primary: var(--color-brand);
-  --color-secondary: var(--color-secondary);
-  --color-background: var(--color-bg);
-  --color-text-primary: var(--color-tx);
-  --color-hr-primary: var(--color-hr);
-  --color-selected: var(--color-selected);
-  /* table */
-  --color-run-date: var(--color-run-date);
-  --color-run-table-thead: var(--color-run-table-thead);
-  --color-run-row-hover-background: var(--color-run-row-hover-background);
-  /* activity-card */
-  --color-activity-card: var(--color-activity-card);
-  /* svg */
-  --svg-color-active-cell: var(--svg-color-inactive-cell);
-  /* fonts */
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-mono);
-  /* positive/negative colors for data */
-  --color-positive: #006400;
-  --color-negative: #8b0000;
-  --color-positive-bg: rgba(0, 100, 0, 0.1);
-  --color-negative-bg: rgba(139, 0, 0, 0.1);
-}
-
-/* 1. System Theme (Base) - Default to light theme style */
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-brand: #1a1a1a;
-    --color-secondary: #333333;
-    --color-bg: #ffffff;
-    --color-tx: #1a1a1a;
-    --color-hr: #e5e5e5;
-    --color-selected: #1a1a1a;
-    --color-run-date: #1a1a1a;
-    --color-run-table-thead: #1a1a1a;
-    --color-run-row-hover-background: #fafafa;
-    --color-activity-card: #f5f5f5;
-    --svg-color-active-cell: #4a4a4a;
-    --svg-special-color: #d4a574;
-    --svg-special-color2: #c5756b;
-    --font-sans: 'IBM Plex Sans', sans-serif;
-    --font-mono: 'IBM Plex Mono', monospace;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* const nike = 'rgb(224,237,94)'; */
-    --color-brand: #e0ed5e;
-    --color-secondary: #ccd94a;
-    --color-bg: var(--color-neutral-900);
-    --color-tx: var(--color-brand);
-    --color-hr: var(--color-red-500);
-    --color-selected: var(--color-brand);
-    --color-run-date: var(--color-neutral-300);
-    --color-run-table-thead: var(--color-zinc-300);
-    --color-run-row-hover-background: var(--color-neutral-800);
-    --color-activity-card: var(--color-neutral-700);
-    --svg-color-active-cell: #4dd2ff;
-    --svg-special-color: #f7d02c;
-    --svg-special-color2: #f56c6c;
-    --font-sans: 'IBM Plex Sans', sans-serif;
-    --font-mono: 'IBM Plex Mono', monospace;
-  }
-}
-
-/* 2. Manual Override (Higher Priority) */
-[data-theme='light'] {
+  /* Light theme colors */
   --color-brand: #1a1a1a;
   --color-secondary: #333333;
-  --color-bg: #ffffff;
+  --color-bg: #fffef5;
   --color-tx: #1a1a1a;
-  --color-hr: #e5e5e5;
+  --color-hr: #1a1a1a;
+  --color-border: #1a1a1a;
   --color-selected: #1a1a1a;
   --color-run-date: #1a1a1a;
   --color-run-table-thead: #1a1a1a;
-  --color-run-row-hover-background: #fafafa;
-  --color-activity-card: #f5f5f5;
+  --color-run-row-hover-background: #fff3cd;
+  --color-activity-card: #fff3cd;
   --svg-color-inactive-cell: #e0e0e0;
   --svg-color-active-cell: #4a4a4a;
   --svg-special-color: #d4a574;
   --svg-special-color2: #c5756b;
   --font-sans: 'IBM Plex Sans', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
-}
 
-[data-theme='dark'] {
-  /* const nike = 'rgb(224,237,94)'; */
-  --color-brand: #e0ed5e;
-  --color-secondary: #ccd94a;
-  --color-bg: var(--color-neutral-900);
-  --color-tx: var(--color-brand);
-  --color-hr: var(--color-red-500);
-  --color-selected: var(--color-brand);
-  --color-run-date: var(--color-neutral-300);
-  --color-run-table-thead: var(--color-zinc-300);
-  --color-run-row-hover-background: var(--color-neutral-800);
-  --color-activity-card: var(--color-neutral-700);
-  --svg-color-active-cell: #4dd2ff;
-  --svg-special-color: #f7d02c;
-  --svg-special-color2: #f56c6c;
-  --font-sans: 'IBM Plex Sans', sans-serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+  /* Global aliases */
+  --color-primary: var(--color-brand);
+  --color-background: var(--color-bg);
+  --color-text-primary: var(--color-tx);
+  --color-hr-primary: var(--color-hr);
+
+  /* positive/negative colors for data */
+  --color-positive: #006400;
+  --color-negative: #8b0000;
+  --color-positive-bg: rgba(0, 100, 0, 0.1);
+  --color-negative-bg: rgba(139, 0, 0, 0.1);
+
+  /* Neo-Brutalism design system */
+  --nb-border-width: 3px;
+  --nb-shadow-offset: 4px;
+  --nb-shadow: 4px 4px 0 var(--color-border);
+  --nb-shadow-hover: 6px 6px 0 var(--color-border);
+
+  /* Neo-Brutalism accent colors */
+  --nb-accent-coral: #ff6b6b;
+  --nb-accent-cyan: #4ecdc4;
+  --nb-accent-yellow: #ffe66d;
+
+  /* Chart colors */
+  --chart-color-pace: #ff6b6b;
+  --chart-color-distance: #4ecdc4;
+  --chart-color-heartrate: #e53935;
+  --chart-color-elevation: #ffe66d;
 }
 
 @layer base {
@@ -117,9 +60,6 @@
   body {
     background-color: var(--color-background);
     color: var(--color-brand);
-    transition:
-      background-color 0.1s ease,
-      color 0.1s ease;
     font-family: var(--font-sans);
   }
 }
