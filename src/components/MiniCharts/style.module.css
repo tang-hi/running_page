@@ -1,0 +1,66 @@
+/* Mini Charts Common Styles */
+.emptyChart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  color: var(--color-text-primary);
+  opacity: 0.4;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Mini Bar Chart */
+.miniBarChart {
+  width: 100%;
+  padding: var(--spacing-xs) 0;
+}
+
+.barsContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 100%;
+  gap: 2px;
+}
+
+.barWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.bar {
+  width: 100%;
+  min-height: 2px;
+  border-radius: 1px 1px 0 0;
+  transition: height 0.3s var(--nb-easing);
+}
+
+.barWrapper:hover .bar {
+  opacity: 0.8;
+}
+
+.barLabel {
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  color: var(--color-text-primary);
+  opacity: 0.5;
+  margin-top: 2px;
+}
+
+/* Mini Line Chart */
+.miniLineChart {
+  width: 100%;
+  padding: var(--spacing-xs) 0;
+}
+
+.lineSvg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Index file exports */

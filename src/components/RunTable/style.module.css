@@ -18,12 +18,22 @@
 
   .runTable th:first-child,
   .runTable td:first-child {
-    min-width: 100px;
+    min-width: 120px;
   }
 
   .runTable th:last-child,
   .runTable td:last-child {
     min-width: 80px;
+  }
+
+  .titleCellContent {
+    gap: 0.5rem;
+  }
+
+  .miniRoutePreview,
+  .miniRouteEmpty {
+    width: 24px !important;
+    height: 24px !important;
   }
 }
 
@@ -122,4 +132,55 @@
 .runDate {
   color: var(--color-run-date);
   font-weight: 600;
+}
+
+/* Mini Route Preview */
+.miniRoutePreview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-activity-card);
+  border-radius: 2px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.miniRouteEmpty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-activity-card);
+  border-radius: 2px;
+  flex-shrink: 0;
+  color: var(--color-run-table-thead);
+  font-size: 0.625rem;
+}
+
+/* Title Cell with Route Preview */
+.titleCell {
+  text-align: left !important;
+}
+
+.titleCellContent {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.runTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Pace Cell with Heat Color */
+.paceCell {
+  text-align: center;
+}
+
+.paceValue {
+  font-weight: 700;
+  transition: color 0.2s ease;
 }

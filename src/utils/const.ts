@@ -31,21 +31,26 @@ const MAP_LAYER_LIST = [
 const USE_GOOGLE_ANALYTICS = false;
 const GOOGLE_ANALYTICS_TRACKING_ID = '';
 
+// Year goal for progress tracking (in km)
+// Set your annual running distance goal here
+const YEAR_GOAL = 1200;
+
 // styling: set to `true` if you want dash-line route
 const USE_DASH_LINE = true;
 // styling: route line opacity: [0, 1]
 const LINE_OPACITY = 0.4;
 // styling: map height - responsive design
 // Use smaller height on mobile devices for better user experience
-const MAP_HEIGHT = window.innerWidth <= 768 ? 250 : 600;
-//set to `false` if you want to hide the road label characters
-const ROAD_LABEL_DISPLAY = true;
-// updated on 2024/11/17: privacy mode is set to true by default
-//set to `true` if you want to display only the routes without showing the map.
+// Increased desktop height for better map visibility (75% layout)
+const MAP_HEIGHT = window.innerWidth <= 768 ? 300 : 'calc(100vh - 200px)';
+// Set to `false` to hide street names for privacy protection
+const ROAD_LABEL_DISPLAY = false;
+// Privacy mode: set to `true` to display only routes without showing the map
+// This provides maximum privacy and zero map API usage (completely free)
 const PRIVACY_MODE = false;
-// updated on 2024/11/17: lights are turned off by default
-//set to `false` if you want to make light off as default, only effect when `PRIVACY_MODE` = false
-const LIGHTS_ON = false;
+// Lights setting: true = show terrain map, false = only routes on dark background
+// With ROAD_LABEL_DISPLAY=false, terrain map also protects privacy
+const LIGHTS_ON = true;
 //set to `true` if you want to show the 'Elevation Gain' column
 const SHOW_ELEVATION_GAIN = false;
 // richer title for the activity types (like garmin style)
@@ -160,6 +165,7 @@ export {
   ACTIVITY_TYPES,
   ACTIVITY_TOTAL,
   HOME_PAGE_TITLE,
+  YEAR_GOAL,
 };
 
 const nike = 'rgb(224,237,94)'; // if you want to change the main color, modify this value in src/styles/variables.scss
@@ -222,11 +228,13 @@ export const SWIMMING_COLOR = 'rgb(255,51,51)';
 
 // map tiles vendor, maptiler or mapbox or stadiamaps
 // if you want to use maptiler, set the access token in MAP_TILE_ACCESS_TOKEN
-export const MAP_TILE_VENDOR = 'mapbox';
+// Maptiler offers terrain/outdoor styles that show topography without revealing exact locations
+export const MAP_TILE_VENDOR = 'maptiler';
 
 // map tiles style name, see MAP_TILE_STYLES for more details
-export const MAP_TILE_STYLE_LIGHT = 'light-v10';
-export const MAP_TILE_STYLE_DARK = 'dark-v10';
+// Using outdoor style for terrain visualization (mountains, rivers, elevation)
+export const MAP_TILE_STYLE_LIGHT = 'outdoor-light';
+export const MAP_TILE_STYLE_DARK = 'outdoor-dark';
 
 // access token. you can apply a new one, it's free.
 // maptiler: Gt5R0jT8tuIYxW6sNrAg | sign up at https://cloud.maptiler.com/auth/widget

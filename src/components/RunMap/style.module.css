@@ -1,3 +1,11 @@
+/* Map Container */
+.mapContainer {
+  border: var(--nb-border-width) solid var(--color-border);
+  box-shadow: var(--nb-shadow-md);
+  overflow: hidden;
+  margin-bottom: var(--spacing-lg);
+}
+
 .locationSVG {
   height: 100%;
   width: 100%;

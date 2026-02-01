@@ -70,7 +70,7 @@ const RunMap = ({
   const mapRef = useRef<MapRef>(null);
   const [lights, setLights] = useState(PRIVACY_MODE ? false : LIGHTS_ON);
   // layers that should remain visible when lights are off
-  const keepWhenLightsOff = ['runs2', 'animated-run'];
+  const keepWhenLightsOff = ['runs2', 'runs-glow', 'animated-run'];
   const [mapGeoData, setMapGeoData] =
     useState<FeatureCollection<RPGeometry> | null>(null);
   const [isLoadingMapData, setIsLoadingMapData] = useState(false);
@@ -345,78 +345,64 @@ const RunMap = ({
   }, [isSingleRun, startRouteAnimation]);
 
   return (
-    <Map
-      {...viewState}
-      onMove={onMove}
-      onClick={handleMapClick}
-      style={style}
-      mapStyle={mapStyle}
-      ref={mapRefCallback}
-      cooperativeGestures={isTouchDevice()}
-      mapboxAccessToken={MAPBOX_TOKEN}
-    >
-      <RunMapButtons changeYear={changeYear} thisYear={thisYear} />
-      <Source id="data" type="geojson" data={combinedGeoData}>
-        <Layer
-          id="province"
-          type="fill"
-          paint={{
-            'fill-color': PROVINCE_FILL_COLOR,
-          }}
-          filter={filterProvinces}
-        />
-        <Layer
-          id="countries"
-          type="fill"
-          paint={{
-            'fill-color': COUNTRY_FILL_COLOR,
-            // in China, fill a bit lighter while already filled provinces
-            'fill-opacity': ['case', ['==', ['get', 'name'], '中国'], 0.1, 0.5],
-          }}
-          filter={filterCountries}
-        />
-        <Layer
-          id="runs2"
-          type="line"
-          paint={{
-            'line-color': ['get', 'color'],
-            'line-width': isBigMap && lights ? 1 : 2,
-            'line-dasharray': dash,
-            'line-opacity':
-              isSingleRun || isBigMap || !lights ? 1 : LINE_OPACITY,
-            'line-blur': 1,
-          }}
-          layout={{
-            'line-join': 'round',
-            'line-cap': 'round',
-          }}
-        />
-      </Source>
-      {isSingleRun && animatedPoints.length > 0 && (
-        <Source
-          id="animated-run"
-          type="geojson"
-          data={{
-            type: 'FeatureCollection',
-            features: [
-              {
-                type: 'Feature',
-                properties: { color: singleRunColor },
-                geometry: {
-                  type: 'LineString',
-                  coordinates: animatedPoints,
-                },
-              },
-            ],
-          }}
-        >
+    <div className={styles.mapContainer}>
+      <Map
+        {...viewState}
+        onMove={onMove}
+        onClick={handleMapClick}
+        style={style}
+        mapStyle={mapStyle}
+        ref={mapRefCallback}
+        cooperativeGestures={isTouchDevice()}
+        mapboxAccessToken={MAPBOX_TOKEN}
+      >
+        <RunMapButtons changeYear={changeYear} thisYear={thisYear} />
+        <Source id="data" type="geojson" data={combinedGeoData}>
           <Layer
-            id="animated-run"
+            id="province"
+            type="fill"
+            paint={{
+              'fill-color': PROVINCE_FILL_COLOR,
+            }}
+            filter={filterProvinces}
+          />
+          <Layer
+            id="countries"
+            type="fill"
+            paint={{
+              'fill-color': COUNTRY_FILL_COLOR,
+              // in China, fill a bit lighter while already filled provinces
+              'fill-opacity': ['case', ['==', ['get', 'name'], '中国'], 0.1, 0.5],
+            }}
+            filter={filterCountries}
+          />
+          {/* Glow layer for neon effect when lights are off */}
+          {!lights && (
+            <Layer
+              id="runs-glow"
+              type="line"
+              paint={{
+                'line-color': ['get', 'color'],
+                'line-width': isBigMap ? 6 : 8,
+                'line-opacity': 0.25,
+                'line-blur': 6,
+              }}
+              layout={{
+                'line-join': 'round',
+                'line-cap': 'round',
+              }}
+            />
+          )}
+          <Layer
+            id="runs2"
             type="line"
             paint={{
               'line-color': ['get', 'color'],
-              'line-width': 3,
-              'line-opacity': 1,
+              'line-width': isBigMap && lights ? 1 : lights ? 2 : 2.5,
+              'line-dasharray': dash,
+              'line-opacity':
+                isSingleRun || isBigMap || !lights ? 1 : LINE_OPACITY,
+              'line-blur': lights ? 1 : 0,
             }}
             layout={{
               'line-join': 'round',
@@ -424,24 +410,57 @@ const RunMap = ({
             }}
           />
         </Source>
-      )}
-      {isSingleRun && (
-        <RunMarker
-          startLat={startLat}
-          startLon={startLon}
-          endLat={endLat}
-          endLon={endLon}
+        {isSingleRun && animatedPoints.length > 0 && (
+          <Source
+            id="animated-run"
+            type="geojson"
+            data={{
+              type: 'FeatureCollection',
+              features: [
+                {
+                  type: 'Feature',
+                  properties: { color: singleRunColor },
+                  geometry: {
+                    type: 'LineString',
+                    coordinates: animatedPoints,
+                  },
+                },
+              ],
+            }}
+          >
+            <Layer
+              id="animated-run"
+              type="line"
+              paint={{
+                'line-color': ['get', 'color'],
+                'line-width': 3,
+                'line-opacity': 1,
+              }}
+              layout={{
+                'line-join': 'round',
+                'line-cap': 'round',
+              }}
+            />
+          </Source>
+        )}
+        {isSingleRun && (
+          <RunMarker
+            startLat={startLat}
+            startLon={startLon}
+            endLat={endLat}
+            endLon={endLon}
+          />
+        )}
+        <span className={styles.runTitle}>{title}</span>
+        <FullscreenControl style={fullscreenButton} />
+        {!PRIVACY_MODE && <LightsControl setLights={setLights} lights={lights} />}
+        <NavigationControl
+          showCompass={false}
+          position={'bottom-right'}
+          style={{ opacity: 0.3 }}
         />
-      )}
-      <span className={styles.runTitle}>{title}</span>
-      <FullscreenControl style={fullscreenButton} />
-      {!PRIVACY_MODE && <LightsControl setLights={setLights} lights={lights} />}
-      <NavigationControl
-        showCompass={false}
-        position={'bottom-right'}
-        style={{ opacity: 0.3 }}
-      />
-    </Map>
+      </Map>
+    </div>
   );
 };
 

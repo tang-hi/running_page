@@ -220,6 +220,34 @@
   color: var(--color-primary);
 }
 
+/* PR Badge */
+.prBadge {
+  display: inline-block;
+  background-color: var(--trend-positive);
+  color: white;
+  font-size: 0.625rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 2px;
+  margin-left: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Milestone Badge */
+.milestoneBadge {
+  display: inline-block;
+  background-color: var(--nb-accent-yellow);
+  color: #1a1a1a;
+  font-size: 0.625rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 2px;
+  margin-left: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .progressContainer {
