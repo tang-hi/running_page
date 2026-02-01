@@ -42,7 +42,9 @@ const MiniLineChart = ({
     });
 
     // Create SVG path
-    const pathPoints = points.map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`).join(' ');
+    const pathPoints = points
+      .map((p, i) => `${i === 0 ? 'M' : 'L'} ${p.x} ${p.y}`)
+      .join(' ');
 
     // Create area fill path
     const areaPoints = [

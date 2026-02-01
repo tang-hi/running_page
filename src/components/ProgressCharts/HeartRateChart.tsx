@@ -21,9 +21,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
     return (
       <div className={styles.customTooltip}>
         <p className={styles.tooltipLabel}>{label}</p>
-        <p className={styles.tooltipValue}>
-          {Math.round(value)} bpm
-        </p>
+        <p className={styles.tooltipValue}>{Math.round(value)} bpm</p>
       </div>
     );
   }
@@ -34,7 +32,9 @@ const HeartRateChart = ({ data }: HeartRateChartProps) => {
   const validData = data.filter((d) => d.heartRate !== null && d.heartRate > 0);
 
   if (validData.length === 0) {
-    return <div className={styles.emptyState}>No heart rate data available</div>;
+    return (
+      <div className={styles.emptyState}>No heart rate data available</div>
+    );
   }
 
   const formatXAxis = (dateStr: string) => {
@@ -43,13 +43,26 @@ const HeartRateChart = ({ data }: HeartRateChartProps) => {
   };
 
   const heartRates = validData.map((d) => d.heartRate!);
-  const minHR = Math.max(60, Math.floor(Math.min(...heartRates) / 10) * 10 - 10);
-  const maxHR = Math.min(220, Math.ceil(Math.max(...heartRates) / 10) * 10 + 10);
+  const minHR = Math.max(
+    60,
+    Math.floor(Math.min(...heartRates) / 10) * 10 - 10
+  );
+  const maxHR = Math.min(
+    220,
+    Math.ceil(Math.max(...heartRates) / 10) * 10 + 10
+  );
 
   return (
     <ResponsiveContainer width="100%" height="100%">
-      <LineChart data={validData} margin={{ top: 5, right: 20, left: 10, bottom: 5 }}>
-        <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" opacity={0.3} />
+      <LineChart
+        data={validData}
+        margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+      >
+        <CartesianGrid
+          strokeDasharray="3 3"
+          stroke="var(--color-border)"
+          opacity={0.3}
+        />
         <XAxis
           dataKey="date"
           tickFormatter={formatXAxis}

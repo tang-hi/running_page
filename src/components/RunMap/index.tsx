@@ -372,7 +372,12 @@ const RunMap = ({
             paint={{
               'fill-color': COUNTRY_FILL_COLOR,
               // in China, fill a bit lighter while already filled provinces
-              'fill-opacity': ['case', ['==', ['get', 'name'], '中国'], 0.1, 0.5],
+              'fill-opacity': [
+                'case',
+                ['==', ['get', 'name'], '中国'],
+                0.1,
+                0.5,
+              ],
             }}
             filter={filterCountries}
           />
@@ -453,7 +458,9 @@ const RunMap = ({
         )}
         <span className={styles.runTitle}>{title}</span>
         <FullscreenControl style={fullscreenButton} />
-        {!PRIVACY_MODE && <LightsControl setLights={setLights} lights={lights} />}
+        {!PRIVACY_MODE && (
+          <LightsControl setLights={setLights} lights={lights} />
+        )}
         <NavigationControl
           showCompass={false}
           position={'bottom-right'}

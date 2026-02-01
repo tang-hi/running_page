@@ -68,7 +68,9 @@ const ProgressCharts = () => {
         </div>
         <div className={styles.statCard}>
           <div className={styles.statLabel}>Average Pace</div>
-          <div className={styles.statValue}>{formatPace(stats.averagePace)}</div>
+          <div className={styles.statValue}>
+            {formatPace(stats.averagePace)}
+          </div>
         </div>
         <div className={styles.statCard}>
           <div className={styles.statLabel}>Best Pace</div>
@@ -90,7 +92,9 @@ const ProgressCharts = () => {
 
         <div className={styles.chartCard}>
           <h3 className={styles.chartTitle}>
-            <span className={`${styles.chartTitleIcon} ${styles.distance}`}></span>
+            <span
+              className={`${styles.chartTitleIcon} ${styles.distance}`}
+            ></span>
             Cumulative Distance
           </h3>
           <div className={styles.chartWrapper}>
@@ -100,7 +104,9 @@ const ProgressCharts = () => {
 
         <div className={styles.chartCard}>
           <h3 className={styles.chartTitle}>
-            <span className={`${styles.chartTitleIcon} ${styles.heartrate}`}></span>
+            <span
+              className={`${styles.chartTitleIcon} ${styles.heartrate}`}
+            ></span>
             Heart Rate
           </h3>
           <div className={styles.chartWrapper}>
@@ -110,7 +116,9 @@ const ProgressCharts = () => {
 
         <div className={styles.chartCard}>
           <h3 className={styles.chartTitle}>
-            <span className={`${styles.chartTitleIcon} ${styles.elevation}`}></span>
+            <span
+              className={`${styles.chartTitleIcon} ${styles.elevation}`}
+            ></span>
             Elevation Gain
           </h3>
           <div className={styles.chartWrapper}>
