@@ -19,9 +19,7 @@ const CustomTooltip = ({ active, payload, label }: any) => {
     return (
       <div className={styles.customTooltip}>
         <p className={styles.tooltipLabel}>{label}</p>
-        <p className={styles.tooltipValue}>
-          {Math.round(payload[0].value)} m
-        </p>
+        <p className={styles.tooltipValue}>{Math.round(payload[0].value)} m</p>
       </div>
     );
   }
@@ -44,8 +42,15 @@ const ElevationChart = ({ data }: ElevationChartProps) => {
 
   return (
     <ResponsiveContainer width="100%" height="100%">
-      <BarChart data={validData} margin={{ top: 5, right: 20, left: 10, bottom: 5 }}>
-        <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" opacity={0.3} />
+      <BarChart
+        data={validData}
+        margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+      >
+        <CartesianGrid
+          strokeDasharray="3 3"
+          stroke="var(--color-border)"
+          opacity={0.3}
+        />
         <XAxis
           dataKey="date"
           tickFormatter={formatXAxis}

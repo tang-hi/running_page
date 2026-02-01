@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <>
       <nav className="mx-auto mt-8 flex w-full max-w-screen-2xl items-center justify-between px-6 font-mono lg:px-16">
-        <div className="flex items-center flex-wrap gap-y-2">
+        <div className="flex flex-wrap items-center gap-y-2">
           <Link to="/" className={styles.navLink}>
             HOME
           </Link>

@@ -30,10 +30,8 @@ const YearsStat = ({
   // Calculate current year's total distance
   const currentYearDistance = useMemo(() => {
     return (
-      currentYearActivities.reduce(
-        (sum, run) => sum + (run.distance || 0),
-        0
-      ) / 1000
+      currentYearActivities.reduce((sum, run) => sum + (run.distance || 0), 0) /
+      1000
     );
   }, [currentYearActivities]);
 

@@ -98,7 +98,8 @@ const RunRow = ({
             className={styles.paceValue}
             style={{
               color: paceColor,
-              textShadow: paceColor !== 'inherit' ? '0 0 1px rgba(0,0,0,0.2)' : 'none',
+              textShadow:
+                paceColor !== 'inherit' ? '0 0 1px rgba(0,0,0,0.2)' : 'none',
             }}
           >
             {paceParts}

@@ -140,9 +140,7 @@ const YearStat = ({
       {/* Year SVG on hover */}
       {year !== 'Total' && hovered && (
         <Suspense
-          fallback={
-            <div className={styles.svgLoading}>Loading chart...</div>
-          }
+          fallback={<div className={styles.svgLoading}>Loading chart...</div>}
         >
           <YearSVG className={styles.yearSvg} />
         </Suspense>

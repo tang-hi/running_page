@@ -41,7 +41,8 @@ const MiniRoutePreview: React.FC<MiniRoutePreviewProps> = ({
 
     // Convert coordinate to SVG coordinate
     const coordToSvg = (lng: number, lat: number): [number, number] => {
-      const x = svgPadding + ((lng - minLng + padding) / boundsWidth) * drawSize;
+      const x =
+        svgPadding + ((lng - minLng + padding) / boundsWidth) * drawSize;
       const y =
         svgPadding + ((maxLat + padding - lat) / boundsHeight) * drawSize;
       return [x, y];
