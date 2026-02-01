@@ -359,7 +359,7 @@ const Index = () => {
       {/* Left Panel - 25% width on desktop */}
       <div className="w-full lg:w-1/4 lg:max-w-xs lg:pr-6">
         <h1 className="mb-6 font-mono text-2xl font-bold tracking-tight lg:text-3xl">
-          <a href="/" className="hover:opacity-80 transition-opacity">
+          <a href="/" className="transition-opacity hover:opacity-80">
             {siteTitle.toUpperCase()}
           </a>
         </h1>

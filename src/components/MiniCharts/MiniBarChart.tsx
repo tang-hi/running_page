@@ -19,7 +19,7 @@ const MiniBarChart = ({
   color = 'var(--nb-accent-cyan)',
   showLabels = false,
 }: MiniBarChartProps) => {
-  const { maxValue, normalizedData } = useMemo(() => {
+  const { normalizedData } = useMemo(() => {
     const max = Math.max(...data.map((d) => d.value), 1);
     const normalized = data.map((d) => ({
       ...d,
