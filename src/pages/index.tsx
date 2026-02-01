@@ -356,9 +356,12 @@ const Index = () => {
       <Helmet>
         <html lang="en" />
       </Helmet>
-      <div className="w-full lg:w-1/3">
-        <h1 className="my-8 mt-4 font-mono text-3xl font-bold tracking-tight lg:text-4xl">
-          <a href="/">{siteTitle.toUpperCase()}</a>
+      {/* Left Panel - 25% width on desktop */}
+      <div className="w-full lg:w-1/4 lg:max-w-xs lg:pr-6">
+        <h1 className="mb-6 font-mono text-2xl font-bold tracking-tight lg:text-3xl">
+          <a href="/" className="hover:opacity-80 transition-opacity">
+            {siteTitle.toUpperCase()}
+          </a>
         </h1>
         {(viewState.zoom ?? 0) <= 3 && IS_CHINESE ? (
           <LocationStat
@@ -370,7 +373,8 @@ const Index = () => {
           <YearsStat year={year} onClick={changeYear} />
         )}
       </div>
-      <div className="w-full lg:w-2/3" id="map-container">
+      {/* Right Panel - 75% width on desktop */}
+      <div className="w-full lg:w-3/4 lg:flex-1" id="map-container">
         <RunMap
           title={title}
           viewState={viewState}

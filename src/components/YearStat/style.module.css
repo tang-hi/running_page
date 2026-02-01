@@ -1,0 +1,134 @@
+.yearStatContainer {
+  cursor: pointer;
+  padding: var(--spacing-md) 0;
+  border-bottom: 2px solid var(--color-border);
+  transition: all 0.15s var(--nb-easing);
+}
+
+.yearStatContainer:hover {
+  background-color: var(--color-run-row-hover-background);
+  padding-left: var(--spacing-sm);
+  margin-left: calc(-1 * var(--spacing-sm));
+}
+
+.yearStatContainer.isTotal {
+  border-bottom-width: 3px;
+  padding-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.yearStatSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+/* Year Title */
+.yearTitle {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-sm);
+}
+
+.yearValue {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.yearLabel {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+
+/* Stats Grid */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-sm);
+}
+
+.statCard {
+  padding: var(--spacing-sm) !important;
+}
+
+.statCard .stat-card-value {
+  font-size: 1.25rem;
+}
+
+/* Secondary Stats */
+.secondaryStats {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.secondaryStat {
+  display: flex;
+  flex-direction: column;
+}
+
+.secondaryValue {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.secondaryLabel {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.6;
+}
+
+/* Year SVG */
+.yearSvg {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin-top: var(--spacing-md);
+  border: 0;
+  padding: 0;
+  animation: fadeIn 0.2s var(--nb-easing-smooth);
+}
+
+.svgLoading {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  opacity: 0.5;
+  padding: var(--spacing-sm) 0;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .yearValue {
+    font-size: 1.5rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xs);
+  }
+
+  .statCard {
+    padding: var(--spacing-xs) !important;
+  }
+}

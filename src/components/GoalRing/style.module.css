@@ -1,0 +1,82 @@
+.goalRing {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ringSvg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progressCircle {
+  transition: stroke-dashoffset 0.5s var(--nb-easing);
+}
+
+.ringContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.percentage {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-primary);
+}
+
+.values {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  margin-top: 4px;
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+}
+
+.current {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.separator {
+  opacity: 0.5;
+}
+
+.target {
+  opacity: 0.6;
+}
+
+.unit {
+  font-size: 0.5rem;
+  opacity: 0.5;
+  margin-left: 2px;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+  margin-top: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .percentage {
+    font-size: 1.25rem;
+  }
+
+  .values {
+    font-size: 0.5rem;
+  }
+}

@@ -1,3 +1,4 @@
+import { useMemo } from 'react';
 import {
   LineChart,
   Line,
@@ -7,6 +8,7 @@ import {
   Tooltip,
   ResponsiveContainer,
   Legend,
+  ReferenceDot,
 } from 'recharts';
 import { ProgressDataPoint, formatPace } from './useProgressData';
 import styles from './style.module.css';
@@ -17,11 +19,19 @@ interface PaceChartProps {
 
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (active && payload && payload.length) {
+    const isPR = payload[0]?.payload?.isPR;
     return (
       <div className={styles.customTooltip}>
-        <p className={styles.tooltipLabel}>{label}</p>
+        <p className={styles.tooltipLabel}>
+          {label}
+          {isPR && <span className={styles.prBadge}>PR</span>}
+        </p>
         {payload.map((entry: any, index: number) => (
-          <p key={index} className={styles.tooltipValue} style={{ color: entry.color }}>
+          <p
+            key={index}
+            className={styles.tooltipValue}
+            style={{ color: entry.color }}
+          >
             {entry.name}: {formatPace(entry.value)}
           </p>
         ))}
@@ -31,12 +41,69 @@ const CustomTooltip = ({ active, payload, label }: any) => {
   return null;
 };
 
+// Custom dot component to highlight PRs
+const CustomDot = (props: any) => {
+  const { cx, cy, payload } = props;
+  if (payload?.isPR) {
+    return (
+      <g>
+        {/* Outer glow */}
+        <circle
+          cx={cx}
+          cy={cy}
+          r={8}
+          fill="var(--trend-positive)"
+          opacity={0.3}
+        />
+        {/* Inner dot */}
+        <circle
+          cx={cx}
+          cy={cy}
+          r={5}
+          fill="var(--trend-positive)"
+          stroke="var(--color-background)"
+          strokeWidth={2}
+        />
+      </g>
+    );
+  }
+  return (
+    <circle
+      cx={cx}
+      cy={cy}
+      r={3}
+      fill="var(--chart-color-pace)"
+      strokeWidth={0}
+    />
+  );
+};
+
 const PaceChart = ({ data }: PaceChartProps) => {
   if (data.length === 0) {
     return <div className={styles.emptyState}>No data available</div>;
   }
 
   const validData = data.filter((d) => d.pace > 0 && d.pace < 15);
+
+  // Find PR (fastest pace) and mark it
+  const dataWithPR = useMemo(() => {
+    if (validData.length === 0) return validData;
+
+    let bestPace = Infinity;
+    let bestIndex = -1;
+
+    validData.forEach((d, index) => {
+      if (d.pace > 0 && d.pace < bestPace) {
+        bestPace = d.pace;
+        bestIndex = index;
+      }
+    });
+
+    return validData.map((d, index) => ({
+      ...d,
+      isPR: index === bestIndex,
+    }));
+  }, [validData]);
 
   const formatXAxis = (dateStr: string) => {
     const date = new Date(dateStr);
@@ -53,8 +120,15 @@ const PaceChart = ({ data }: PaceChartProps) => {
 
   return (
     <ResponsiveContainer width="100%" height="100%">
-      <LineChart data={validData} margin={{ top: 5, right: 20, left: 10, bottom: 5 }}>
-        <CartesianGrid strokeDasharray="3 3" stroke="var(--color-border)" opacity={0.3} />
+      <LineChart
+        data={dataWithPR}
+        margin={{ top: 5, right: 20, left: 10, bottom: 5 }}
+      >
+        <CartesianGrid
+          strokeDasharray="3 3"
+          stroke="var(--color-border)"
+          opacity={0.3}
+        />
         <XAxis
           dataKey="date"
           tickFormatter={formatXAxis}
@@ -84,7 +158,7 @@ const PaceChart = ({ data }: PaceChartProps) => {
           name="Pace"
           stroke="var(--chart-color-pace)"
           strokeWidth={2}
-          dot={{ fill: 'var(--chart-color-pace)', strokeWidth: 0, r: 3 }}
+          dot={<CustomDot />}
           activeDot={{ r: 5, strokeWidth: 2, stroke: 'var(--color-border)' }}
         />
         <Line
