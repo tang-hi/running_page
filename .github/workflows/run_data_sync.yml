@@ -42,6 +42,7 @@ env:
   SAVE_TO_PARQENT: false # If you want to save the data to the repo, set it to `true`
   GENERATE_MONTH_OF_LIFE: true # If you want to generate the month of life, set it to `true`
   BIRTHDAY_MONTH: 1996-10 # If you want to generate the month of life, set it to your birthday month, format is YYYY-MM
+  LOGFIRE_SEND_TO_LOGFIRE: false # Disable logfire auto-instrumentation from openai dependency
 
 jobs:
   sync:
