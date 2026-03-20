@@ -61,7 +61,18 @@ class Garmin:
         self.modern_url = self.URL_DICT.get("MODERN_URL")
         garth.client.loads(secret_string)
         if garth.client.oauth2_token.expired:
-            garth.client.refresh_oauth2()
+            max_retries = 5
+            for attempt in range(max_retries):
+                try:
+                    garth.client.refresh_oauth2()
+                    break
+                except Exception as e:
+                    if "429" in str(e) and attempt < max_retries - 1:
+                        wait = 2 ** (attempt + 1)
+                        print(f"Rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/{max_retries})")
+                        time.sleep(wait)
+                    else:
+                        raise
 
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
@@ -80,10 +91,23 @@ class Garmin:
         try:
             response = await self.req.get(url, headers=self.headers)
             if response.status_code == 429:
-                raise GarminConnectTooManyRequestsError("Too many requests")
+                if not retrying:
+                    for attempt in range(3):
+                        wait = 2 ** (attempt + 1)
+                        print(f"Rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/3)")
+                        await asyncio.sleep(wait)
+                        response = await self.req.get(url, headers=self.headers)
+                        if response.status_code != 429:
+                            break
+                    else:
+                        raise GarminConnectTooManyRequestsError("Too many requests")
+                else:
+                    raise GarminConnectTooManyRequestsError("Too many requests")
             logger.debug(f"fetch_data got response code {response.status_code}")
             response.raise_for_status()
             return response.json()
+        except GarminConnectTooManyRequestsError:
+            raise
         except Exception as err:
             print(err)
             if retrying:
