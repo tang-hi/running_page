@@ -45,8 +45,28 @@ GARMIN_CN_URL_DICT = {
 }
 
 
+def garmin_login(email, password, auth_domain):
+    """Login with email/password and return new secret string."""
+    if auth_domain and str(auth_domain).upper() == "CN":
+        garth.configure(domain="garmin.cn", ssl_verify=False)
+    max_retries = 5
+    for attempt in range(max_retries):
+        try:
+            garth.login(email, password)
+            break
+        except Exception as e:
+            if "429" in str(e) and attempt < max_retries - 1:
+                wait = 2 ** (attempt + 2)
+                print(f"Login rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/{max_retries})")
+                time.sleep(wait)
+            else:
+                raise
+    return garth.client.dumps()
+
+
 class Garmin:
-    def __init__(self, secret_string, auth_domain, is_only_running=False):
+    def __init__(self, secret_string, auth_domain, is_only_running=False,
+                 email=None, password=None):
         """
         Init module
         """
@@ -61,21 +81,28 @@ class Garmin:
         self.modern_url = self.URL_DICT.get("MODERN_URL")
         garth.client.loads(secret_string)
         if garth.client.oauth2_token.expired:
+            refresh_err = None
             max_retries = 5
             for attempt in range(max_retries):
                 try:
                     garth.client.refresh_oauth2()
+                    refresh_err = None
                     break
                 except Exception as e:
+                    refresh_err = e
                     if "429" in str(e) and attempt < max_retries - 1:
-                        # garth 0.7.6+ invalidates oauth1_token on failure,
-                        # reload from secret_string to restore it for retry
                         garth.client.loads(secret_string)
                         wait = 2 ** (attempt + 2)  # 4, 8, 16, 32, 64s
                         print(f"Rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/{max_retries})")
                         time.sleep(wait)
                     else:
-                        raise
+                        break
+            if refresh_err:
+                if email and password:
+                    print(f"Token refresh failed ({refresh_err}), re-logging in with email/password...")
+                    garmin_login(email, password, auth_domain)
+                else:
+                    raise refresh_err
 
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
@@ -376,9 +403,11 @@ def get_garmin_summary_infos(activity_summary, activity_id):
 
 
 async def download_new_activities(
-    secret_string, auth_domain, downloaded_ids, is_only_running, folder, file_type
+    secret_string, auth_domain, downloaded_ids, is_only_running, folder, file_type,
+    email=None, password=None,
 ):
-    client = Garmin(secret_string, auth_domain, is_only_running)
+    client = Garmin(secret_string, auth_domain, is_only_running,
+                    email=email, password=password)
     # because I don't find a para for after time, so I use garmin-id as filename
     # to find new run to generate
     activity_ids = await get_activity_id_list(client)
@@ -448,6 +477,18 @@ if __name__ == "__main__":
         default="gpx",
         help="to download personal documents or ebook",
     )
+    parser.add_argument(
+        "--garmin-email",
+        dest="garmin_email",
+        help="Garmin email for auto re-login when token expires",
+        default=os.environ.get("GARMIN_EMAIL"),
+    )
+    parser.add_argument(
+        "--garmin-password",
+        dest="garmin_password",
+        help="Garmin password for auto re-login when token expires",
+        default=os.environ.get("GARMIN_PASSWORD"),
+    )
     options = parser.parse_args()
     secret_string = options.secret_string
     auth_domain = "CN" if options.is_cn else "COM"  # Default to COM if not specified
@@ -479,6 +520,8 @@ if __name__ == "__main__":
             is_only_running,
             folder,
             file_type,
+            email=options.garmin_email,
+            password=options.garmin_password,
         )
     )
     loop.run_until_complete(future)
