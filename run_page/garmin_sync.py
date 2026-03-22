@@ -68,7 +68,10 @@ class Garmin:
                     break
                 except Exception as e:
                     if "429" in str(e) and attempt < max_retries - 1:
-                        wait = 2 ** (attempt + 1)
+                        # garth 0.7.6+ invalidates oauth1_token on failure,
+                        # reload from secret_string to restore it for retry
+                        garth.client.loads(secret_string)
+                        wait = 2 ** (attempt + 2)  # 4, 8, 16, 32, 64s
                         print(f"Rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/{max_retries})")
                         time.sleep(wait)
                     else:
