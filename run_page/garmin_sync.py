@@ -17,6 +17,7 @@ from lxml import etree
 
 import aiofiles
 import garth
+import garth.http
 import httpx
 from config import FOLDER_DICT, JSON_FILE, SQL_FILE
 from garmin_device_adaptor import process_garmin_data
@@ -47,6 +48,9 @@ GARMIN_CN_URL_DICT = {
 
 def garmin_login(email, password, auth_domain):
     """Login with email/password and return new secret string."""
+    # Reset garth client to clear stale cookies from failed refresh attempts,
+    # which can cause SSO to redirect to unresolvable mobile.integration.garmin.com
+    garth.client = garth.http.Client()
     if auth_domain and str(auth_domain).upper() == "CN":
         garth.configure(domain="garmin.cn", ssl_verify=False)
     max_retries = 5
