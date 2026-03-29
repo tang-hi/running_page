@@ -104,17 +104,23 @@ class Garmin:
             if refresh_err:
                 if email and password:
                     print(f"Token refresh failed ({refresh_err}), re-logging in with email/password...")
+                    print("WARNING: SSO login may be rate-limited (429). If this fails,")
+                    print("run 'python run_page/garmin_browser_auth.py' to get tokens via browser.")
                     garmin_login(email, password, auth_domain)
                 else:
+                    print(f"Token refresh failed: {refresh_err}")
+                    print("TIP: Run 'python run_page/garmin_browser_auth.py' to get fresh tokens via browser login.")
                     raise refresh_err
 
         self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
             "origin": self.URL_DICT.get("SSO_URL_ORIGIN"),
             "nk": "NT",
             "Authorization": str(garth.client.oauth2_token),
         }
         self.is_only_running = is_only_running
+        # Save refreshed secret_string for updating GitHub secrets
+        self.refreshed_secret_string = garth.client.dumps()
         self.upload_url = self.URL_DICT.get("UPLOAD_URL")
         self.activity_url = self.URL_DICT.get("ACTIVITY_URL")
 
@@ -126,9 +132,9 @@ class Garmin:
             response = await self.req.get(url, headers=self.headers)
             if response.status_code == 429:
                 if not retrying:
-                    for attempt in range(3):
-                        wait = 2 ** (attempt + 1)
-                        print(f"Rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/3)")
+                    for attempt in range(5):
+                        wait = 2 ** (attempt + 2)  # 4, 8, 16, 32, 64s
+                        print(f"Rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/5)")
                         await asyncio.sleep(wait)
                         response = await self.req.get(url, headers=self.headers)
                         if response.status_code != 429:
@@ -365,7 +371,8 @@ async def get_activity_id_list(client, start=0):
     activities = await client.get_activities(start, 100)
     if len(activities) > 0:
         ids = list(map(lambda a: str(a.get("activityId", "")), activities))
-        print("Syncing Activity IDs")
+        print(f"Syncing Activity IDs (fetched {start + len(activities)})")
+        await asyncio.sleep(1)  # rate limit protection
         return ids + await get_activity_id_list(client, start + 100)
     else:
         return []
@@ -420,7 +427,7 @@ async def download_new_activities(
 
     to_generate_garmin_id2title = {}
     garmin_summary_infos_dict = {}
-    for id in to_generate_garmin_ids:
+    for i, id in enumerate(to_generate_garmin_ids):
         try:
             activity_summary = await client.get_activity_summary(id)
             activity_title = activity_summary.get("activityName", "")
@@ -428,13 +435,15 @@ async def download_new_activities(
             garmin_summary_infos_dict[id] = get_garmin_summary_infos(
                 activity_summary, id
             )
+            if (i + 1) % 5 == 0:
+                await asyncio.sleep(2)  # rate limit protection
         except Exception as e:
             print(f"Failed to get activity summary {id}: {str(e)}")
             continue
 
     start_time = time.time()
     await gather_with_concurrency(
-        10,
+        3,
         [
             download_garmin_data(
                 client, id, file_type=file_type, summary_infos=garmin_summary_infos_dict
@@ -530,6 +539,13 @@ if __name__ == "__main__":
     )
     loop.run_until_complete(future)
     new_ids, id2title = future.result()
+    # Check if token was refreshed
+    refreshed = garth.client.dumps()
+    if refreshed != secret_string:
+        # Mask the new token in GitHub Actions logs before printing
+        print(f"::add-mask::{refreshed}")
+        print("\nToken was refreshed. New GARMIN_SECRET_STRING:")
+        print(refreshed)
     # fit may contain gpx(maybe upload by user)
     if file_type == "fit":
         make_activities_file(
