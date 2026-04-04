@@ -46,26 +46,19 @@ GARMIN_CN_URL_DICT = {
 }
 
 
-def garmin_login(email, password, auth_domain):
-    """Login with email/password and return new secret string."""
-    # Reset garth client to clear stale cookies from failed refresh attempts,
-    # which can cause SSO to redirect to unresolvable mobile.integration.garmin.com
-    garth.client = garth.http.Client()
-    if auth_domain and str(auth_domain).upper() == "CN":
-        garth.configure(domain="garmin.cn", ssl_verify=False)
-    max_retries = 5
-    for attempt in range(max_retries):
-        try:
-            garth.login(email, password)
-            break
-        except Exception as e:
-            if "429" in str(e) and attempt < max_retries - 1:
-                wait = 2 ** (attempt + 2)
-                print(f"Login rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/{max_retries})")
-                time.sleep(wait)
-            else:
-                raise
-    return garth.client.dumps()
+def get_secret_via_browser(email, password, auth_domain):
+    """Get fresh token via Playwright headed browser login (bypasses SSO 429 block)."""
+    from garmin_browser_auth import (
+        browser_login_auto, build_secret_string,
+        exchange_oauth2, get_oauth1_token, get_oauth_consumer,
+    )
+    domain = "garmin.cn" if auth_domain and str(auth_domain).upper() == "CN" else "garmin.com"
+    print("Getting fresh token via browser auth...")
+    consumer = get_oauth_consumer()
+    ticket = browser_login_auto(email, password, domain)
+    oauth1 = get_oauth1_token(ticket, consumer, domain)
+    oauth2 = exchange_oauth2(oauth1, consumer, domain)
+    return build_secret_string(oauth1, oauth2)
 
 
 class Garmin:
@@ -85,32 +78,14 @@ class Garmin:
         self.modern_url = self.URL_DICT.get("MODERN_URL")
         garth.client.loads(secret_string)
         if garth.client.oauth2_token.expired:
-            refresh_err = None
-            max_retries = 5
-            for attempt in range(max_retries):
-                try:
-                    garth.client.refresh_oauth2()
-                    refresh_err = None
-                    break
-                except Exception as e:
-                    refresh_err = e
-                    if "429" in str(e) and attempt < max_retries - 1:
-                        garth.client.loads(secret_string)
-                        wait = 2 ** (attempt + 2)  # 4, 8, 16, 32, 64s
-                        print(f"Rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/{max_retries})")
-                        time.sleep(wait)
-                    else:
-                        break
-            if refresh_err:
-                if email and password:
-                    print(f"Token refresh failed ({refresh_err}), re-logging in with email/password...")
-                    print("WARNING: SSO login may be rate-limited (429). If this fails,")
-                    print("run 'python run_page/garmin_browser_auth.py' to get tokens via browser.")
-                    garmin_login(email, password, auth_domain)
-                else:
-                    print(f"Token refresh failed: {refresh_err}")
-                    print("TIP: Run 'python run_page/garmin_browser_auth.py' to get fresh tokens via browser login.")
-                    raise refresh_err
+            try:
+                garth.client.refresh_oauth2()
+            except Exception as e:
+                print(f"Token refresh failed ({e}), using browser auth...")
+                if not (email and password):
+                    raise
+                new_secret = get_secret_via_browser(email, password, auth_domain)
+                garth.client.loads(new_secret)
 
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
@@ -503,13 +478,18 @@ if __name__ == "__main__":
         default=os.environ.get("GARMIN_PASSWORD"),
     )
     options = parser.parse_args()
-    secret_string = options.secret_string
-    auth_domain = "CN" if options.is_cn else "COM"  # Default to COM if not specified
+    auth_domain = "CN" if options.is_cn else "COM"
     file_type = options.download_file_type
     is_only_running = options.only_run
+    secret_string = options.secret_string
     if secret_string is None:
-        print("Missing argument nor valid configuration file")
-        sys.exit(1)
+        if options.garmin_email and options.garmin_password:
+            secret_string = get_secret_via_browser(
+                options.garmin_email, options.garmin_password, auth_domain
+            )
+        else:
+            print("Provide a secret_string or set GARMIN_EMAIL and GARMIN_PASSWORD env vars")
+            sys.exit(1)
     folder = FOLDER_DICT.get(file_type, "gpx")
     # make gpx or tcx dir
     if not os.path.exists(folder):
@@ -539,13 +519,6 @@ if __name__ == "__main__":
     )
     loop.run_until_complete(future)
     new_ids, id2title = future.result()
-    # Check if token was refreshed
-    refreshed = garth.client.dumps()
-    if refreshed != secret_string:
-        # Mask the new token in GitHub Actions logs before printing
-        print(f"::add-mask::{refreshed}")
-        print("\nToken was refreshed. New GARMIN_SECRET_STRING:")
-        print(refreshed)
     # fit may contain gpx(maybe upload by user)
     if file_type == "fit":
         make_activities_file(

@@ -72,6 +72,14 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Setup browser auth (Xvfb + Playwright)
+        if: env.RUN_TYPE == 'garmin' || env.RUN_TYPE == 'garmin_cn'
+        run: |
+          if command -v apt-get &>/dev/null; then
+            sudo apt-get update -qq && sudo apt-get install -y -qq xvfb || true
+          fi
+          python -m playwright install chromium --with-deps || python -m playwright install chromium || true
+
       - name: Cache Data Files
         if: env.SAVE_DATA_IN_GITHUB_CACHE == 'true'
         uses: actions/cache@v4
@@ -125,17 +133,16 @@ jobs:
           python run_page/strava_sync.py ${{ secrets.STRAVA_CLIENT_ID }} ${{ secrets.STRAVA_CLIENT_SECRET }} ${{ secrets.STRAVA_CLIENT_REFRESH_TOKEN }}
         # If you only want to sync 'type running' add args --only-run, default script is to sync all data (rides and runs).
 
-      # for garmin if you want generate 'tcx' you can add --tcx command in the args.
+      # Garmin blocks headless browsers (427) and SSO login (429).
+      # xvfb-run provides a virtual display so Playwright runs in headed mode.
+      # If no GARMIN_SECRET_STRING, browser auth with email/password is used automatically.
       - name: Run sync Garmin script
         if: env.RUN_TYPE == 'garmin'
         env:
           GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
         run: |
-          python run_page/garmin_sync.py ${{ secrets.GARMIN_SECRET_STRING }}
-        # make garmin secret string 'python run_page/get_garmin_secret.py ${email} ${password}'
-        # If you only want to sync 'type running' add args --only-run, default script is to sync all data (rides and runs).
-        # python run_page/garmin_sync.py ${{ secrets.GARMIN_SECRET_STRING }} --only-run
+          xvfb-run python run_page/garmin_sync.py ${{ secrets.GARMIN_SECRET_STRING }}
 
       - name: Run sync Garmin CN script
         if: env.RUN_TYPE == 'garmin_cn'
@@ -143,10 +150,7 @@ jobs:
           GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
         run: |
-          python run_page/garmin_sync.py ${{ secrets.GARMIN_SECRET_STRING_CN }} --is-cn
-        # make garmin secret string 'python run_page/get_garmin_secret.py ${email} ${password} --is-cn'
-        # If you only want to sync 'type running' add args --only-run, default script is to sync all data (rides and runs).
-        # python run_page/garmin_sync.py ${{ secrets.GARMIN_SECRET_STRING_CN }}  --only-run --is-cn
+          xvfb-run python run_page/garmin_sync.py ${{ secrets.GARMIN_SECRET_STRING_CN }} --is-cn
 
       - name: Run sync Garmin CN to Garmin script
         if: env.RUN_TYPE == 'garmin_sync_cn_global'
