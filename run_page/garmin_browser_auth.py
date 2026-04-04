@@ -60,12 +60,13 @@ def get_oauth1_token(ticket, consumer, domain="garmin.com"):
             print(f"OAuth1 exchange rate limited (429), retrying in {wait}s... ({attempt + 1}/5)")
             time.sleep(wait)
             continue
-        resp.raise_for_status()
+        if not resp.ok:
+            raise Exception(f"OAuth1 exchange failed: {resp.status_code}")
         parsed = parse_qs(resp.text)
         token = {k: v[0] for k, v in parsed.items()}
         token["domain"] = domain
         return token
-    resp.raise_for_status()
+    raise Exception("OAuth1 exchange failed: 429 after 5 retries")
 
 
 def exchange_oauth2(oauth1, consumer, domain="garmin.com"):
@@ -96,14 +97,15 @@ def exchange_oauth2(oauth1, consumer, domain="garmin.com"):
             print(f"OAuth2 exchange rate limited (429), retrying in {wait}s... ({attempt + 1}/5)")
             time.sleep(wait)
             continue
-        resp.raise_for_status()
+        if not resp.ok:
+            raise Exception(f"OAuth2 exchange failed: {resp.status_code}")
         token = resp.json()
         token["expires_at"] = int(time.time() + token["expires_in"])
         token["refresh_token_expires_at"] = int(
             time.time() + token["refresh_token_expires_in"]
         )
         return token
-    resp.raise_for_status()
+    raise Exception("OAuth2 exchange failed: 429 after 5 retries")
 
 
 def _wait_for_ticket(page, max_wait):
