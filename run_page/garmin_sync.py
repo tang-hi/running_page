@@ -62,8 +62,7 @@ def get_secret_via_browser(email, password, auth_domain):
 
 
 class Garmin:
-    def __init__(self, secret_string, auth_domain, is_only_running=False,
-                 email=None, password=None):
+    def __init__(self, secret_string, auth_domain, is_only_running=False):
         """
         Init module
         """
@@ -77,15 +76,6 @@ class Garmin:
             garth.configure(domain="garmin.cn", ssl_verify=False)
         self.modern_url = self.URL_DICT.get("MODERN_URL")
         garth.client.loads(secret_string)
-        if garth.client.oauth2_token.expired:
-            try:
-                garth.client.refresh_oauth2()
-            except Exception as e:
-                print(f"Token refresh failed ({e}), using browser auth...")
-                if not (email and password):
-                    raise
-                new_secret = get_secret_via_browser(email, password, auth_domain)
-                garth.client.loads(new_secret)
 
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
@@ -390,10 +380,8 @@ def get_garmin_summary_infos(activity_summary, activity_id):
 
 async def download_new_activities(
     secret_string, auth_domain, downloaded_ids, is_only_running, folder, file_type,
-    email=None, password=None,
 ):
-    client = Garmin(secret_string, auth_domain, is_only_running,
-                    email=email, password=password)
+    client = Garmin(secret_string, auth_domain, is_only_running)
     # because I don't find a para for after time, so I use garmin-id as filename
     # to find new run to generate
     activity_ids = await get_activity_id_list(client)
@@ -490,6 +478,23 @@ if __name__ == "__main__":
         else:
             print("Provide a secret_string or set GARMIN_EMAIL and GARMIN_PASSWORD env vars")
             sys.exit(1)
+    # Validate/refresh token BEFORE entering asyncio loop
+    # (Playwright sync API cannot run inside an asyncio event loop)
+    if auth_domain and str(auth_domain).upper() == "CN":
+        garth.configure(domain="garmin.cn", ssl_verify=False)
+    garth.client.loads(secret_string)
+    if garth.client.oauth2_token.expired:
+        try:
+            garth.client.refresh_oauth2()
+            secret_string = garth.client.dumps()
+        except Exception as e:
+            print(f"Token refresh failed ({e}), using browser auth...")
+            if not (options.garmin_email and options.garmin_password):
+                raise
+            secret_string = get_secret_via_browser(
+                options.garmin_email, options.garmin_password, auth_domain
+            )
+
     folder = FOLDER_DICT.get(file_type, "gpx")
     # make gpx or tcx dir
     if not os.path.exists(folder):
@@ -513,8 +518,6 @@ if __name__ == "__main__":
             is_only_running,
             folder,
             file_type,
-            email=options.garmin_email,
-            password=options.garmin_password,
         )
     )
     loop.run_until_complete(future)
