@@ -21,6 +21,7 @@ Then update your GARMIN_SECRET_STRING GitHub secret with the output.
 import argparse
 import base64
 import json
+import os
 import re
 import time
 from urllib.parse import parse_qs
@@ -52,12 +53,19 @@ def get_oauth1_token(ticket, consumer, domain="garmin.com"):
         f"&login-url={login_url}"
         f"&accepts-mfa-tokens=true"
     )
-    resp = sess.get(url, headers={"User-Agent": ANDROID_UA}, timeout=15)
+    for attempt in range(5):
+        resp = sess.get(url, headers={"User-Agent": ANDROID_UA}, timeout=15)
+        if resp.status_code == 429:
+            wait = 2 ** (attempt + 2)  # 4, 8, 16, 32, 64s
+            print(f"OAuth1 exchange rate limited (429), retrying in {wait}s... ({attempt + 1}/5)")
+            time.sleep(wait)
+            continue
+        resp.raise_for_status()
+        parsed = parse_qs(resp.text)
+        token = {k: v[0] for k, v in parsed.items()}
+        token["domain"] = domain
+        return token
     resp.raise_for_status()
-    parsed = parse_qs(resp.text)
-    token = {k: v[0] for k, v in parsed.items()}
-    token["domain"] = domain
-    return token
 
 
 def exchange_oauth2(oauth1, consumer, domain="garmin.com"):
@@ -73,22 +81,29 @@ def exchange_oauth2(oauth1, consumer, domain="garmin.com"):
     data = {}
     if oauth1.get("mfa_token"):
         data["mfa_token"] = oauth1["mfa_token"]
-    resp = sess.post(
-        url,
-        headers={
-            "User-Agent": ANDROID_UA,
-            "Content-Type": "application/x-www-form-urlencoded",
-        },
-        data=data,
-        timeout=15,
-    )
+    for attempt in range(5):
+        resp = sess.post(
+            url,
+            headers={
+                "User-Agent": ANDROID_UA,
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            data=data,
+            timeout=15,
+        )
+        if resp.status_code == 429:
+            wait = 2 ** (attempt + 2)  # 4, 8, 16, 32, 64s
+            print(f"OAuth2 exchange rate limited (429), retrying in {wait}s... ({attempt + 1}/5)")
+            time.sleep(wait)
+            continue
+        resp.raise_for_status()
+        token = resp.json()
+        token["expires_at"] = int(time.time() + token["expires_in"])
+        token["refresh_token_expires_at"] = int(
+            time.time() + token["refresh_token_expires_in"]
+        )
+        return token
     resp.raise_for_status()
-    token = resp.json()
-    token["expires_at"] = int(time.time() + token["expires_in"])
-    token["refresh_token_expires_at"] = int(
-        time.time() + token["refresh_token_expires_in"]
-    )
-    return token
 
 
 def _wait_for_ticket(page, max_wait):
@@ -100,13 +115,13 @@ def _wait_for_ticket(page, max_wait):
             if "ticket=" in url:
                 m = re.search(r"ticket=(ST-[A-Za-z0-9\-]+)", url)
                 if m:
-                    print(f"Got ticket from URL: {m.group(1)[:30]}...")
+                    print("Got ticket from URL.")
                     return m.group(1)
 
             content = page.content()
             m = re.search(r"ticket=(ST-[A-Za-z0-9\-]+)", content)
             if m:
-                print(f"Got ticket: {m.group(1)[:30]}...")
+                print("Got ticket.")
                 return m.group(1)
         except Exception:
             pass
@@ -294,11 +309,16 @@ def main():
 
     print()
     print("=" * 50)
-    print("SUCCESS! Copy the secret_string below and update")
-    print("your GARMIN_SECRET_STRING GitHub secret:")
-    print("=" * 50)
-    print()
-    print(secret_string)
+    print("SUCCESS!")
+    if os.environ.get("CI"):
+        print("Running in CI — secret_string not printed.")
+        print(f"::add-mask::{secret_string}")
+    else:
+        print("Copy the secret_string below and update")
+        print("your GARMIN_SECRET_STRING GitHub secret:")
+        print("=" * 50)
+        print()
+        print(secret_string)
     print()
 
 

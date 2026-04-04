@@ -491,6 +491,9 @@ if __name__ == "__main__":
             print(f"Token refresh failed ({e}), using browser auth...")
             if not (options.garmin_email and options.garmin_password):
                 raise
+            if "429" in str(e):
+                print("Waiting 10s for rate limit to cool down...")
+                time.sleep(10)
             secret_string = get_secret_via_browser(
                 options.garmin_email, options.garmin_password, auth_domain
             )
