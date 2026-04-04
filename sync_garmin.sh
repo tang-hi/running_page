@@ -16,10 +16,17 @@ if [ -z "$GARMIN_EMAIL" ] || [ -z "$GARMIN_PASSWORD" ]; then
     exit 1
 fi
 
+# Use venv python
+VENV_PYTHON="$(dirname "$0")/venv/bin/python"
+if [ ! -f "$VENV_PYTHON" ]; then
+    echo "venv not found at $VENV_PYTHON, please run: python3 -m venv venv && venv/bin/pip install -r requirements.txt"
+    exit 1
+fi
+
 # Auto-detect: use xvfb-run on headless servers (no DISPLAY)
-PYTHON="python"
+PYTHON="$VENV_PYTHON"
 if [ -z "$DISPLAY" ] && command -v xvfb-run &>/dev/null; then
-    PYTHON="xvfb-run python"
+    PYTHON="xvfb-run $VENV_PYTHON"
     echo "Headless server detected, using xvfb-run"
 fi
 
@@ -36,10 +43,10 @@ $PYTHON run_page/garmin_sync.py
 
 # 2. Generate SVGs
 echo "=== Generating SVGs ==="
-python run_page/gen_svg.py --from-db --title "$TITLE" --type github --github-style "align-firstday" --athlete "$ATHLETE" --special-distance 10 --special-distance2 20 --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --min-distance 0.5
-python run_page/gen_svg.py --from-db --title "$TITLE_GRID" --type grid --athlete "$ATHLETE" --output assets/grid.svg --special-color yellow --special-color2 red --special-distance 20 --special-distance2 40 --use-localtime --min-distance "$MIN_GRID_DISTANCE"
-python run_page/gen_svg.py --from-db --type circular --use-localtime
-python run_page/gen_svg.py --from-db --year "$(date +%Y)" --language zh_CN --title "$(date +%Y) Running" --type github --github-style "align-firstday" --athlete "$ATHLETE" --special-distance 10 --special-distance2 20 --special-color yellow --special-color2 red --output "assets/github_$(date +%Y).svg" --use-localtime --min-distance 0.5
+"$VENV_PYTHON" run_page/gen_svg.py --from-db --title "$TITLE" --type github --github-style "align-firstday" --athlete "$ATHLETE" --special-distance 10 --special-distance2 20 --special-color yellow --special-color2 red --output assets/github.svg --use-localtime --min-distance 0.5
+"$VENV_PYTHON" run_page/gen_svg.py --from-db --title "$TITLE_GRID" --type grid --athlete "$ATHLETE" --output assets/grid.svg --special-color yellow --special-color2 red --special-distance 20 --special-distance2 40 --use-localtime --min-distance "$MIN_GRID_DISTANCE"
+"$VENV_PYTHON" run_page/gen_svg.py --from-db --type circular --use-localtime
+"$VENV_PYTHON" run_page/gen_svg.py --from-db --year "$(date +%Y)" --language zh_CN --title "$(date +%Y) Running" --type github --github-style "align-firstday" --athlete "$ATHLETE" --special-distance 10 --special-distance2 20 --special-color yellow --special-color2 red --output "assets/github_$(date +%Y).svg" --use-localtime --min-distance 0.5
 
 # 3. Generate month of life SVGs
 echo "=== Generating Month of Life ==="
@@ -49,7 +56,7 @@ for type_title in "running:Runner" "walking:Walker" "hiking:Hiker" "cycling:Cycl
     output="assets/mol_${sport}.svg"
     title="${label:+${label} }Month of Life"
     [ "$sport" = "all" ] && output="assets/mol.svg"
-    python run_page/gen_svg.py --from-db --type monthoflife --birth "$BIRTHDAY_MONTH" \
+    "$VENV_PYTHON" run_page/gen_svg.py --from-db --type monthoflife --birth "$BIRTHDAY_MONTH" \
         --special-color "#f9d367" --special-color2 "#f0a1a8" \
         --output "$output" --use-localtime --athlete "$ATHLETE" --title "$title" --sport-type "$sport"
 done
