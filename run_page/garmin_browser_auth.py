@@ -91,27 +91,52 @@ def exchange_oauth2(oauth1, consumer, domain="garmin.com"):
     return token
 
 
-def browser_login(domain="garmin.com"):
-    """Open a real browser, let user log in, capture the SSO ticket."""
+def _wait_for_ticket(page, max_wait):
+    """Poll page URL and content for SSO ticket."""
+    start = time.time()
+    while time.time() - start < max_wait:
+        try:
+            url = page.url
+            if "ticket=" in url:
+                m = re.search(r"ticket=(ST-[A-Za-z0-9\-]+)", url)
+                if m:
+                    print(f"Got ticket from URL: {m.group(1)[:30]}...")
+                    return m.group(1)
+
+            content = page.content()
+            m = re.search(r"ticket=(ST-[A-Za-z0-9\-]+)", content)
+            if m:
+                print(f"Got ticket: {m.group(1)[:30]}...")
+                return m.group(1)
+        except Exception:
+            pass
+        page.wait_for_timeout(500)
+    return None
+
+
+def _build_sso_url(domain="garmin.com"):
     sso_domain = f"sso.{domain}"
+    return (
+        f"https://{sso_domain}/sso/embed"
+        "?id=gauth-widget"
+        "&embedWidget=true"
+        f"&gauthHost=https://{sso_domain}/sso"
+        "&clientId=GarminConnect"
+        "&locale=en_US"
+        f"&redirectAfterAccountLoginUrl=https://{sso_domain}/sso/embed"
+        f"&service=https://{sso_domain}/sso/embed"
+    )
+
+
+def browser_login(domain="garmin.com"):
+    """Open a real browser, let user log in manually, capture the SSO ticket."""
     ticket = None
 
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
         context = browser.new_context()
         page = context.new_page()
-
-        sso_url = (
-            f"https://{sso_domain}/sso/embed"
-            "?id=gauth-widget"
-            "&embedWidget=true"
-            f"&gauthHost=https://{sso_domain}/sso"
-            "&clientId=GarminConnect"
-            "&locale=en_US"
-            f"&redirectAfterAccountLoginUrl=https://{sso_domain}/sso/embed"
-            f"&service=https://{sso_domain}/sso/embed"
-        )
-        page.goto(sso_url)
+        page.goto(_build_sso_url(domain))
 
         print()
         print("=" * 50)
@@ -121,35 +146,61 @@ def browser_login(domain="garmin.com"):
         print("=" * 50)
         print()
 
-        max_wait = 300  # 5 minutes
-        start = time.time()
-
-        while time.time() - start < max_wait:
-            try:
-                url = page.url
-                if "ticket=" in url:
-                    m = re.search(r"ticket=(ST-[A-Za-z0-9\-]+)", url)
-                    if m:
-                        ticket = m.group(1)
-                        print(f"Got ticket from URL: {ticket[:30]}...")
-                        break
-
-                content = page.content()
-                m = re.search(r"ticket=(ST-[A-Za-z0-9\-]+)", content)
-                if m:
-                    ticket = m.group(1)
-                    print(f"Got ticket: {ticket[:30]}...")
-                    break
-            except Exception:
-                pass
-
-            page.wait_for_timeout(500)
-
+        ticket = _wait_for_ticket(page, max_wait=300)
         browser.close()
 
     if not ticket:
         print("ERROR: Timed out waiting for login (5 min). Try again.")
         raise SystemExit(1)
+
+    return ticket
+
+
+def browser_login_auto(email, password, domain="garmin.com"):
+    """Automated browser login with email/password (headed mode via Xvfb in CI).
+
+    Garmin blocks headless browsers (error 427), so this must run in headed mode.
+    In CI, use xvfb-run to provide a virtual display.
+    """
+    ticket = None
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=False)
+        context = browser.new_context()
+        page = context.new_page()
+        page.goto(_build_sso_url(domain))
+
+        print("Waiting for login form...")
+        page.wait_for_load_state("networkidle")
+        page.wait_for_timeout(1000)
+
+        # Fill email
+        email_input = page.locator("#email, input[name='username']").first
+        email_input.click()
+        page.wait_for_timeout(300)
+        email_input.fill(email)
+
+        # Fill password
+        page.wait_for_timeout(500)
+        password_input = page.locator("#password, input[name='password']").first
+        password_input.click()
+        page.wait_for_timeout(300)
+        password_input.fill(password)
+
+        # Submit
+        page.wait_for_timeout(500)
+        page.locator("#login-btn-signin, button[type='submit']").first.click()
+
+        print("Credentials submitted, waiting for SSO ticket...")
+        ticket = _wait_for_ticket(page, max_wait=60)
+        browser.close()
+
+    if not ticket:
+        raise Exception(
+            "Automated browser login timed out — could not capture SSO ticket. "
+            "Check your email/password, or try manual login: "
+            "python run_page/garmin_browser_auth.py"
+        )
 
     return ticket
 
@@ -190,6 +241,14 @@ def main():
         action="store_true",
         help="Use garmin.cn (China) instead of garmin.com",
     )
+    parser.add_argument(
+        "--email",
+        help="Garmin email for automated login (no manual interaction needed)",
+    )
+    parser.add_argument(
+        "--password",
+        help="Garmin password for automated login",
+    )
     options = parser.parse_args()
     domain = "garmin.cn" if options.is_cn else "garmin.com"
 
@@ -200,7 +259,11 @@ def main():
     consumer = get_oauth_consumer()
 
     print("Launching browser...")
-    ticket = browser_login(domain)
+    if options.email and options.password:
+        print("Using automated login with provided credentials...")
+        ticket = browser_login_auto(options.email, options.password, domain)
+    else:
+        ticket = browser_login(domain)
 
     print("Exchanging ticket for OAuth1 token...")
     oauth1 = get_oauth1_token(ticket, consumer, domain)
