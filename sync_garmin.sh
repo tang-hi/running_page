@@ -61,7 +61,16 @@ for type_title in "running:Runner" "walking:Walker" "hiking:Hiker" "cycling:Cycl
         --output "$output" --use-localtime --athlete "$ATHLETE" --title "$title" --sport-type "$sport"
 done
 
-# 4. Commit and push
+# 4. Format and lint generated files to keep CI green
+echo "=== Formatting and linting ==="
+if command -v corepack >/dev/null 2>&1; then
+    corepack pnpm run format || echo 'format failed, continuing'
+    corepack pnpm run lint || echo 'lint failed, continuing'
+else
+    echo 'corepack not found, skipping pnpm format/lint'
+fi
+
+# 5. Commit and push
 echo "=== Committing and pushing ==="
 git add .
 git commit -m 'update new runs' || echo 'nothing to commit'
