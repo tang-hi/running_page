@@ -57,7 +57,9 @@ def get_oauth1_token(ticket, consumer, domain="garmin.com"):
         resp = sess.get(url, headers={"User-Agent": ANDROID_UA}, timeout=15)
         if resp.status_code == 429:
             wait = 2 ** (attempt + 2)  # 4, 8, 16, 32, 64s
-            print(f"OAuth1 exchange rate limited (429), retrying in {wait}s... ({attempt + 1}/5)")
+            print(
+                f"OAuth1 exchange rate limited (429), retrying in {wait}s... ({attempt + 1}/5)"
+            )
             time.sleep(wait)
             continue
         if not resp.ok:
@@ -94,7 +96,9 @@ def exchange_oauth2(oauth1, consumer, domain="garmin.com"):
         )
         if resp.status_code == 429:
             wait = 2 ** (attempt + 2)  # 4, 8, 16, 32, 64s
-            print(f"OAuth2 exchange rate limited (429), retrying in {wait}s... ({attempt + 1}/5)")
+            print(
+                f"OAuth2 exchange rate limited (429), retrying in {wait}s... ({attempt + 1}/5)"
+            )
             time.sleep(wait)
             continue
         if not resp.ok:
