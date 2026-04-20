@@ -288,11 +288,11 @@ def main():
 
     print("Exchanging ticket for OAuth1 token...")
     oauth1 = get_oauth1_token(ticket, consumer, domain)
-    print(f"  OAuth1 token obtained")
+    print("  OAuth1 token obtained")
 
     print("Exchanging OAuth1 for OAuth2 token...")
     oauth2 = exchange_oauth2(oauth1, consumer, domain)
-    print(f"  OAuth2 access_token obtained")
+    print("  OAuth2 access_token obtained")
     print(f"  Expires in: {oauth2['expires_in']}s")
     print(f"  Refresh expires in: {oauth2['refresh_token_expires_in']}s")
 
