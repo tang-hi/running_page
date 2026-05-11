@@ -25,9 +25,8 @@ on:
 
 env:
   # please change to your own config.
-  # Garmin sync disabled — connectapi.garmin.com blocks GitHub Actions IPs.
-  # Use ./sync_garmin.sh locally instead.
-  RUN_TYPE: pass # support strava/nike/garmin/coros/garmin_cn/garmin_sync_cn_global/keep/only_gpx/only_fit/nike_to_strava/strava_to_garmin/tcx_to_garmin/strava_to_garmin_cn/garmin_to_strava/garmin_to_strava_cn/codoon/oppo/db_updater, Please change the 'pass' it to your own
+  RUN_TYPE: garmin # support strava/nike/garmin/coros/garmin_cn/garmin_sync_cn_global/keep/only_gpx/only_fit/nike_to_strava/strava_to_garmin/tcx_to_garmin/strava_to_garmin_cn/garmin_to_strava/garmin_to_strava_cn/codoon/oppo/db_updater, Please change the 'pass' it to your own
+  USE_CLOUDFLARE_WARP: true # Route Garmin traffic via Cloudflare WARP to work around 429 blocking of GitHub Actions IPs
   ATHLETE: tang-hi
   TITLE: TangDH Running
   MIN_GRID_DISTANCE: 3 # change min distance here
@@ -73,6 +72,25 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
+
+      - name: Install Cloudflare WARP
+        if: env.USE_CLOUDFLARE_WARP == 'true'
+        run: |
+          curl -fsSL https://pkg.cloudflareclient.com/pubkey.gpg | sudo gpg --dearmor -o /usr/share/keyrings/cloudflare-warp-archive-keyring.gpg
+          echo "deb [signed-by=/usr/share/keyrings/cloudflare-warp-archive-keyring.gpg] https://pkg.cloudflareclient.com/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/cloudflare-client.list
+          sudo apt-get update && sudo apt-get install -y cloudflare-warp
+
+      - name: Connect Cloudflare WARP
+        if: env.USE_CLOUDFLARE_WARP == 'true'
+        run: |
+          warp-cli --accept-tos registration new
+          warp-cli --accept-tos mode warp
+          warp-cli --accept-tos connect
+          sleep 3
+          echo "WARP status:"
+          warp-cli --accept-tos status
+          echo "IP info:"
+          curl -s https://cloudflare.com/cdn-cgi/trace | grep -E "ip|warp"
 
       - name: Cache Data Files
         if: env.SAVE_DATA_IN_GITHUB_CACHE == 'true'
@@ -127,16 +145,13 @@ jobs:
           python run_page/strava_sync.py ${{ secrets.STRAVA_CLIENT_ID }} ${{ secrets.STRAVA_CLIENT_SECRET }} ${{ secrets.STRAVA_CLIENT_REFRESH_TOKEN }}
         # If you only want to sync 'type running' add args --only-run, default script is to sync all data (rides and runs).
 
-      # Garmin blocks headless browsers (427) and SSO login (429).
-      # xvfb-run provides a virtual display so Playwright runs in headed mode.
-      # If no GARMIN_SECRET_STRING, browser auth with email/password is used automatically.
       - name: Run sync Garmin script
         if: env.RUN_TYPE == 'garmin'
         env:
           GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
         run: |
-          xvfb-run python run_page/garmin_sync.py ${{ secrets.GARMIN_SECRET_STRING }}
+          python run_page/garmin_sync.py ${{ secrets.GARMIN_SECRET_STRING }}
 
       - name: Run sync Garmin CN script
         if: env.RUN_TYPE == 'garmin_cn'
@@ -144,7 +159,7 @@ jobs:
           GARMIN_EMAIL: ${{ secrets.GARMIN_EMAIL }}
           GARMIN_PASSWORD: ${{ secrets.GARMIN_PASSWORD }}
         run: |
-          xvfb-run python run_page/garmin_sync.py ${{ secrets.GARMIN_SECRET_STRING_CN }} --is-cn
+          python run_page/garmin_sync.py ${{ secrets.GARMIN_SECRET_STRING_CN }} --is-cn
 
       - name: Run sync Garmin CN to Garmin script
         if: env.RUN_TYPE == 'garmin_sync_cn_global'
@@ -240,6 +255,11 @@ jobs:
         run: |
           pip install duckdb==1.1.0
           python run_page/save_to_parqent.py
+
+      - name: Disconnect Cloudflare WARP
+        if: env.USE_CLOUDFLARE_WARP == 'true'
+        run: |
+          warp-cli --accept-tos disconnect
 
       - name: Push new runs
         if: env.SAVE_DATA_IN_GITHUB_CACHE != 'true'
