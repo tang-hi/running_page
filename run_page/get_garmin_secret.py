@@ -24,7 +24,9 @@ if __name__ == "__main__":
         except Exception as e:
             if "429" in str(e) and attempt < max_retries - 1:
                 wait = 2 ** (attempt + 2)  # 4, 8, 16, 32, 64 seconds
-                print(f"Rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/{max_retries})")
+                print(
+                    f"Rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/{max_retries})"
+                )
                 time.sleep(wait)
             else:
                 raise

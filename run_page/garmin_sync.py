@@ -49,10 +49,18 @@ GARMIN_CN_URL_DICT = {
 def get_secret_via_browser(email, password, auth_domain):
     """Get fresh token via Playwright headed browser login (bypasses SSO 429 block)."""
     from garmin_browser_auth import (
-        browser_login_auto, build_secret_string,
-        exchange_oauth2, get_oauth1_token, get_oauth_consumer,
+        browser_login_auto,
+        build_secret_string,
+        exchange_oauth2,
+        get_oauth1_token,
+        get_oauth_consumer,
     )
-    domain = "garmin.cn" if auth_domain and str(auth_domain).upper() == "CN" else "garmin.com"
+
+    domain = (
+        "garmin.cn"
+        if auth_domain and str(auth_domain).upper() == "CN"
+        else "garmin.com"
+    )
     print("Getting fresh token via browser auth...")
     consumer = get_oauth_consumer()
     ticket = browser_login_auto(email, password, domain)
@@ -99,7 +107,9 @@ class Garmin:
                 if not retrying:
                     for attempt in range(5):
                         wait = 2 ** (attempt + 2)  # 4, 8, 16, 32, 64s
-                        print(f"Rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/5)")
+                        print(
+                            f"Rate limited (429), retrying in {wait}s... (attempt {attempt + 1}/5)"
+                        )
                         await asyncio.sleep(wait)
                         response = await self.req.get(url, headers=self.headers)
                         if response.status_code != 429:
@@ -379,7 +389,12 @@ def get_garmin_summary_infos(activity_summary, activity_id):
 
 
 async def download_new_activities(
-    secret_string, auth_domain, downloaded_ids, is_only_running, folder, file_type,
+    secret_string,
+    auth_domain,
+    downloaded_ids,
+    is_only_running,
+    folder,
+    file_type,
 ):
     client = Garmin(secret_string, auth_domain, is_only_running)
     # because I don't find a para for after time, so I use garmin-id as filename
@@ -476,7 +491,9 @@ if __name__ == "__main__":
                 options.garmin_email, options.garmin_password, auth_domain
             )
         else:
-            print("Provide a secret_string or set GARMIN_EMAIL and GARMIN_PASSWORD env vars")
+            print(
+                "Provide a secret_string or set GARMIN_EMAIL and GARMIN_PASSWORD env vars"
+            )
             sys.exit(1)
     # Validate/refresh token BEFORE entering asyncio loop
     # (Playwright sync API cannot run inside an asyncio event loop)
