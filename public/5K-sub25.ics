@@ -1,0 +1,2436 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//running//5K Sub-25 Plan//CN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:🏃 5K Sub-25 训练计划
+X-WR-TIMEZONE:Asia/Shanghai
+X-WR-CALDESC:12 周 5K 破 25 分钟训练计划
+BEGIN:VTIMEZONE
+TZID:Asia/Shanghai
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+TZNAME:CST
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:w01-summary@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260727
+DTEND;VALUE=DATE:20260728
+SUMMARY:📋 W1 · 基础重建 · 目标 26km
+DESCRIPTION:第 1/12 周 — 阶段1「基础重建」\n\n本周跑量目
+ 标：26 km（4 次）\n轻松跑配速：6:40–7:15/km\n长距离配速
+ ：6:50–7:20/km\n\n本阶段不做任何强度课。慢得别扭是对
+ 的，这是在补有氧地基。\n\n【早上没起来？先考虑挪到
+ 当天晚上 19:30】\n挪到当天晚上，这节课就完整保住了，
+ 远好过跳过。但分课型：\n· 周二 轻松跑 → 别挪，直接
+ 跳过。挪了离周三强度课只剩 11 小时，\n  带着疲劳去跑
+ 质量课，两节课一起废。\n· 周三 强度课 → 可以挪，但
+ 【必须去跑道】（晚上红绿灯会毁掉节奏跑），\n  且跑
+ 完离睡觉留 3 小时。\n· 周五 / 周六 轻松跑 → 随便挪，
+ 零损失。\n\n【真的漏掉了】\n· 轻松跑 → 直接跳过，不
+ 用补。这周少 5km 毫无影响。\n· 强度课 → 顺延一天；
+ 若离周日长距离不足 48h，本周就降级成轻松跑。\n· 长
+ 距离 → 唯一值得抢救的课，挪到周六或周一晚上。\n· 
+ 绝不要：两节课并到一天补，或连着三天堆量——这是
+ 受伤的头号原因。\n\n保底三课 = 周日长距离 + 周三强度
+ 课 + 任一次轻松跑。做到就算合格的一周。\n连续两周都
+ 在晚上补 → 说明早上这个时间不适合你，直接改计划，
+ 别每周硬撑。
+TRANSP:TRANSPARENT
+CATEGORIES:训练计划
+END:VEVENT
+BEGIN:VEVENT
+UID:w01-d0-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260727
+DTEND;VALUE=DATE:20260728
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w01-d1-extra@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260728
+DTEND;VALUE=DATE:20260729
+SUMMARY:🏥 体检（空腹）
+DESCRIPTION:🏥 今日体检，不跑步。\n\n【为什么昨天和今天
+ 都不能练】\n剧烈运动后 24–48 小时内，肌酸激酶(CK)、
+ 转氨酶(ALT/AST) 会明显升高，\n还可能出现运动性蛋白尿
+ ——这些都会让体检报告出现【假性异常】，\n白白多做
+ 一轮复查。\n\n【顺便让医生看两项】\n1. 心电图：接下
+ 来 12 周你的训练强度会明显上升，先确认心脏没问题。\
+ n2. 血红蛋白 + 铁蛋白：缺铁在跑者中很常见，症状恰好
+ 就是\n   「训练照旧但成绩持续下滑」——和你近 8 个月
+ 的曲线一模一样。\n   主因大概率还是训练结构，但既然
+ 要抽血，顺便看一眼几乎零成本。\n\n【抽完血别马上跑
+ 】\n空腹十几个小时后先正常吃一顿、补足水，今天就当
+ 休息日。
+CATEGORIES:训练计划
+END:VEVENT
+BEGIN:VEVENT
+UID:w01-d2@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260729T070000
+DTEND;TZID=Asia/Shanghai:20260729T073500
+SUMMARY:🏃 W1 轻松跑 5km
+DESCRIPTION:W1 周三 · 阶段1「基础重建」\n距离约 5 km ｜ 时
+ 长约 35 分钟\n──────────────────
+ ──\n全程 Z2。这是计划的第一课，唯一任务是【跑慢】
+ 。\n昨天刚体检完空腹抽血，今天先吃好喝好，跑得比平
+ 时更慢一点。\n──────────────────
+ ──\n目标配速 6:40–7:15/km\n心率 138–150（Z2，能完整说
+ 话）\n\n本周目标 26km，这是第 1/4 次。\n\n🛣️ 路线：现
+ 有路线即可，红绿灯影响不大。\n心率本来就低，停一下
+ 无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高温
+ 期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速心
+ 率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，唯
+ 一判断标准是心率不超上限。\n带水或规划有直饮水的路
+ 线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w01-d3@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260730T070000
+DTEND;TZID=Asia/Shanghai:20260730T080000
+SUMMARY:🏃 W1 🎯 5K 全力测试
+DESCRIPTION:W1 周四 · 阶段1「基础重建」\n距离约 9.3 km ｜ 
+ 时长约 60 分钟\n─────────────────
+ ───\n热身 20 分钟轻松跑 → 5K 尽全力 → 放松 10 分钟
+ 慢跑。\n找平坦路段或操场，中途不停。记录成绩和平均
+ 心率——\n这是整个计划唯一的真实基线，后面所有配速
+ 都据此校准。\n⚠️ 关掉 Garmin 自动暂停，看真实总时间
+ 。\n────────────────────\n\n本
+ 周目标 26km，这是第 2/4 次。\n\n🛣️ 路线：跑道（12.5 
+ 圈）或无红绿灯的绿道。\n\n⚠️ 【关闭 Garmin 自动暂停
+ 】\nSub-25 指的是 25:00 的【总耗时】，不是移动时间。\n
+ 等一个红灯，表上配速可能还是 5:00，但你实际用了 26 
+ 分钟。\n\n🌡️ 高温期提醒\n杭州此时早晨约 27–30°C、
+ 湿度 75%+，同配速心率会高 10–15 次。\n把目标配速【放
+ 慢 25–35 秒/km】，唯一判断标准是心率不超上限。\n带水
+ 或规划有直饮水的路线；出现头晕、皮肤发凉、起鸡皮
+ 疙瘩立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:🎯 5K 全力测试
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w01-d4-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w01-d5@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260801T073000
+DTEND;TZID=Asia/Shanghai:20260801T080500
+SUMMARY:🏃 W1 轻松跑 4km + 4×20s 加速跑
+DESCRIPTION:W1 周六 · 阶段1「基础重建」\n距离约 4.6 km ｜ 
+ 时长约 35 分钟\n─────────────────
+ ───\n加速跑：20 秒接近全速的【放松】加速，每趟之
+ 间慢走 60 秒。\n不是冲刺比赛——重点是动作放松、步
+ 频快、落地轻。\n─────────────────
+ ───\n目标配速 6:40–7:15/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 26km，这是第 3/4 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 4km + 4×20s 加速跑
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w01-d6@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260802T193000
+DTEND;TZID=Asia/Shanghai:20260802T202000
+SUMMARY:🏃 W1 长距离 7km
+DESCRIPTION:W1 周日 · 阶段1「基础重建」\n距离约 7 km ｜ 时
+ 长约 50 分钟\n──────────────────
+ ──\n比轻松跑再慢一点。全程能对话，结束时感觉还能
+ 再跑 2km。\n───────────────────
+ ─\n目标配速 6:50–7:20/km\n心率 135–148（Z2，结束时要有
+ 余力）\n\n本周目标 26km，这是第 4/4 次。\n\n🛣️ 路线：
+ 务必选【无红绿灯】的绿道 / 公园环线 / 江边步道。\n长
+ 距离的价值来自【连续】的 Z2 时间，停 90 秒心率就掉 20
+ –30 次。\n被切成 5 段的 90 分钟 ≠ 90 分钟长距离。折返
+ 跑也可以。\n\n🌡️ 高温期提醒\n杭州此时早晨约 27–30
+ °C、湿度 75%+，同配速心率会高 10–15 次。\n把目标配速
+ 【放慢 25–35 秒/km】，唯一判断标准是心率不超上限。\n
+ 带水或规划有直饮水的路线；出现头晕、皮肤发凉、起
+ 鸡皮疙瘩立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:长距离 7km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w02-summary@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+SUMMARY:📋 W2 · 基础重建 · 目标 27km
+DESCRIPTION:第 2/12 周 — 阶段1「基础重建」\n\n本周跑量目
+ 标：27 km（4 次）\n轻松跑配速：6:40–7:15/km\n长距离配速
+ ：6:50–7:20/km\n\n本阶段不做任何强度课。慢得别扭是对
+ 的，这是在补有氧地基。\n\n【早上没起来？先考虑挪到
+ 当天晚上 19:30】\n挪到当天晚上，这节课就完整保住了，
+ 远好过跳过。但分课型：\n· 周二 轻松跑 → 别挪，直接
+ 跳过。挪了离周三强度课只剩 11 小时，\n  带着疲劳去跑
+ 质量课，两节课一起废。\n· 周三 强度课 → 可以挪，但
+ 【必须去跑道】（晚上红绿灯会毁掉节奏跑），\n  且跑
+ 完离睡觉留 3 小时。\n· 周五 / 周六 轻松跑 → 随便挪，
+ 零损失。\n\n【真的漏掉了】\n· 轻松跑 → 直接跳过，不
+ 用补。这周少 5km 毫无影响。\n· 强度课 → 顺延一天；
+ 若离周日长距离不足 48h，本周就降级成轻松跑。\n· 长
+ 距离 → 唯一值得抢救的课，挪到周六或周一晚上。\n· 
+ 绝不要：两节课并到一天补，或连着三天堆量——这是
+ 受伤的头号原因。\n\n保底三课 = 周日长距离 + 周三强度
+ 课 + 任一次轻松跑。做到就算合格的一周。\n连续两周都
+ 在晚上补 → 说明早上这个时间不适合你，直接改计划，
+ 别每周硬撑。
+TRANSP:TRANSPARENT
+CATEGORIES:训练计划
+END:VEVENT
+BEGIN:VEVENT
+UID:w02-review@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260803T210000
+DTEND;TZID=Asia/Shanghai:20260803T211500
+SUMMARY:🔍 周复盘 · 回顾 W1
+DESCRIPTION:打开 running_page 或 Garmin Connect，花 15 分钟回顾上
+ 周。\n\n四个问题：\n□ 轻松跑的心率有没有真的压在 152
+  以下？\n□ 长距离有没有完成，且结束时还有余力？\n
+ □ 强度课有没有跑到规定配速，且最后一组没崩？\n□ 
+ 有没有累积的关节疼痛？\n\n四个都「是」  → 按计划继
+ 续\n第 1 条「否」 → 跑得太快了，继续减速，别管配速
+ 难看\n第 3 条「否」 → 强度配速下调 10 秒/km，先建立完
+ 成度\n第 4 条「是」 → 立刻插入一个减量周\n\n再记一个
+ 数：本周 Z2 跑量占比，目标 ≥ 80%。\n这是判断「有没有
+ 跳出灰色地带」最直接的指标。
+CATEGORIES:复盘
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:🔍 周复盘
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w02-d0-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260804
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w02-d1@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260804T070000
+DTEND;TZID=Asia/Shanghai:20260804T074200
+SUMMARY:🏃 W2 轻松跑 6km
+DESCRIPTION:W2 周二 · 阶段1「基础重建」\n距离约 6 km ｜ 时
+ 长约 42 分钟\n──────────────────
+ ──\n全程 Z2。\n─────────────────
+ ───\n目标配速 6:40–7:15/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 27km，这是第 1/4 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 6km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w02-d2@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260805T070000
+DTEND;TZID=Asia/Shanghai:20260805T074500
+SUMMARY:🏃 W2 轻松跑 5km + 6×20s 加速跑
+DESCRIPTION:W2 周三 · 阶段1「基础重建」\n距离约 5.8 km ｜ 
+ 时长约 45 分钟\n─────────────────
+ ───\n加速跑：20 秒接近全速的【放松】加速，每趟之
+ 间慢走 60 秒。\n不是冲刺比赛——重点是动作放松、步
+ 频快、落地轻。\n─────────────────
+ ───\n目标配速 6:40–7:15/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 27km，这是第 2/4 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km + 6×20s 加速跑
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w02-d3-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260806
+DTEND;VALUE=DATE:20260807
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w02-d4@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260807T070000
+DTEND;TZID=Asia/Shanghai:20260807T073500
+SUMMARY:🏃 W2 轻松跑 5km
+DESCRIPTION:W2 周五 · 阶段1「基础重建」\n距离约 5 km ｜ 时
+ 长约 35 分钟\n──────────────────
+ ──\n全程 Z2。\n─────────────────
+ ───\n目标配速 6:40–7:15/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 27km，这是第 3/4 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w02-d5-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260808
+DTEND;VALUE=DATE:20260809
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w02-d6@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260809T193000
+DTEND;TZID=Asia/Shanghai:20260809T204200
+SUMMARY:🏃 W2 长距离 10km
+DESCRIPTION:W2 周日 · 阶段1「基础重建」\n距离约 10 km ｜ 时
+ 长约 72 分钟\n──────────────────
+ ──\n本周最重要的一课。配速无所谓，把时间跑满。\n
+ ────────────────────\n目标配速
+  6:50–7:20/km\n心率 135–148（Z2，结束时要有余力）\n\n本
+ 周目标 27km，这是第 4/4 次。\n\n🛣️ 路线：务必选【无
+ 红绿灯】的绿道 / 公园环线 / 江边步道。\n长距离的价值
+ 来自【连续】的 Z2 时间，停 90 秒心率就掉 20–30 次。\n
+ 被切成 5 段的 90 分钟 ≠ 90 分钟长距离。折返跑也可以
+ 。\n\n🌡️ 高温期提醒\n杭州此时早晨约 27–30°C、湿度 
+ 75%+，同配速心率会高 10–15 次。\n把目标配速【放慢 25
+ –35 秒/km】，唯一判断标准是心率不超上限。\n带水或规
+ 划有直饮水的路线；出现头晕、皮肤发凉、起鸡皮疙瘩
+ 立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:长距离 10km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w03-summary@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260811
+SUMMARY:📋 W3 · 基础重建 · 目标 32km
+DESCRIPTION:第 3/12 周 — 阶段1「基础重建」\n\n本周跑量目
+ 标：32 km（5 次）\n轻松跑配速：6:40–7:15/km\n长距离配速
+ ：6:50–7:20/km\n\n本阶段不做任何强度课。慢得别扭是对
+ 的，这是在补有氧地基。\n\n【早上没起来？先考虑挪到
+ 当天晚上 19:30】\n挪到当天晚上，这节课就完整保住了，
+ 远好过跳过。但分课型：\n· 周二 轻松跑 → 别挪，直接
+ 跳过。挪了离周三强度课只剩 11 小时，\n  带着疲劳去跑
+ 质量课，两节课一起废。\n· 周三 强度课 → 可以挪，但
+ 【必须去跑道】（晚上红绿灯会毁掉节奏跑），\n  且跑
+ 完离睡觉留 3 小时。\n· 周五 / 周六 轻松跑 → 随便挪，
+ 零损失。\n\n【真的漏掉了】\n· 轻松跑 → 直接跳过，不
+ 用补。这周少 5km 毫无影响。\n· 强度课 → 顺延一天；
+ 若离周日长距离不足 48h，本周就降级成轻松跑。\n· 长
+ 距离 → 唯一值得抢救的课，挪到周六或周一晚上。\n· 
+ 绝不要：两节课并到一天补，或连着三天堆量——这是
+ 受伤的头号原因。\n\n保底三课 = 周日长距离 + 周三强度
+ 课 + 任一次轻松跑。做到就算合格的一周。\n连续两周都
+ 在晚上补 → 说明早上这个时间不适合你，直接改计划，
+ 别每周硬撑。
+TRANSP:TRANSPARENT
+CATEGORIES:训练计划
+END:VEVENT
+BEGIN:VEVENT
+UID:w03-review@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260810T210000
+DTEND;TZID=Asia/Shanghai:20260810T211500
+SUMMARY:🔍 周复盘 · 回顾 W2
+DESCRIPTION:打开 running_page 或 Garmin Connect，花 15 分钟回顾上
+ 周。\n\n四个问题：\n□ 轻松跑的心率有没有真的压在 152
+  以下？\n□ 长距离有没有完成，且结束时还有余力？\n
+ □ 强度课有没有跑到规定配速，且最后一组没崩？\n□ 
+ 有没有累积的关节疼痛？\n\n四个都「是」  → 按计划继
+ 续\n第 1 条「否」 → 跑得太快了，继续减速，别管配速
+ 难看\n第 3 条「否」 → 强度配速下调 10 秒/km，先建立完
+ 成度\n第 4 条「是」 → 立刻插入一个减量周\n\n再记一个
+ 数：本周 Z2 跑量占比，目标 ≥ 80%。\n这是判断「有没有
+ 跳出灰色地带」最直接的指标。
+CATEGORIES:复盘
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:🔍 周复盘
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w03-d0-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260810
+DTEND;VALUE=DATE:20260811
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w03-d1@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260811T070000
+DTEND;TZID=Asia/Shanghai:20260811T074200
+SUMMARY:🏃 W3 轻松跑 6km
+DESCRIPTION:W3 周二 · 阶段1「基础重建」\n距离约 6 km ｜ 时
+ 长约 42 分钟\n──────────────────
+ ──\n全程 Z2。\n─────────────────
+ ───\n目标配速 6:40–7:15/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 32km，这是第 1/5 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 6km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w03-d2@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260812T070000
+DTEND;TZID=Asia/Shanghai:20260812T075200
+SUMMARY:🏃 W3 轻松跑 6km + 6×20s 加速跑
+DESCRIPTION:W3 周三 · 阶段1「基础重建」\n距离约 6.8 km ｜ 
+ 时长约 52 分钟\n─────────────────
+ ───\n加速跑：20 秒接近全速的【放松】加速，每趟之
+ 间慢走 60 秒。\n不是冲刺比赛——重点是动作放松、步
+ 频快、落地轻。\n─────────────────
+ ───\n目标配速 6:40–7:15/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 32km，这是第 2/5 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 6km + 6×20s 加速跑
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w03-d3-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260814
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w03-d4@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260814T070000
+DTEND;TZID=Asia/Shanghai:20260814T073500
+SUMMARY:🏃 W3 轻松跑 5km
+DESCRIPTION:W3 周五 · 阶段1「基础重建」\n距离约 5 km ｜ 时
+ 长约 35 分钟\n──────────────────
+ ──\n全程 Z2。\n─────────────────
+ ───\n目标配速 6:40–7:15/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 32km，这是第 3/5 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w03-d5@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260815T073000
+DTEND;TZID=Asia/Shanghai:20260815T080000
+SUMMARY:🏃 W3 轻松跑 4km
+DESCRIPTION:W3 周六 · 阶段1「基础重建」\n距离约 4 km ｜ 时
+ 长约 30 分钟\n──────────────────
+ ──\n恢复性质，比平时再慢 20 秒/km。\n───────
+ ─────────────\n目标配速 6:40–7:15/km\n心
+ 率 138–150（Z2，能完整说话）\n\n本周目标 32km，这是第 4
+ /5 次。\n\n🛣️ 路线：现有路线即可，红绿灯影响不大
+ 。\n心率本来就低，停一下无所谓——等灯时原地慢走别
+ 站死就行。\n\n🌡️ 高温期提醒\n杭州此时早晨约 27–30
+ °C、湿度 75%+，同配速心率会高 10–15 次。\n把目标配速
+ 【放慢 25–35 秒/km】，唯一判断标准是心率不超上限。\n
+ 带水或规划有直饮水的路线；出现头晕、皮肤发凉、起
+ 鸡皮疙瘩立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 4km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w03-d6@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260816T193000
+DTEND;TZID=Asia/Shanghai:20260816T204200
+SUMMARY:🏃 W3 长距离 10km
+DESCRIPTION:W3 周日 · 阶段1「基础重建」\n距离约 10 km ｜ 时
+ 长约 72 分钟\n──────────────────
+ ──\n本阶段跑量高点，结束后注意补充和拉伸。\n──
+ ──────────────────\n目标配速 6:50
+ –7:20/km\n心率 135–148（Z2，结束时要有余力）\n\n本周目
+ 标 32km，这是第 5/5 次。\n\n🛣️ 路线：务必选【无红绿
+ 灯】的绿道 / 公园环线 / 江边步道。\n长距离的价值来自
+ 【连续】的 Z2 时间，停 90 秒心率就掉 20–30 次。\n被切
+ 成 5 段的 90 分钟 ≠ 90 分钟长距离。折返跑也可以。\n\n
+ 🌡️ 高温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，
+ 同配速心率会高 10–15 次。\n把目标配速【放慢 25–35 秒
+ /km】，唯一判断标准是心率不超上限。\n带水或规划有直
+ 饮水的路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停
+ 跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:长距离 10km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w04-summary@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+SUMMARY:📋 W4 · 基础重建 · 目标 23km
+DESCRIPTION:第 4/12 周 — 阶段1「基础重建」\n\n本周跑量目
+ 标：23 km（4 次）\n轻松跑配速：6:40–7:15/km\n长距离配速
+ ：6:50–7:20/km\n\n本阶段不做任何强度课。慢得别扭是对
+ 的，这是在补有氧地基。\n\n【早上没起来？先考虑挪到
+ 当天晚上 19:30】\n挪到当天晚上，这节课就完整保住了，
+ 远好过跳过。但分课型：\n· 周二 轻松跑 → 别挪，直接
+ 跳过。挪了离周三强度课只剩 11 小时，\n  带着疲劳去跑
+ 质量课，两节课一起废。\n· 周三 强度课 → 可以挪，但
+ 【必须去跑道】（晚上红绿灯会毁掉节奏跑），\n  且跑
+ 完离睡觉留 3 小时。\n· 周五 / 周六 轻松跑 → 随便挪，
+ 零损失。\n\n【真的漏掉了】\n· 轻松跑 → 直接跳过，不
+ 用补。这周少 5km 毫无影响。\n· 强度课 → 顺延一天；
+ 若离周日长距离不足 48h，本周就降级成轻松跑。\n· 长
+ 距离 → 唯一值得抢救的课，挪到周六或周一晚上。\n· 
+ 绝不要：两节课并到一天补，或连着三天堆量——这是
+ 受伤的头号原因。\n\n保底三课 = 周日长距离 + 周三强度
+ 课 + 任一次轻松跑。做到就算合格的一周。\n连续两周都
+ 在晚上补 → 说明早上这个时间不适合你，直接改计划，
+ 别每周硬撑。
+TRANSP:TRANSPARENT
+CATEGORIES:训练计划
+END:VEVENT
+BEGIN:VEVENT
+UID:w04-review@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260817T210000
+DTEND;TZID=Asia/Shanghai:20260817T211500
+SUMMARY:🔍 周复盘 · 回顾 W3
+DESCRIPTION:打开 running_page 或 Garmin Connect，花 15 分钟回顾上
+ 周。\n\n四个问题：\n□ 轻松跑的心率有没有真的压在 152
+  以下？\n□ 长距离有没有完成，且结束时还有余力？\n
+ □ 强度课有没有跑到规定配速，且最后一组没崩？\n□ 
+ 有没有累积的关节疼痛？\n\n四个都「是」  → 按计划继
+ 续\n第 1 条「否」 → 跑得太快了，继续减速，别管配速
+ 难看\n第 3 条「否」 → 强度配速下调 10 秒/km，先建立完
+ 成度\n第 4 条「是」 → 立刻插入一个减量周\n\n再记一个
+ 数：本周 Z2 跑量占比，目标 ≥ 80%。\n这是判断「有没有
+ 跳出灰色地带」最直接的指标。
+CATEGORIES:复盘
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:🔍 周复盘
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w04-d0-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260817
+DTEND;VALUE=DATE:20260818
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w04-d1@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260818T070000
+DTEND;TZID=Asia/Shanghai:20260818T073500
+SUMMARY:🏃 W4 轻松跑 5km
+DESCRIPTION:W4 周二 · 阶段1「基础重建」\n距离约 5 km ｜ 时
+ 长约 35 分钟\n──────────────────
+ ──\n减量周开始，全程 Z2。\n───────────
+ ─────────\n目标配速 6:40–7:15/km\n心率 138–150
+ （Z2，能完整说话）\n\n本周目标 23km，这是第 1/4 次。\n\n
+ 🛣️ 路线：现有路线即可，红绿灯影响不大。\n心率本
+ 来就低，停一下无所谓——等灯时原地慢走别站死就行
+ 。\n\n🌡️ 高温期提醒\n杭州此时早晨约 27–30°C、湿度 
+ 75%+，同配速心率会高 10–15 次。\n把目标配速【放慢 25
+ –35 秒/km】，唯一判断标准是心率不超上限。\n带水或规
+ 划有直饮水的路线；出现头晕、皮肤发凉、起鸡皮疙瘩
+ 立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w04-d2@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260819T070000
+DTEND;TZID=Asia/Shanghai:20260819T074200
+SUMMARY:🏃 W4 轻松跑 5km + 4×20s 加速跑
+DESCRIPTION:W4 周三 · 阶段1「基础重建」\n距离约 5.6 km ｜ 
+ 时长约 42 分钟\n─────────────────
+ ───\n加速跑：20 秒接近全速的【放松】加速，每趟之
+ 间慢走 60 秒。\n不是冲刺比赛——重点是动作放松、步
+ 频快、落地轻。\n─────────────────
+ ───\n目标配速 6:40–7:15/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 23km，这是第 2/4 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km + 4×20s 加速跑
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w04-d3-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260820
+DTEND;VALUE=DATE:20260821
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w04-d4-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w04-d5@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260822T073000
+DTEND;TZID=Asia/Shanghai:20260822T080000
+SUMMARY:🏃 W4 轻松跑 4km
+DESCRIPTION:W4 周六 · 阶段1「基础重建」\n距离约 4 km ｜ 时
+ 长约 30 分钟\n──────────────────
+ ──\n全程 Z2。\n─────────────────
+ ───\n目标配速 6:40–7:15/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 23km，这是第 3/4 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 4km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w04-d6@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260823T193000
+DTEND;TZID=Asia/Shanghai:20260823T202700
+SUMMARY:🏃 W4 长距离 8km
+DESCRIPTION:W4 周日 · 阶段1「基础重建」\n距离约 8 km ｜ 时
+ 长约 57 分钟\n──────────────────
+ ──\n阶段一收官。回顾：这 4 周你的轻松跑心率有没有
+ 真的压在 152 以下？\n如果有，阶段二的强度课会跑得很
+ 舒服；如果没有，把阶段一再重复 2 周。\n──────
+ ──────────────\n目标配速 6:50–7:20/km\n
+ 心率 135–148（Z2，结束时要有余力）\n\n本周目标 23km，
+ 这是第 4/4 次。\n\n🛣️ 路线：务必选【无红绿灯】的绿
+ 道 / 公园环线 / 江边步道。\n长距离的价值来自【连续】
+ 的 Z2 时间，停 90 秒心率就掉 20–30 次。\n被切成 5 段的 
+ 90 分钟 ≠ 90 分钟长距离。折返跑也可以。\n\n🌡️ 高温
+ 期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速心
+ 率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，唯
+ 一判断标准是心率不超上限。\n带水或规划有直饮水的路
+ 线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:长距离 8km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w05-summary@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:📋 W5 · 引入强度 · 目标 33km
+DESCRIPTION:第 5/12 周 — 阶段2「引入强度」\n\n本周跑量目
+ 标：33 km（5 次）\n轻松跑配速：6:35–7:10/km\n长距离配速
+ ：6:45–7:15/km\n\n强度课之间至少隔 48 小时，轻松跑日必
+ 须真轻松。\n\n【早上没起来？先考虑挪到当天晚上 19:30
+ 】\n挪到当天晚上，这节课就完整保住了，远好过跳过。
+ 但分课型：\n· 周二 轻松跑 → 别挪，直接跳过。挪了离
+ 周三强度课只剩 11 小时，\n  带着疲劳去跑质量课，两节
+ 课一起废。\n· 周三 强度课 → 可以挪，但【必须去跑道
+ 】（晚上红绿灯会毁掉节奏跑），\n  且跑完离睡觉留 3 
+ 小时。\n· 周五 / 周六 轻松跑 → 随便挪，零损失。\n\n
+ 【真的漏掉了】\n· 轻松跑 → 直接跳过，不用补。这周
+ 少 5km 毫无影响。\n· 强度课 → 顺延一天；若离周日长
+ 距离不足 48h，本周就降级成轻松跑。\n· 长距离 → 唯一
+ 值得抢救的课，挪到周六或周一晚上。\n· 绝不要：两节
+ 课并到一天补，或连着三天堆量——这是受伤的头号原
+ 因。\n\n保底三课 = 周日长距离 + 周三强度课 + 任一次轻
+ 松跑。做到就算合格的一周。\n连续两周都在晚上补 → 
+ 说明早上这个时间不适合你，直接改计划，别每周硬撑
+ 。
+TRANSP:TRANSPARENT
+CATEGORIES:训练计划
+END:VEVENT
+BEGIN:VEVENT
+UID:w05-review@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260824T210000
+DTEND;TZID=Asia/Shanghai:20260824T213000
+SUMMARY:🔍 阶段一复盘 · 基础重建 · 回顾 W4
+DESCRIPTION:阶段一（W1–W4）结束了。花 30 分钟认真看一次
+ 。\n\n【基础期不看成绩，看这三条】\n1. 同样配速下，
+ 心率有没有下降？\n   ——这是有氧能力进步的第一信号
+ ，比配速可靠得多。\n2. 轻松跑能不能在心率不变的前提
+ 下自然变快？\n3. 长距离从 7km 加到 10km，最后 2km 是否还
+ 算轻松？\n\n【怎么判断】\n第 1、2 条至少一条是「是」 
+ → 阶段二按计划上强度。\n两条都是「否」 → 把阶段一
+ 再重复 2 周，别急着上强度。\n地基没打好就加速度，是
+ 伤病和平台期的最常见来源。\n\n【顺便回顾】\n这 4 周
+ 你最不适应的是什么？跑得太慢的别扭感消失了吗？
+CATEGORIES:复盘
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:🔍 阶段一复盘 · 基础重建
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w05-d0-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260824
+DTEND;VALUE=DATE:20260825
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w05-d1@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260825T070000
+DTEND;TZID=Asia/Shanghai:20260825T074200
+SUMMARY:🏃 W5 轻松跑 6km
+DESCRIPTION:W5 周二 · 阶段2「引入强度」\n距离约 6 km ｜ 时
+ 长约 42 分钟\n──────────────────
+ ──\n全程 Z2。\n─────────────────
+ ───\n目标配速 6:35–7:10/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 33km，这是第 1/5 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 6km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w05-d2@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260826T070000
+DTEND;TZID=Asia/Shanghai:20260826T074500
+SUMMARY:🏃 W5 ⚡ 节奏跑 3km @5:40
+DESCRIPTION:W5 周三 · 阶段2「引入强度」\n距离约 7 km ｜ 时
+ 长约 45 分钟\n──────────────────
+ ──\n热身 2km 轻松跑 → 节奏跑 3km @5:40/km → 放松 2km 轻
+ 松跑。\n心率 165–172（Z4，只能蹦单词）\n节奏跑是「舒
+ 适的难受」——难但可控，结束时还能再跑 1km。\n第一
+ 次做，宁可慢 5 秒也不要快 5 秒。\n─────────
+ ───────────\n\n本周目标 33km，这是第 2/5 次
+ 。\n\n🛣️ 路线：需要 20–26 分钟【完全不间断】的路
+ 段，首选 400m 塑胶跑道。\n节奏跑练的是乳酸清除，中途
+ 停一次整节课就作废了。\n如果不得不等灯：原地小跳 / 
+ 绕小圈，把心率维持住，别站着。\n\n🌡️ 高温期提醒\n
+ 杭州此时早晨约 27–30°C、湿度 75%+，同配速心率会高 10
+ –15 次。\n把目标配速【放慢 25–35 秒/km】，唯一判断标
+ 准是心率不超上限。\n带水或规划有直饮水的路线；出现
+ 头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:⚡ 节奏跑 3km @5:40
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w05-d3-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260827
+DTEND;VALUE=DATE:20260828
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w05-d4@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260828T070000
+DTEND;TZID=Asia/Shanghai:20260828T073500
+SUMMARY:🏃 W5 轻松跑 5km
+DESCRIPTION:W5 周五 · 阶段2「引入强度」\n距离约 5 km ｜ 时
+ 长约 35 分钟\n──────────────────
+ ──\n强度课后恢复，跑得比平时更慢。\n──────
+ ──────────────\n目标配速 6:35–7:10/km\n
+ 心率 138–150（Z2，能完整说话）\n\n本周目标 33km，这是
+ 第 3/5 次。\n\n🛣️ 路线：现有路线即可，红绿灯影响不
+ 大。\n心率本来就低，停一下无所谓——等灯时原地慢走
+ 别站死就行。\n\n🌡️ 高温期提醒\n杭州此时早晨约 27–
+ 30°C、湿度 75%+，同配速心率会高 10–15 次。\n把目标配
+ 速【放慢 25–35 秒/km】，唯一判断标准是心率不超上限
+ 。\n带水或规划有直饮水的路线；出现头晕、皮肤发凉、
+ 起鸡皮疙瘩立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w05-d5@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260829T073000
+DTEND;TZID=Asia/Shanghai:20260829T080000
+SUMMARY:🏃 W5 轻松跑 4km
+DESCRIPTION:W5 周六 · 阶段2「引入强度」\n距离约 4 km ｜ 时
+ 长约 30 分钟\n──────────────────
+ ──\n全程 Z2。\n─────────────────
+ ───\n目标配速 6:35–7:10/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 33km，这是第 4/5 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 4km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w05-d6@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260830T193000
+DTEND;TZID=Asia/Shanghai:20260830T204800
+SUMMARY:🏃 W5 长距离 11km
+DESCRIPTION:W5 周日 · 阶段2「引入强度」\n距离约 11 km ｜ 时
+ 长约 78 分钟\n──────────────────
+ ──\n全程 Z2，不要因为感觉好就加速。\n──────
+ ──────────────\n目标配速 6:45–7:15/km\n
+ 心率 135–148（Z2，结束时要有余力）\n\n本周目标 33km，
+ 这是第 5/5 次。\n\n🛣️ 路线：务必选【无红绿灯】的绿
+ 道 / 公园环线 / 江边步道。\n长距离的价值来自【连续】
+ 的 Z2 时间，停 90 秒心率就掉 20–30 次。\n被切成 5 段的 
+ 90 分钟 ≠ 90 分钟长距离。折返跑也可以。\n\n🌡️ 高温
+ 期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速心
+ 率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，唯
+ 一判断标准是心率不超上限。\n带水或规划有直饮水的路
+ 线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:长距离 11km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w06-summary@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:📋 W6 · 引入强度 · 目标 37km
+DESCRIPTION:第 6/12 周 — 阶段2「引入强度」\n\n本周跑量目
+ 标：37 km（5 次）\n轻松跑配速：6:35–7:10/km\n长距离配速
+ ：6:45–7:15/km\n\n强度课之间至少隔 48 小时，轻松跑日必
+ 须真轻松。\n\n【早上没起来？先考虑挪到当天晚上 19:30
+ 】\n挪到当天晚上，这节课就完整保住了，远好过跳过。
+ 但分课型：\n· 周二 轻松跑 → 别挪，直接跳过。挪了离
+ 周三强度课只剩 11 小时，\n  带着疲劳去跑质量课，两节
+ 课一起废。\n· 周三 强度课 → 可以挪，但【必须去跑道
+ 】（晚上红绿灯会毁掉节奏跑），\n  且跑完离睡觉留 3 
+ 小时。\n· 周五 / 周六 轻松跑 → 随便挪，零损失。\n\n
+ 【真的漏掉了】\n· 轻松跑 → 直接跳过，不用补。这周
+ 少 5km 毫无影响。\n· 强度课 → 顺延一天；若离周日长
+ 距离不足 48h，本周就降级成轻松跑。\n· 长距离 → 唯一
+ 值得抢救的课，挪到周六或周一晚上。\n· 绝不要：两节
+ 课并到一天补，或连着三天堆量——这是受伤的头号原
+ 因。\n\n保底三课 = 周日长距离 + 周三强度课 + 任一次轻
+ 松跑。做到就算合格的一周。\n连续两周都在晚上补 → 
+ 说明早上这个时间不适合你，直接改计划，别每周硬撑
+ 。
+TRANSP:TRANSPARENT
+CATEGORIES:训练计划
+END:VEVENT
+BEGIN:VEVENT
+UID:w06-review@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260831T210000
+DTEND;TZID=Asia/Shanghai:20260831T211500
+SUMMARY:🔍 周复盘 · 回顾 W5
+DESCRIPTION:打开 running_page 或 Garmin Connect，花 15 分钟回顾上
+ 周。\n\n四个问题：\n□ 轻松跑的心率有没有真的压在 152
+  以下？\n□ 长距离有没有完成，且结束时还有余力？\n
+ □ 强度课有没有跑到规定配速，且最后一组没崩？\n□ 
+ 有没有累积的关节疼痛？\n\n四个都「是」  → 按计划继
+ 续\n第 1 条「否」 → 跑得太快了，继续减速，别管配速
+ 难看\n第 3 条「否」 → 强度配速下调 10 秒/km，先建立完
+ 成度\n第 4 条「是」 → 立刻插入一个减量周\n\n再记一个
+ 数：本周 Z2 跑量占比，目标 ≥ 80%。\n这是判断「有没有
+ 跳出灰色地带」最直接的指标。
+CATEGORIES:复盘
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:🔍 周复盘
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w06-d0-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260831
+DTEND;VALUE=DATE:20260901
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w06-d1@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260901T070000
+DTEND;TZID=Asia/Shanghai:20260901T074200
+SUMMARY:🏃 W6 轻松跑 6km
+DESCRIPTION:W6 周二 · 阶段2「引入强度」\n距离约 6 km ｜ 时
+ 长约 42 分钟\n──────────────────
+ ──\n全程 Z2。\n─────────────────
+ ───\n目标配速 6:35–7:10/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 37km，这是第 1/5 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 6km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w06-d2@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260902T070000
+DTEND;TZID=Asia/Shanghai:20260902T080500
+SUMMARY:🏃 W6 ⚡ 间歇 5×1000m @5:15
+DESCRIPTION:W6 周三 · 阶段2「引入强度」\n距离约 10.7 km ｜ 
+ 时长约 65 分钟\n─────────────────
+ ───\n热身 2km → 5×1000m @5:15/km，每组之间慢跑 2.5 分
+ 钟 → 放松 2km。\n心率 >172（Z5）\n关键：第 1 组和第 5 组
+ 配速要一样。前面跑爽了后面必崩。\n如果第 4 组开始掉
+ 速超过 10 秒，跑完第 4 组就收，不要硬凑第 5 组。\n─
+ ───────────────────\n\n本周目标 
+ 37km，这是第 2/5 次。\n\n🛣️ 路线：400m 塑胶跑道最理想
+ ——圈数即距离，配速反馈准，无路口。\n组间慢跑可以
+ 绕外道。没有跑道就找 1km 以上的连续直道折返。\n\n🌡
+ ️ 高温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同
+ 配速心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km
+ 】，唯一判断标准是心率不超上限。\n带水或规划有直饮
+ 水的路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑
+ 走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:⚡ 间歇 5×1000m @5:15
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w06-d3-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260904
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w06-d4@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260904T070000
+DTEND;TZID=Asia/Shanghai:20260904T073500
+SUMMARY:🏃 W6 轻松跑 5km
+DESCRIPTION:W6 周五 · 阶段2「引入强度」\n距离约 5 km ｜ 时
+ 长约 35 分钟\n──────────────────
+ ──\n强度课后恢复。\n──────────────
+ ──────\n目标配速 6:35–7:10/km\n心率 138–150（Z2，
+ 能完整说话）\n\n本周目标 37km，这是第 3/5 次。\n\n🛣️ 
+ 路线：现有路线即可，红绿灯影响不大。\n心率本来就低
+ ，停一下无所谓——等灯时原地慢走别站死就行。\n\n🌡
+ ️ 高温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同
+ 配速心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km
+ 】，唯一判断标准是心率不超上限。\n带水或规划有直饮
+ 水的路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑
+ 走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w06-d5@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260905T073000
+DTEND;TZID=Asia/Shanghai:20260905T080000
+SUMMARY:🏃 W6 轻松跑 4km
+DESCRIPTION:W6 周六 · 阶段2「引入强度」\n距离约 4 km ｜ 时
+ 长约 30 分钟\n──────────────────
+ ──\n全程 Z2。\n─────────────────
+ ───\n目标配速 6:35–7:10/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 37km，这是第 4/5 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 4km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w06-d6@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260906T193000
+DTEND;TZID=Asia/Shanghai:20260906T204800
+SUMMARY:🏃 W6 长距离 11km
+DESCRIPTION:W6 周日 · 阶段2「引入强度」\n距离约 11 km ｜ 时
+ 长约 78 分钟\n──────────────────
+ ──\n全程 Z2。\n─────────────────
+ ───\n目标配速 6:45–7:15/km\n心率 135–148（Z2，结束时
+ 要有余力）\n\n本周目标 37km，这是第 5/5 次。\n\n🛣️ 路
+ 线：务必选【无红绿灯】的绿道 / 公园环线 / 江边步道
+ 。\n长距离的价值来自【连续】的 Z2 时间，停 90 秒心率
+ 就掉 20–30 次。\n被切成 5 段的 90 分钟 ≠ 90 分钟长距离
+ 。折返跑也可以。\n\n🌡️ 高温期提醒\n杭州此时早晨约
+  27–30°C、湿度 75%+，同配速心率会高 10–15 次。\n把目
+ 标配速【放慢 25–35 秒/km】，唯一判断标准是心率不超
+ 上限。\n带水或规划有直饮水的路线；出现头晕、皮肤发
+ 凉、起鸡皮疙瘩立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:长距离 11km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w07-summary@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:📋 W7 · 引入强度 · 目标 38km
+DESCRIPTION:第 7/12 周 — 阶段2「引入强度」\n\n本周跑量目
+ 标：38 km（5 次）\n轻松跑配速：6:35–7:10/km\n长距离配速
+ ：6:45–7:15/km\n\n强度课之间至少隔 48 小时，轻松跑日必
+ 须真轻松。\n\n【早上没起来？先考虑挪到当天晚上 19:30
+ 】\n挪到当天晚上，这节课就完整保住了，远好过跳过。
+ 但分课型：\n· 周二 轻松跑 → 别挪，直接跳过。挪了离
+ 周三强度课只剩 11 小时，\n  带着疲劳去跑质量课，两节
+ 课一起废。\n· 周三 强度课 → 可以挪，但【必须去跑道
+ 】（晚上红绿灯会毁掉节奏跑），\n  且跑完离睡觉留 3 
+ 小时。\n· 周五 / 周六 轻松跑 → 随便挪，零损失。\n\n
+ 【真的漏掉了】\n· 轻松跑 → 直接跳过，不用补。这周
+ 少 5km 毫无影响。\n· 强度课 → 顺延一天；若离周日长
+ 距离不足 48h，本周就降级成轻松跑。\n· 长距离 → 唯一
+ 值得抢救的课，挪到周六或周一晚上。\n· 绝不要：两节
+ 课并到一天补，或连着三天堆量——这是受伤的头号原
+ 因。\n\n保底三课 = 周日长距离 + 周三强度课 + 任一次轻
+ 松跑。做到就算合格的一周。\n连续两周都在晚上补 → 
+ 说明早上这个时间不适合你，直接改计划，别每周硬撑
+ 。
+TRANSP:TRANSPARENT
+CATEGORIES:训练计划
+END:VEVENT
+BEGIN:VEVENT
+UID:w07-review@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260907T210000
+DTEND;TZID=Asia/Shanghai:20260907T211500
+SUMMARY:🔍 周复盘 · 回顾 W6
+DESCRIPTION:打开 running_page 或 Garmin Connect，花 15 分钟回顾上
+ 周。\n\n四个问题：\n□ 轻松跑的心率有没有真的压在 152
+  以下？\n□ 长距离有没有完成，且结束时还有余力？\n
+ □ 强度课有没有跑到规定配速，且最后一组没崩？\n□ 
+ 有没有累积的关节疼痛？\n\n四个都「是」  → 按计划继
+ 续\n第 1 条「否」 → 跑得太快了，继续减速，别管配速
+ 难看\n第 3 条「否」 → 强度配速下调 10 秒/km，先建立完
+ 成度\n第 4 条「是」 → 立刻插入一个减量周\n\n再记一个
+ 数：本周 Z2 跑量占比，目标 ≥ 80%。\n这是判断「有没有
+ 跳出灰色地带」最直接的指标。
+CATEGORIES:复盘
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:🔍 周复盘
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w07-d0-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260907
+DTEND;VALUE=DATE:20260908
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w07-d1@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260908T070000
+DTEND;TZID=Asia/Shanghai:20260908T075000
+SUMMARY:🏃 W7 轻松跑 7km
+DESCRIPTION:W7 周二 · 阶段2「引入强度」\n距离约 7 km ｜ 时
+ 长约 50 分钟\n──────────────────
+ ──\n全程 Z2。\n─────────────────
+ ───\n目标配速 6:35–7:10/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 38km，这是第 1/5 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 7km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w07-d2@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260909T070000
+DTEND;TZID=Asia/Shanghai:20260909T075200
+SUMMARY:🏃 W7 ⚡ 节奏跑 4km @5:35
+DESCRIPTION:W7 周三 · 阶段2「引入强度」\n距离约 8 km ｜ 时
+ 长约 52 分钟\n──────────────────
+ ──\n热身 2km → 节奏跑 4km @5:35/km → 放松 2km。\n心率 16
+ 5–172（Z4，只能蹦单词）\n比 W5 多 1km、快 5 秒。这一课
+ 能顺利完成，说明阈值在上移。\n──────────
+ ──────────\n\n本周目标 38km，这是第 2/5 次。
+ \n\n🛣️ 路线：需要 20–26 分钟【完全不间断】的路段
+ ，首选 400m 塑胶跑道。\n节奏跑练的是乳酸清除，中途停
+ 一次整节课就作废了。\n如果不得不等灯：原地小跳 / 绕
+ 小圈，把心率维持住，别站着。\n\n🌡️ 高温期提醒\n杭
+ 州此时早晨约 27–30°C、湿度 75%+，同配速心率会高 10–1
+ 5 次。\n把目标配速【放慢 25–35 秒/km】，唯一判断标准
+ 是心率不超上限。\n带水或规划有直饮水的路线；出现头
+ 晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:⚡ 节奏跑 4km @5:35
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w07-d3-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w07-d4@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260911T070000
+DTEND;TZID=Asia/Shanghai:20260911T073500
+SUMMARY:🏃 W7 轻松跑 5km
+DESCRIPTION:W7 周五 · 阶段2「引入强度」\n距离约 5 km ｜ 时
+ 长约 35 分钟\n──────────────────
+ ──\n强度课后恢复。\n──────────────
+ ──────\n目标配速 6:35–7:10/km\n心率 138–150（Z2，
+ 能完整说话）\n\n本周目标 38km，这是第 3/5 次。\n\n🛣️ 
+ 路线：现有路线即可，红绿灯影响不大。\n心率本来就低
+ ，停一下无所谓——等灯时原地慢走别站死就行。\n\n🌡
+ ️ 高温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同
+ 配速心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km
+ 】，唯一判断标准是心率不超上限。\n带水或规划有直饮
+ 水的路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑
+ 走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w07-d5@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260912T073000
+DTEND;TZID=Asia/Shanghai:20260912T080500
+SUMMARY:🏃 W7 轻松跑 5km
+DESCRIPTION:W7 周六 · 阶段2「引入强度」\n距离约 5 km ｜ 时
+ 长约 35 分钟\n──────────────────
+ ──\n全程 Z2。\n─────────────────
+ ───\n目标配速 6:35–7:10/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 38km，这是第 4/5 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w07-d6@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260913T193000
+DTEND;TZID=Asia/Shanghai:20260913T210200
+SUMMARY:🏃 W7 长距离 13km
+DESCRIPTION:W7 周日 · 阶段2「引入强度」\n距离约 13 km ｜ 时
+ 长约 92 分钟\n──────────────────
+ ──\n阶段二最长的一次，也是全程第二长。补水带上。
+ \n────────────────────\n目标配
+ 速 6:45–7:15/km\n心率 135–148（Z2，结束时要有余力）\n\n
+ 本周目标 38km，这是第 5/5 次。\n\n🛣️ 路线：务必选【
+ 无红绿灯】的绿道 / 公园环线 / 江边步道。\n长距离的价
+ 值来自【连续】的 Z2 时间，停 90 秒心率就掉 20–30 次。
+ \n被切成 5 段的 90 分钟 ≠ 90 分钟长距离。折返跑也可以
+ 。\n\n🌡️ 高温期提醒\n杭州此时早晨约 27–30°C、湿度 
+ 75%+，同配速心率会高 10–15 次。\n把目标配速【放慢 25
+ –35 秒/km】，唯一判断标准是心率不超上限。\n带水或规
+ 划有直饮水的路线；出现头晕、皮肤发凉、起鸡皮疙瘩
+ 立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:长距离 13km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w08-summary@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+SUMMARY:📋 W8 · 引入强度 · 目标 24km
+DESCRIPTION:第 8/12 周 — 阶段2「引入强度」\n\n本周跑量目
+ 标：24 km（4 次）\n轻松跑配速：6:35–7:10/km\n长距离配速
+ ：6:45–7:15/km\n\n强度课之间至少隔 48 小时，轻松跑日必
+ 须真轻松。\n\n【早上没起来？先考虑挪到当天晚上 19:30
+ 】\n挪到当天晚上，这节课就完整保住了，远好过跳过。
+ 但分课型：\n· 周二 轻松跑 → 别挪，直接跳过。挪了离
+ 周三强度课只剩 11 小时，\n  带着疲劳去跑质量课，两节
+ 课一起废。\n· 周三 强度课 → 可以挪，但【必须去跑道
+ 】（晚上红绿灯会毁掉节奏跑），\n  且跑完离睡觉留 3 
+ 小时。\n· 周五 / 周六 轻松跑 → 随便挪，零损失。\n\n
+ 【真的漏掉了】\n· 轻松跑 → 直接跳过，不用补。这周
+ 少 5km 毫无影响。\n· 强度课 → 顺延一天；若离周日长
+ 距离不足 48h，本周就降级成轻松跑。\n· 长距离 → 唯一
+ 值得抢救的课，挪到周六或周一晚上。\n· 绝不要：两节
+ 课并到一天补，或连着三天堆量——这是受伤的头号原
+ 因。\n\n保底三课 = 周日长距离 + 周三强度课 + 任一次轻
+ 松跑。做到就算合格的一周。\n连续两周都在晚上补 → 
+ 说明早上这个时间不适合你，直接改计划，别每周硬撑
+ 。
+TRANSP:TRANSPARENT
+CATEGORIES:训练计划
+END:VEVENT
+BEGIN:VEVENT
+UID:w08-review@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260914T210000
+DTEND;TZID=Asia/Shanghai:20260914T211500
+SUMMARY:🔍 周复盘 · 回顾 W7
+DESCRIPTION:打开 running_page 或 Garmin Connect，花 15 分钟回顾上
+ 周。\n\n四个问题：\n□ 轻松跑的心率有没有真的压在 152
+  以下？\n□ 长距离有没有完成，且结束时还有余力？\n
+ □ 强度课有没有跑到规定配速，且最后一组没崩？\n□ 
+ 有没有累积的关节疼痛？\n\n四个都「是」  → 按计划继
+ 续\n第 1 条「否」 → 跑得太快了，继续减速，别管配速
+ 难看\n第 3 条「否」 → 强度配速下调 10 秒/km，先建立完
+ 成度\n第 4 条「是」 → 立刻插入一个减量周\n\n再记一个
+ 数：本周 Z2 跑量占比，目标 ≥ 80%。\n这是判断「有没有
+ 跳出灰色地带」最直接的指标。
+CATEGORIES:复盘
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:🔍 周复盘
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w08-d0-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260914
+DTEND;VALUE=DATE:20260915
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w08-d1@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260915T070000
+DTEND;TZID=Asia/Shanghai:20260915T073500
+SUMMARY:🏃 W8 轻松跑 5km
+DESCRIPTION:W8 周二 · 阶段2「引入强度」\n距离约 5 km ｜ 时
+ 长约 35 分钟\n──────────────────
+ ──\n减量周，全程 Z2。\n─────────────
+ ───────\n目标配速 6:35–7:10/km\n心率 138–150（Z2
+ ，能完整说话）\n\n本周目标 24km，这是第 1/4 次。\n\n🛣
+ ️ 路线：现有路线即可，红绿灯影响不大。\n心率本来
+ 就低，停一下无所谓——等灯时原地慢走别站死就行。\n
+ \n🌡️ 高温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+
+ ，同配速心率会高 10–15 次。\n把目标配速【放慢 25–35 
+ 秒/km】，唯一判断标准是心率不超上限。\n带水或规划有
+ 直饮水的路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻
+ 停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w08-d2@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260916T070000
+DTEND;TZID=Asia/Shanghai:20260916T074500
+SUMMARY:🏃 W8 轻松跑 5km + 6×20s 加速跑
+DESCRIPTION:W8 周三 · 阶段2「引入强度」\n距离约 5.8 km ｜ 
+ 时长约 45 分钟\n─────────────────
+ ───\n加速跑：20 秒接近全速的【放松】加速，每趟之
+ 间慢走 60 秒。\n不是冲刺比赛——重点是动作放松、步
+ 频快、落地轻。\n本周不做强度课，让身体吸收前 3 周的
+ 刺激。\n────────────────────\n
+ 目标配速 6:35–7:10/km\n心率 138–150（Z2，能完整说话）\n\
+ n本周目标 24km，这是第 2/4 次。\n\n🛣️ 路线：现有路线
+ 即可，红绿灯影响不大。\n心率本来就低，停一下无所谓
+ ——等灯时原地慢走别站死就行。\n\n🌡️ 高温期提醒\n
+ 杭州此时早晨约 27–30°C、湿度 75%+，同配速心率会高 10
+ –15 次。\n把目标配速【放慢 25–35 秒/km】，唯一判断标
+ 准是心率不超上限。\n带水或规划有直饮水的路线；出现
+ 头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km + 6×20s 加速跑
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w08-d3-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260917
+DTEND;VALUE=DATE:20260918
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w08-d4-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w08-d5@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260919T073000
+DTEND;TZID=Asia/Shanghai:20260919T080000
+SUMMARY:🏃 W8 轻松跑 4km
+DESCRIPTION:W8 周六 · 阶段2「引入强度」\n距离约 4 km ｜ 时
+ 长约 30 分钟\n──────────────────
+ ──\n全程 Z2。\n─────────────────
+ ───\n目标配速 6:35–7:10/km\n心率 138–150（Z2，能完整
+ 说话）\n\n本周目标 24km，这是第 3/4 次。\n\n🛣️ 路线：
+ 现有路线即可，红绿灯影响不大。\n心率本来就低，停一
+ 下无所谓——等灯时原地慢走别站死就行。\n\n🌡️ 高
+ 温期提醒\n杭州此时早晨约 27–30°C、湿度 75%+，同配速
+ 心率会高 10–15 次。\n把目标配速【放慢 25–35 秒/km】，
+ 唯一判断标准是心率不超上限。\n带水或规划有直饮水的
+ 路线；出现头晕、皮肤发凉、起鸡皮疙瘩立刻停跑走回
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 4km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w08-d6@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260920T193000
+DTEND;TZID=Asia/Shanghai:20260920T203400
+SUMMARY:🏃 W8 长距离 9km
+DESCRIPTION:W8 周日 · 阶段2「引入强度」\n距离约 9 km ｜ 时
+ 长约 64 分钟\n──────────────────
+ ──\n阶段二收官。此时 5K 实力应该在 26:00–26:30 附近
+ 。\n感觉如何？如果强度课都能按配速完成且没有伤痛，
+ 阶段三可以按计划推进。\n─────────────
+ ───────\n目标配速 6:45–7:15/km\n心率 135–148（Z2
+ ，结束时要有余力）\n\n本周目标 24km，这是第 4/4 次。\n\
+ n🛣️ 路线：务必选【无红绿灯】的绿道 / 公园环线 / 
+ 江边步道。\n长距离的价值来自【连续】的 Z2 时间，停 9
+ 0 秒心率就掉 20–30 次。\n被切成 5 段的 90 分钟 ≠ 90 分
+ 钟长距离。折返跑也可以。\n\n🌡️ 高温期提醒\n杭州此
+ 时早晨约 27–30°C、湿度 75%+，同配速心率会高 10–15 次
+ 。\n把目标配速【放慢 25–35 秒/km】，唯一判断标准是心
+ 率不超上限。\n带水或规划有直饮水的路线；出现头晕、
+ 皮肤发凉、起鸡皮疙瘩立刻停跑走回。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:长距离 9km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w09-summary@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:📋 W9 · 5K 专项 · 目标 40km
+DESCRIPTION:第 9/12 周 — 阶段3「5K 专项」\n\n本周跑量目标
+ ：40 km（5 次）\n轻松跑配速：6:20–7:00/km\n长距离配速：6
+ :35–7:05/km\n\n质量课已接近 5K 目标配速。跑不动就降 10 
+ 秒/km，别硬扛。\n\n【早上没起来？先考虑挪到当天晚上 
+ 19:30】\n挪到当天晚上，这节课就完整保住了，远好过跳
+ 过。但分课型：\n· 周二 轻松跑 → 别挪，直接跳过。挪
+ 了离周三强度课只剩 11 小时，\n  带着疲劳去跑质量课，
+ 两节课一起废。\n· 周三 强度课 → 可以挪，但【必须去
+ 跑道】（晚上红绿灯会毁掉节奏跑），\n  且跑完离睡觉
+ 留 3 小时。\n· 周五 / 周六 轻松跑 → 随便挪，零损失。
+ \n\n【真的漏掉了】\n· 轻松跑 → 直接跳过，不用补。这
+ 周少 5km 毫无影响。\n· 强度课 → 顺延一天；若离周日
+ 长距离不足 48h，本周就降级成轻松跑。\n· 长距离 → 唯
+ 一值得抢救的课，挪到周六或周一晚上。\n· 绝不要：两
+ 节课并到一天补，或连着三天堆量——这是受伤的头号
+ 原因。\n\n保底三课 = 周日长距离 + 周三强度课 + 任一次
+ 轻松跑。做到就算合格的一周。\n连续两周都在晚上补 
+ → 说明早上这个时间不适合你，直接改计划，别每周硬
+ 撑。
+TRANSP:TRANSPARENT
+CATEGORIES:训练计划
+END:VEVENT
+BEGIN:VEVENT
+UID:w09-review@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260921T210000
+DTEND;TZID=Asia/Shanghai:20260921T213000
+SUMMARY:🔍 阶段二复盘 · 引入强度 · 回顾 W8
+DESCRIPTION:阶段二（W5–W8）结束了。此时 5K 实力应在 26:00
+ –26:30 附近。\n\n【对比这几节课】\n1. W5 的节奏跑 3km@5:4
+ 0 和 W7 的 4km@5:35，哪次感觉更轻松？\n   ——后者更轻松
+  = 乳酸阈值真的上移了。\n2. W6 的 5×1000m，最后一组比第
+ 一组掉速超过 10 秒了吗？\n3. 周跑量涨到 38km 时，身体
+ 吃得消吗？睡眠和 HRV 正常吗？\n\n【怎么判断】\n强度课
+ 都能按配速完成 + 无伤痛 → 阶段三按计划推进。\n明显
+ 吃力 → 阶段三配速整体下调 5–10 秒/km，目标改为 25:30
+ –26:00。\n调整目标不是失败——按不切实际的配速硬练
+ 才是。
+CATEGORIES:复盘
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:🔍 阶段二复盘 · 引入强度
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w09-d0-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260921
+DTEND;VALUE=DATE:20260922
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w09-d1@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260922T070000
+DTEND;TZID=Asia/Shanghai:20260922T074900
+SUMMARY:🏃 W9 轻松跑 7km
+DESCRIPTION:W9 周二 · 阶段3「5K 专项」\n距离约 7 km ｜ 时长
+ 约 49 分钟\n───────────────────
+ ─\n全程 Z2。\n──────────────────
+ ──\n目标配速 6:20–7:00/km\n心率 138–150（Z2，能完整说
+ 话）\n\n本周目标 40km，这是第 1/5 次。\n\n🛣️ 路线：现
+ 有路线即可，红绿灯影响不大。\n心率本来就低，停一下
+ 无所谓——等灯时原地慢走别站死就行。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 7km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w09-d2@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260923T070000
+DTEND;TZID=Asia/Shanghai:20260923T080500
+SUMMARY:🏃 W9 ⚡ 间歇 6×800m @4:55
+DESCRIPTION:W9 周三 · 阶段3「5K 专项」\n距离约 10.5 km ｜ 时
+ 长约 65 分钟\n──────────────────
+ ──\n热身 2km → 6×800m @4:55/km（每组 3:56），组间慢跑 2 
+ 分钟 → 放松 2km。\n心率 >172（Z5）\n这个配速比 5K 目标
+ 配速还快——目的是让 5:00/km 感觉起来「慢」。\n前 3 组
+ 会觉得轻松，那是对的，把力气留给后 3 组。\n────
+ ────────────────\n\n本周目标 40km，
+ 这是第 2/5 次。\n\n🛣️ 路线：400m 塑胶跑道最理想——
+ 圈数即距离，配速反馈准，无路口。\n组间慢跑可以绕外
+ 道。没有跑道就找 1km 以上的连续直道折返。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:⚡ 间歇 6×800m @4:55
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w09-d3-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260924
+DTEND;VALUE=DATE:20260925
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w09-d4@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260925T070000
+DTEND;TZID=Asia/Shanghai:20260925T073500
+SUMMARY:🏃 W9 轻松跑 5km
+DESCRIPTION:W9 周五 · 阶段3「5K 专项」\n距离约 5 km ｜ 时长
+ 约 35 分钟\n───────────────────
+ ─\n强度课后恢复。\n───────────────
+ ─────\n目标配速 6:20–7:00/km\n心率 138–150（Z2，能
+ 完整说话）\n\n本周目标 40km，这是第 3/5 次。\n\n🛣️ 路
+ 线：现有路线即可，红绿灯影响不大。\n心率本来就低，
+ 停一下无所谓——等灯时原地慢走别站死就行。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w09-d5@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260926T073000
+DTEND;TZID=Asia/Shanghai:20260926T080500
+SUMMARY:🏃 W9 轻松跑 5km
+DESCRIPTION:W9 周六 · 阶段3「5K 专项」\n距离约 5 km ｜ 时长
+ 约 35 分钟\n───────────────────
+ ─\n全程 Z2。\n──────────────────
+ ──\n目标配速 6:20–7:00/km\n心率 138–150（Z2，能完整说
+ 话）\n\n本周目标 40km，这是第 4/5 次。\n\n🛣️ 路线：现
+ 有路线即可，红绿灯影响不大。\n心率本来就低，停一下
+ 无所谓——等灯时原地慢走别站死就行。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w09-d6@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260927T193000
+DTEND;TZID=Asia/Shanghai:20260927T210100
+SUMMARY:🏃 W9 长距离 13km
+DESCRIPTION:W9 周日 · 阶段3「5K 专项」\n距离约 13 km ｜ 时长
+ 约 91 分钟\n───────────────────
+ ─\n全程 Z2。\n──────────────────
+ ──\n目标配速 6:35–7:05/km\n心率 135–148（Z2，结束时要
+ 有余力）\n\n本周目标 40km，这是第 5/5 次。\n\n🛣️ 路线
+ ：务必选【无红绿灯】的绿道 / 公园环线 / 江边步道。\n
+ 长距离的价值来自【连续】的 Z2 时间，停 90 秒心率就掉
+  20–30 次。\n被切成 5 段的 90 分钟 ≠ 90 分钟长距离。折
+ 返跑也可以。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:长距离 13km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w10-summary@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:📋 W10 · 5K 专项 · 目标 40km
+DESCRIPTION:第 10/12 周 — 阶段3「5K 专项」\n\n本周跑量目标
+ ：40 km（5 次）\n轻松跑配速：6:20–7:00/km\n长距离配速：6
+ :35–7:05/km\n\n质量课已接近 5K 目标配速。跑不动就降 10 
+ 秒/km，别硬扛。\n\n【早上没起来？先考虑挪到当天晚上 
+ 19:30】\n挪到当天晚上，这节课就完整保住了，远好过跳
+ 过。但分课型：\n· 周二 轻松跑 → 别挪，直接跳过。挪
+ 了离周三强度课只剩 11 小时，\n  带着疲劳去跑质量课，
+ 两节课一起废。\n· 周三 强度课 → 可以挪，但【必须去
+ 跑道】（晚上红绿灯会毁掉节奏跑），\n  且跑完离睡觉
+ 留 3 小时。\n· 周五 / 周六 轻松跑 → 随便挪，零损失。
+ \n\n【真的漏掉了】\n· 轻松跑 → 直接跳过，不用补。这
+ 周少 5km 毫无影响。\n· 强度课 → 顺延一天；若离周日
+ 长距离不足 48h，本周就降级成轻松跑。\n· 长距离 → 唯
+ 一值得抢救的课，挪到周六或周一晚上。\n· 绝不要：两
+ 节课并到一天补，或连着三天堆量——这是受伤的头号
+ 原因。\n\n保底三课 = 周日长距离 + 周三强度课 + 任一次
+ 轻松跑。做到就算合格的一周。\n连续两周都在晚上补 
+ → 说明早上这个时间不适合你，直接改计划，别每周硬
+ 撑。
+TRANSP:TRANSPARENT
+CATEGORIES:训练计划
+END:VEVENT
+BEGIN:VEVENT
+UID:w10-review@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260928T210000
+DTEND;TZID=Asia/Shanghai:20260928T211500
+SUMMARY:🔍 周复盘 · 回顾 W9
+DESCRIPTION:打开 running_page 或 Garmin Connect，花 15 分钟回顾上
+ 周。\n\n四个问题：\n□ 轻松跑的心率有没有真的压在 152
+  以下？\n□ 长距离有没有完成，且结束时还有余力？\n
+ □ 强度课有没有跑到规定配速，且最后一组没崩？\n□ 
+ 有没有累积的关节疼痛？\n\n四个都「是」  → 按计划继
+ 续\n第 1 条「否」 → 跑得太快了，继续减速，别管配速
+ 难看\n第 3 条「否」 → 强度配速下调 10 秒/km，先建立完
+ 成度\n第 4 条「是」 → 立刻插入一个减量周\n\n再记一个
+ 数：本周 Z2 跑量占比，目标 ≥ 80%。\n这是判断「有没有
+ 跳出灰色地带」最直接的指标。
+CATEGORIES:复盘
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:🔍 周复盘
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w10-d0-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260928
+DTEND;VALUE=DATE:20260929
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w10-d1@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260929T070000
+DTEND;TZID=Asia/Shanghai:20260929T074900
+SUMMARY:🏃 W10 轻松跑 7km
+DESCRIPTION:W10 周二 · 阶段3「5K 专项」\n距离约 7 km ｜ 时长
+ 约 49 分钟\n───────────────────
+ ─\n全程 Z2。\n──────────────────
+ ──\n目标配速 6:20–7:00/km\n心率 138–150（Z2，能完整说
+ 话）\n\n本周目标 40km，这是第 1/5 次。\n\n🛣️ 路线：现
+ 有路线即可，红绿灯影响不大。\n心率本来就低，停一下
+ 无所谓——等灯时原地慢走别站死就行。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 7km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w10-d2@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260930T070000
+DTEND;TZID=Asia/Shanghai:20260930T075500
+SUMMARY:🏃 W10 ⚡ 节奏跑 5km @5:20
+DESCRIPTION:W10 周三 · 阶段3「5K 专项」\n距离约 9 km ｜ 时长
+ 约 55 分钟\n───────────────────
+ ─\n热身 2km → 节奏跑 5km @5:20/km → 放松 2km。\n心率 165
+ –172（Z4，只能蹦单词）\n全程最硬的一节奏跑：连续 26 
+ 分钟的阈值强度。\n能完成，说明你已经具备 5K 跑进 26 
+ 分的能力。\n───────────────────
+ ─\n\n本周目标 40km，这是第 2/5 次。\n\n🛣️ 路线：需要
+  20–26 分钟【完全不间断】的路段，首选 400m 塑胶跑道
+ 。\n节奏跑练的是乳酸清除，中途停一次整节课就作废了
+ 。\n如果不得不等灯：原地小跳 / 绕小圈，把心率维持住
+ ，别站着。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:⚡ 节奏跑 5km @5:20
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w10-d3-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w10-d4@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261002T070000
+DTEND;TZID=Asia/Shanghai:20261002T073500
+SUMMARY:🏃 W10 轻松跑 5km
+DESCRIPTION:W10 周五 · 阶段3「5K 专项」\n距离约 5 km ｜ 时长
+ 约 35 分钟\n───────────────────
+ ─\n强度课后恢复。\n───────────────
+ ─────\n目标配速 6:20–7:00/km\n心率 138–150（Z2，能
+ 完整说话）\n\n本周目标 40km，这是第 3/5 次。\n\n🛣️ 路
+ 线：现有路线即可，红绿灯影响不大。\n心率本来就低，
+ 停一下无所谓——等灯时原地慢走别站死就行。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w10-d5@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261003T073000
+DTEND;TZID=Asia/Shanghai:20261003T080500
+SUMMARY:🏃 W10 轻松跑 5km
+DESCRIPTION:W10 周六 · 阶段3「5K 专项」\n距离约 5 km ｜ 时长
+ 约 35 分钟\n───────────────────
+ ─\n全程 Z2。\n──────────────────
+ ──\n目标配速 6:20–7:00/km\n心率 138–150（Z2，能完整说
+ 话）\n\n本周目标 40km，这是第 4/5 次。\n\n🛣️ 路线：现
+ 有路线即可，红绿灯影响不大。\n心率本来就低，停一下
+ 无所谓——等灯时原地慢走别站死就行。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w10-d6@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261004T193000
+DTEND;TZID=Asia/Shanghai:20261004T210800
+SUMMARY:🏃 W10 长距离 14km
+DESCRIPTION:W10 周日 · 阶段3「5K 专项」\n距离约 14 km ｜ 时
+ 长约 98 分钟\n──────────────────
+ ──\n全程最长，也是跑量峰值周的收尾。之后开始减量
+ 。\n────────────────────\n目标
+ 配速 6:35–7:05/km\n心率 135–148（Z2，结束时要有余力）\n\
+ n本周目标 40km，这是第 5/5 次。\n\n🛣️ 路线：务必选【
+ 无红绿灯】的绿道 / 公园环线 / 江边步道。\n长距离的价
+ 值来自【连续】的 Z2 时间，停 90 秒心率就掉 20–30 次。
+ \n被切成 5 段的 90 分钟 ≠ 90 分钟长距离。折返跑也可以
+ 。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:长距离 14km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w11-summary@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:📋 W11 · 5K 专项 · 目标 32km
+DESCRIPTION:第 11/12 周 — 阶段3「5K 专项」\n\n本周跑量目标
+ ：32 km（4 次）\n轻松跑配速：6:20–7:00/km\n长距离配速：6
+ :35–7:05/km\n\n质量课已接近 5K 目标配速。跑不动就降 10 
+ 秒/km，别硬扛。\n\n【早上没起来？先考虑挪到当天晚上 
+ 19:30】\n挪到当天晚上，这节课就完整保住了，远好过跳
+ 过。但分课型：\n· 周二 轻松跑 → 别挪，直接跳过。挪
+ 了离周三强度课只剩 11 小时，\n  带着疲劳去跑质量课，
+ 两节课一起废。\n· 周三 强度课 → 可以挪，但【必须去
+ 跑道】（晚上红绿灯会毁掉节奏跑），\n  且跑完离睡觉
+ 留 3 小时。\n· 周五 / 周六 轻松跑 → 随便挪，零损失。
+ \n\n【真的漏掉了】\n· 轻松跑 → 直接跳过，不用补。这
+ 周少 5km 毫无影响。\n· 强度课 → 顺延一天；若离周日
+ 长距离不足 48h，本周就降级成轻松跑。\n· 长距离 → 唯
+ 一值得抢救的课，挪到周六或周一晚上。\n· 绝不要：两
+ 节课并到一天补，或连着三天堆量——这是受伤的头号
+ 原因。\n\n保底三课 = 周日长距离 + 周三强度课 + 任一次
+ 轻松跑。做到就算合格的一周。\n连续两周都在晚上补 
+ → 说明早上这个时间不适合你，直接改计划，别每周硬
+ 撑。
+TRANSP:TRANSPARENT
+CATEGORIES:训练计划
+END:VEVENT
+BEGIN:VEVENT
+UID:w11-review@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261005T210000
+DTEND;TZID=Asia/Shanghai:20261005T211500
+SUMMARY:🔍 周复盘 · 回顾 W10
+DESCRIPTION:打开 running_page 或 Garmin Connect，花 15 分钟回顾上
+ 周。\n\n四个问题：\n□ 轻松跑的心率有没有真的压在 152
+  以下？\n□ 长距离有没有完成，且结束时还有余力？\n
+ □ 强度课有没有跑到规定配速，且最后一组没崩？\n□ 
+ 有没有累积的关节疼痛？\n\n四个都「是」  → 按计划继
+ 续\n第 1 条「否」 → 跑得太快了，继续减速，别管配速
+ 难看\n第 3 条「否」 → 强度配速下调 10 秒/km，先建立完
+ 成度\n第 4 条「是」 → 立刻插入一个减量周\n\n再记一个
+ 数：本周 Z2 跑量占比，目标 ≥ 80%。\n这是判断「有没有
+ 跳出灰色地带」最直接的指标。
+CATEGORIES:复盘
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:🔍 周复盘
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w11-d0-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w11-d1@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261006T070000
+DTEND;TZID=Asia/Shanghai:20261006T074200
+SUMMARY:🏃 W11 轻松跑 6km
+DESCRIPTION:W11 周二 · 阶段3「5K 专项」\n距离约 6 km ｜ 时长
+ 约 42 分钟\n───────────────────
+ ─\n开始减量，全程 Z2。\n─────────────
+ ───────\n目标配速 6:20–7:00/km\n心率 138–150（Z2
+ ，能完整说话）\n\n本周目标 32km，这是第 1/4 次。\n\n🛣
+ ️ 路线：现有路线即可，红绿灯影响不大。\n心率本来
+ 就低，停一下无所谓——等灯时原地慢走别站死就行。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 6km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w11-d2@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261007T070000
+DTEND;TZID=Asia/Shanghai:20261007T080000
+SUMMARY:🏃 W11 ⚡⚡ 关键课 3×1600m @5:00
+DESCRIPTION:W11 周三 · 阶段3「5K 专项」\n距离约 9.8 km ｜ 时
+ 长约 60 分钟\n──────────────────
+ ──\n热身 2km → 3×1600m @5:00/km（每组 8:00），组间慢跑 3
+  分钟 → 放松 2km。\n心率 >172（Z5）\n★ 全程最关键的一
+ 课 ★\n这就是目标配速。三组都稳在 5:00 且第三组没崩 
+ → 测试日 sub-25 稳了。\n如果第三组掉到 5:15 以上 → 目
+ 标调整为 25:30–26:00，同样是巨大进步。\n──────
+ ──────────────\n\n本周目标 32km，这是
+ 第 2/4 次。\n\n🛣️ 路线：400m 塑胶跑道最理想——圈数
+ 即距离，配速反馈准，无路口。\n组间慢跑可以绕外道。
+ 没有跑道就找 1km 以上的连续直道折返。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:⚡⚡ 关键课 3×1600m @5:00
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w11-d3-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w11-d4@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261009T070000
+DTEND;TZID=Asia/Shanghai:20261009T073500
+SUMMARY:🏃 W11 轻松跑 5km
+DESCRIPTION:W11 周五 · 阶段3「5K 专项」\n距离约 5 km ｜ 时长
+ 约 35 分钟\n───────────────────
+ ─\n强度课后恢复。\n───────────────
+ ─────\n目标配速 6:20–7:00/km\n心率 138–150（Z2，能
+ 完整说话）\n\n本周目标 32km，这是第 3/4 次。\n\n🛣️ 路
+ 线：现有路线即可，红绿灯影响不大。\n心率本来就低，
+ 停一下无所谓——等灯时原地慢走别站死就行。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w11-d5-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261010
+DTEND;VALUE=DATE:20261011
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w11-d6@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261011T193000
+DTEND;TZID=Asia/Shanghai:20261011T204700
+SUMMARY:🏃 W11 长距离 11km
+DESCRIPTION:W11 周日 · 阶段3「5K 专项」\n距离约 11 km ｜ 时
+ 长约 77 分钟\n──────────────────
+ ──\n减量中，全程 Z2，跑完应该觉得意犹未尽。\n──
+ ──────────────────\n目标配速 6:35
+ –7:05/km\n心率 135–148（Z2，结束时要有余力）\n\n本周目
+ 标 32km，这是第 4/4 次。\n\n🛣️ 路线：务必选【无红绿
+ 灯】的绿道 / 公园环线 / 江边步道。\n长距离的价值来自
+ 【连续】的 Z2 时间，停 90 秒心率就掉 20–30 次。\n被切
+ 成 5 段的 90 分钟 ≠ 90 分钟长距离。折返跑也可以。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:长距离 11km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w12-summary@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:📋 W12 · 5K 专项 · 目标 24km
+DESCRIPTION:第 12/12 周 — 阶段3「5K 专项」\n\n本周跑量目标
+ ：24 km（4 次）\n轻松跑配速：6:20–7:00/km\n长距离配速：6
+ :35–7:05/km\n\n质量课已接近 5K 目标配速。跑不动就降 10 
+ 秒/km，别硬扛。\n\n【早上没起来？先考虑挪到当天晚上 
+ 19:30】\n挪到当天晚上，这节课就完整保住了，远好过跳
+ 过。但分课型：\n· 周二 轻松跑 → 别挪，直接跳过。挪
+ 了离周三强度课只剩 11 小时，\n  带着疲劳去跑质量课，
+ 两节课一起废。\n· 周三 强度课 → 可以挪，但【必须去
+ 跑道】（晚上红绿灯会毁掉节奏跑），\n  且跑完离睡觉
+ 留 3 小时。\n· 周五 / 周六 轻松跑 → 随便挪，零损失。
+ \n\n【真的漏掉了】\n· 轻松跑 → 直接跳过，不用补。这
+ 周少 5km 毫无影响。\n· 强度课 → 顺延一天；若离周日
+ 长距离不足 48h，本周就降级成轻松跑。\n· 长距离 → 唯
+ 一值得抢救的课，挪到周六或周一晚上。\n· 绝不要：两
+ 节课并到一天补，或连着三天堆量——这是受伤的头号
+ 原因。\n\n保底三课 = 周日长距离 + 周三强度课 + 任一次
+ 轻松跑。做到就算合格的一周。\n连续两周都在晚上补 
+ → 说明早上这个时间不适合你，直接改计划，别每周硬
+ 撑。
+TRANSP:TRANSPARENT
+CATEGORIES:训练计划
+END:VEVENT
+BEGIN:VEVENT
+UID:w12-review@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261012T210000
+DTEND;TZID=Asia/Shanghai:20261012T211500
+SUMMARY:🔍 周复盘 · 回顾 W11
+DESCRIPTION:打开 running_page 或 Garmin Connect，花 15 分钟回顾上
+ 周。\n\n四个问题：\n□ 轻松跑的心率有没有真的压在 152
+  以下？\n□ 长距离有没有完成，且结束时还有余力？\n
+ □ 强度课有没有跑到规定配速，且最后一组没崩？\n□ 
+ 有没有累积的关节疼痛？\n\n四个都「是」  → 按计划继
+ 续\n第 1 条「否」 → 跑得太快了，继续减速，别管配速
+ 难看\n第 3 条「否」 → 强度配速下调 10 秒/km，先建立完
+ 成度\n第 4 条「是」 → 立刻插入一个减量周\n\n再记一个
+ 数：本周 Z2 跑量占比，目标 ≥ 80%。\n这是判断「有没有
+ 跳出灰色地带」最直接的指标。
+CATEGORIES:复盘
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:🔍 周复盘
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w12-d0-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w12-d1@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261013T070000
+DTEND;TZID=Asia/Shanghai:20261013T073500
+SUMMARY:🏃 W12 轻松跑 5km
+DESCRIPTION:W12 周二 · 阶段3「5K 专项」\n距离约 5 km ｜ 时长
+ 约 35 分钟\n───────────────────
+ ─\n赛前周，全程 Z2。腿会感觉「太轻松了」，这是对的
+ 。\n────────────────────\n目标
+ 配速 6:20–7:00/km\n心率 138–150（Z2，能完整说话）\n\n本
+ 周目标 24km，这是第 1/4 次。\n\n🛣️ 路线：现有路线即
+ 可，红绿灯影响不大。\n心率本来就低，停一下无所谓—
+ —等灯时原地慢走别站死就行。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 5km
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w12-d2@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261014T070000
+DTEND;TZID=Asia/Shanghai:20261014T074500
+SUMMARY:🏃 W12 ⚡ 4×400m @4:35
+DESCRIPTION:W12 周三 · 阶段3「5K 专项」\n距离约 6.6 km ｜ 时
+ 长约 45 分钟\n──────────────────
+ ──\n热身 2km → 4×400m @4:35/km（每组 1:50），组间慢跑 2 
+ 分钟 → 放松 2km。\n短促、轻快，目的是唤醒神经系统，
+ 不是练体能。\n跑完应该觉得「还能再来 4 组」——如果
+ 累了说明跑太快。\n────────────────
+ ────\n\n本周目标 24km，这是第 2/4 次。\n\n🛣️ 路线
+ ：400m 塑胶跑道最理想——圈数即距离，配速反馈准，无
+ 路口。\n组间慢跑可以绕外道。没有跑道就找 1km 以上的
+ 连续直道折返。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:⚡ 4×400m @4:35
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w12-d3-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w12-d4-rest@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:😴 休息日
+DESCRIPTION:完全休息，不要跑。超量恢复只发生在休息时—
+ —这一天和训练日同等重要。\n可以做：拉伸、散步、力
+ 量训练（臀桥 / 保加利亚分腿蹲 / 提踵 / 平板支撑）。
+TRANSP:TRANSPARENT
+CATEGORIES:休息
+END:VEVENT
+BEGIN:VEVENT
+UID:w12-d5@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261017T073000
+DTEND;TZID=Asia/Shanghai:20261017T075800
+SUMMARY:🏃 W12 轻松跑 3km + 3×20s 加速跑
+DESCRIPTION:W12 周六 · 阶段3「5K 专项」\n距离约 3.4 km ｜ 时
+ 长约 28 分钟\n──────────────────
+ ──\n测试前一天的激活跑。非常轻松，加速跑只做 3 趟
+ 。\n────────────────────\n目标
+ 配速 6:20–7:00/km\n心率 138–150（Z2，能完整说话）\n\n本
+ 周目标 24km，这是第 3/4 次。\n\n🛣️ 路线：现有路线即
+ 可，红绿灯影响不大。\n心率本来就低，停一下无所谓—
+ —等灯时原地慢走别站死就行。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:轻松跑 3km + 3×20s 加速跑
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:w12-d6@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261018T193000
+DTEND;TZID=Asia/Shanghai:20261018T202500
+SUMMARY:🏃 W12 🏁 5K 测试 · Sub-25
+DESCRIPTION:W12 周日 · 阶段3「5K 专项」\n距离约 9.3 km ｜ 时
+ 长约 55 分钟\n──────────────────
+ ──\n热身 20 分钟（最后 3 分钟做 3 次 20 秒加速）→ 5K 
+ 全力 → 放松 10 分钟。\n\n【配速策略】目标 25:00 = 5:00/km
+ \n  1km  5:02  （起跑别冲，稍慢 2 秒是最优开局）\n  2km  5:
+ 00\n  3km  5:00  （最难的一公里，咬住）\n  4km  4:58\n  5km  
+ 全力\n\n和 12 周前那次测试对比一下。无论成绩多少，你
+ 已经完成了\n从「打卡跑者」到「训练跑者」的转变。\n
+ ────────────────────\n\n本周目
+ 标 24km，这是第 4/4 次。\n\n🛣️ 路线：跑道（12.5 圈）
+ 或无红绿灯的绿道。\n\n⚠️ 【关闭 Garmin 自动暂停】\nSu
+ b-25 指的是 25:00 的【总耗时】，不是移动时间。\n等一个
+ 红灯，表上配速可能还是 5:00，但你实际用了 26 分钟。
+CATEGORIES:跑步训练
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:🏁 5K 测试 · Sub-25
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:final-review@5k-sub25.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261019T210000
+DTEND;TZID=Asia/Shanghai:20261019T213000
+SUMMARY:🏁 12 周总复盘
+DESCRIPTION:🏁 12 周走完了。花 30 分钟做一次总复盘。\n\n
+ 【对比 W1 基线（7/30）和 W12 测试（10/18）】\n1. 5K 成绩提
+ 升了多少？\n2. 同配速下心率下降了多少？——这个比成
+ 绩更能说明问题。\n3. 周跑量从 20km 涨到 40km，身体适应
+ 了吗？\n4. 12 周里哪一课最难？哪个习惯最难建立？\n\n
+ 【不管成绩如何，你已经完成的事】\n从「每天 3km 中等
+ 强度打卡」变成了有结构的训练：\n会跑慢、有长距离、
+ 有强度课、会休息、会看心率。\n这套东西比任何一次 5K
+  成绩都值钱。\n\n【下一步】\n· 没达成 sub-25 → 按阶段
+ 二/三的模式再循环 4 周，通常就够了。\n· 达成了 → 下
+ 一个目标：10K sub-52，或者开始考虑半马。\n· 无论哪种
+ ，先给自己 1 周完全的轻松跑，别直接接下一个周期。
+CATEGORIES:复盘
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT30M
+DESCRIPTION:12 周总复盘
+END:VALARM
+END:VEVENT
+END:VCALENDAR
