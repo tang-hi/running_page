@@ -52,7 +52,7 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260727T073000
 DTEND;TZID=Asia/Shanghai:20260727T073500
-SUMMARY:⚖️ 晨起称重 · 第 1 周（参考 68.1–68.2 kg）
+SUMMARY:⚖️ 晨起称重 · 第 1 周（参考 68.0–69.0 kg）
 DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
  意义】\n起床 → 上厕所 → 不穿衣服 → 称重。每周同一
  时间、同一状态。\n\n【别被单次读数骗了】\n体重每天
@@ -66,7 +66,7 @@ CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:PT0S
-DESCRIPTION:⚖️ 晨起称重 · 第 1 周（参考 68.1–68.2 kg）
+DESCRIPTION:⚖️ 晨起称重 · 第 1 周（参考 68.0–69.0 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -194,7 +194,7 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260803T073000
 DTEND;TZID=Asia/Shanghai:20260803T073500
-SUMMARY:⚖️ 晨起称重 · 第 2 周（参考 67.7–67.9 kg）
+SUMMARY:⚖️ 晨起称重 · 第 2 周（参考 67.7–68.7 kg）
 DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
  意义】\n起床 → 上厕所 → 不穿衣服 → 称重。每周同一
  时间、同一状态。\n\n【别被单次读数骗了】\n体重每天
@@ -208,7 +208,7 @@ CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:PT0S
-DESCRIPTION:⚖️ 晨起称重 · 第 2 周（参考 67.7–67.9 kg）
+DESCRIPTION:⚖️ 晨起称重 · 第 2 周（参考 67.7–68.7 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -370,7 +370,7 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260810T073000
 DTEND;TZID=Asia/Shanghai:20260810T073500
-SUMMARY:⚖️ 晨起称重 · 第 3 周（参考 67.3–67.6 kg）
+SUMMARY:⚖️ 晨起称重 · 第 3 周（参考 67.3–68.3 kg）
 DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
  意义】\n起床 → 上厕所 → 不穿衣服 → 称重。每周同一
  时间、同一状态。\n\n【别被单次读数骗了】\n体重每天
@@ -384,7 +384,7 @@ CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:PT0S
-DESCRIPTION:⚖️ 晨起称重 · 第 3 周（参考 67.3–67.6 kg）
+DESCRIPTION:⚖️ 晨起称重 · 第 3 周（参考 67.3–68.3 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -597,7 +597,7 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260817T073000
 DTEND;TZID=Asia/Shanghai:20260817T073500
-SUMMARY:⚖️ 晨起称重 · 第 4 周（参考 66.9–67.3 kg）
+SUMMARY:⚖️ 晨起称重 · 第 4 周（参考 67.0–68.0 kg）
 DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
  意义】\n起床 → 上厕所 → 不穿衣服 → 称重。每周同一
  时间、同一状态。\n\n【别被单次读数骗了】\n体重每天
@@ -611,7 +611,7 @@ CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:PT0S
-DESCRIPTION:⚖️ 晨起称重 · 第 4 周（参考 66.9–67.3 kg）
+DESCRIPTION:⚖️ 晨起称重 · 第 4 周（参考 67.0–68.0 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -849,7 +849,7 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260824T073000
 DTEND;TZID=Asia/Shanghai:20260824T073500
-SUMMARY:⚖️ 晨起称重 · 第 5 周（参考 66.5–67.0 kg）
+SUMMARY:⚖️ 晨起称重 · 第 5 周（参考 66.6–67.6 kg）
 DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
  意义】\n起床 → 上厕所 → 不穿衣服 → 称重。每周同一
  时间、同一状态。\n\n【别被单次读数骗了】\n体重每天
@@ -863,7 +863,7 @@ CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:PT0S
-DESCRIPTION:⚖️ 晨起称重 · 第 5 周（参考 66.5–67.0 kg）
+DESCRIPTION:⚖️ 晨起称重 · 第 5 周（参考 66.6–67.6 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1110,7 +1110,7 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260831T073000
 DTEND;TZID=Asia/Shanghai:20260831T073500
-SUMMARY:⚖️ 晨起称重 · 第 6 周（参考 66.1–66.7 kg）
+SUMMARY:⚖️ 晨起称重 · 第 6 周（参考 66.2–67.2 kg）
 DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
  意义】\n起床 → 上厕所 → 不穿衣服 → 称重。每周同一
  时间、同一状态。\n\n【别被单次读数骗了】\n体重每天
@@ -1124,7 +1124,7 @@ CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:PT0S
-DESCRIPTION:⚖️ 晨起称重 · 第 6 周（参考 66.1–66.7 kg）
+DESCRIPTION:⚖️ 晨起称重 · 第 6 周（参考 66.2–67.2 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1397,7 +1397,7 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260907T073000
 DTEND;TZID=Asia/Shanghai:20260907T073500
-SUMMARY:⚖️ 晨起称重 · 第 7 周（参考 65.7–66.4 kg）
+SUMMARY:⚖️ 晨起称重 · 第 7 周（参考 65.9–66.9 kg）
 DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
  意义】\n起床 → 上厕所 → 不穿衣服 → 称重。每周同一
  时间、同一状态。\n\n【别被单次读数骗了】\n体重每天
@@ -1411,7 +1411,7 @@ CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:PT0S
-DESCRIPTION:⚖️ 晨起称重 · 第 7 周（参考 65.7–66.4 kg）
+DESCRIPTION:⚖️ 晨起称重 · 第 7 周（参考 65.9–66.9 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1619,7 +1619,7 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260914T073000
 DTEND;TZID=Asia/Shanghai:20260914T073500
-SUMMARY:⚖️ 晨起称重 · 第 8 周（参考 65.3–66.1 kg）
+SUMMARY:⚖️ 晨起称重 · 第 8 周（参考 65.5–66.5 kg）
 DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
  意义】\n起床 → 上厕所 → 不穿衣服 → 称重。每周同一
  时间、同一状态。\n\n【别被单次读数骗了】\n体重每天
@@ -1633,7 +1633,7 @@ CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:PT0S
-DESCRIPTION:⚖️ 晨起称重 · 第 8 周（参考 65.3–66.1 kg）
+DESCRIPTION:⚖️ 晨起称重 · 第 8 周（参考 65.5–66.5 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1866,7 +1866,7 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260921T073000
 DTEND;TZID=Asia/Shanghai:20260921T073500
-SUMMARY:⚖️ 晨起称重 · 第 9 周（参考 64.9–65.8 kg）
+SUMMARY:⚖️ 晨起称重 · 第 9 周（参考 65.2–66.2 kg）
 DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
  意义】\n起床 → 上厕所 → 不穿衣服 → 称重。每周同一
  时间、同一状态。\n\n【别被单次读数骗了】\n体重每天
@@ -1880,7 +1880,7 @@ CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:PT0S
-DESCRIPTION:⚖️ 晨起称重 · 第 9 周（参考 64.9–65.8 kg）
+DESCRIPTION:⚖️ 晨起称重 · 第 9 周（参考 65.2–66.2 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -2008,7 +2008,7 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260928T073000
 DTEND;TZID=Asia/Shanghai:20260928T073500
-SUMMARY:⚖️ 晨起称重 · 第 10 周（参考 64.5–65.5 kg）
+SUMMARY:⚖️ 晨起称重 · 第 10 周（参考 64.8–65.8 kg）
 DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
  意义】\n起床 → 上厕所 → 不穿衣服 → 称重。每周同一
  时间、同一状态。\n\n【别被单次读数骗了】\n体重每天
@@ -2022,7 +2022,7 @@ CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:PT0S
-DESCRIPTION:⚖️ 晨起称重 · 第 10 周（参考 64.5–65.5 kg）
+DESCRIPTION:⚖️ 晨起称重 · 第 10 周（参考 64.8–65.8 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -2150,7 +2150,7 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20261005T073000
 DTEND;TZID=Asia/Shanghai:20261005T073500
-SUMMARY:⚖️ 晨起称重 · 第 11 周（参考 64.5–65.2 kg）
+SUMMARY:⚖️ 晨起称重 · 第 11 周（参考 64.5–65.5 kg）
 DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
  意义】\n起床 → 上厕所 → 不穿衣服 → 称重。每周同一
  时间、同一状态。\n\n【别被单次读数骗了】\n体重每天
@@ -2164,7 +2164,7 @@ CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:PT0S
-DESCRIPTION:⚖️ 晨起称重 · 第 11 周（参考 64.5–65.2 kg）
+DESCRIPTION:⚖️ 晨起称重 · 第 11 周（参考 64.5–65.5 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -2292,7 +2292,7 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20261012T073000
 DTEND;TZID=Asia/Shanghai:20261012T073500
-SUMMARY:⚖️ 晨起称重 · 第 12 周（参考 64.5–64.9 kg）
+SUMMARY:⚖️ 晨起称重 · 第 12 周（参考 64.2–65.2 kg）
 DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
  意义】\n起床 → 上厕所 → 不穿衣服 → 称重。每周同一
  时间、同一状态。\n\n【别被单次读数骗了】\n体重每天
@@ -2306,7 +2306,7 @@ CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:PT0S
-DESCRIPTION:⚖️ 晨起称重 · 第 12 周（参考 64.5–64.9 kg）
+DESCRIPTION:⚖️ 晨起称重 · 第 12 周（参考 64.2–65.2 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
