@@ -37,7 +37,10 @@ jobs:
 
       - name: Lint with Ruff
         run: |
-          pip install ruff
+          # 锁版本。不锁的话 CI 结果取决于当天 PyPI 上的最新版：
+          # ruff 0.16.0 扩大了默认规则集，同一份代码从 0 个错变成 165 个，
+          # 而这些代码一行都没改过。
+          pip install ruff==0.14.14
           ruff check .
 
   node_lint_and_test:
