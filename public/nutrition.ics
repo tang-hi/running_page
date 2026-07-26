@@ -42,8 +42,8 @@ DESCRIPTION:【本阶段只改这一件事】下午 15:45 主动加餐\n\n
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🎯 习惯 1：下午 15:45 主动加餐
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -65,8 +65,8 @@ DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:⚖️ 晨起称重 · 第 1 周（参考 68.1–68.2 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -89,93 +89,103 @@ DESCRIPTION:【本周要买的】\n无糖酸奶 ×5 / 坚果小包装 ×5 /
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🛒 一周备餐采购
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w01-d0@nutrition.local
+UID:nudge-h1-w01-d0@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260727T154500
 DTEND;TZID=Asia/Shanghai:20260727T155000
-SUMMARY:· 下午 15:45 主动加餐
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
 DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
  n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
- 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w01-d1@nutrition.local
+UID:nudge-h1-w01-d1@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260728T154500
 DTEND;TZID=Asia/Shanghai:20260728T155000
-SUMMARY:· 下午 15:45 主动加餐
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
 DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
  n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
- 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w01-d2@nutrition.local
+UID:nudge-h1-w01-d2@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260729T154500
 DTEND;TZID=Asia/Shanghai:20260729T155000
-SUMMARY:· 下午 15:45 主动加餐
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
 DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
  n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
- 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w01-d3@nutrition.local
+UID:nudge-h1-w01-d3@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260730T154500
 DTEND;TZID=Asia/Shanghai:20260730T155000
-SUMMARY:· 下午 15:45 主动加餐
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
 DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
  n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
- 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w01-d4@nutrition.local
+UID:nudge-h1-w01-d4@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260731T154500
 DTEND;TZID=Asia/Shanghai:20260731T155000
-SUMMARY:· 下午 15:45 主动加餐
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
 DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
  n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
- 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -197,8 +207,8 @@ DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:⚖️ 晨起称重 · 第 2 周（参考 67.7–67.9 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -221,93 +231,103 @@ DESCRIPTION:【本周要买的】\n无糖酸奶 ×5 / 坚果小包装 ×5 /
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🛒 一周备餐采购
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w02-d0@nutrition.local
+UID:nudge-h1-w02-d0@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260803T154500
 DTEND;TZID=Asia/Shanghai:20260803T155000
-SUMMARY:· 下午 15:45 主动加餐
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
 DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
  n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
- 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w02-d1@nutrition.local
+UID:nudge-h1-w02-d1@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260804T154500
 DTEND;TZID=Asia/Shanghai:20260804T155000
-SUMMARY:· 下午 15:45 主动加餐
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
 DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
  n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
- 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w02-d2@nutrition.local
+UID:nudge-h1-w02-d2@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260805T154500
 DTEND;TZID=Asia/Shanghai:20260805T155000
-SUMMARY:· 下午 15:45 主动加餐
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
 DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
  n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
- 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w02-d3@nutrition.local
+UID:nudge-h1-w02-d3@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260806T154500
 DTEND;TZID=Asia/Shanghai:20260806T155000
-SUMMARY:· 下午 15:45 主动加餐
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
 DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
  n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
- 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w02-d4@nutrition.local
+UID:nudge-h1-w02-d4@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260807T154500
 DTEND;TZID=Asia/Shanghai:20260807T155000
-SUMMARY:· 下午 15:45 主动加餐
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
 DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
  n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
- 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -340,8 +360,8 @@ DESCRIPTION:【本阶段只改这一件事】午餐改造 · 治本\n\n为
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🎯 习惯 2：午餐改造 · 治本
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -363,8 +383,8 @@ DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:⚖️ 晨起称重 · 第 3 周（参考 67.3–67.6 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -387,93 +407,188 @@ DESCRIPTION:【本周要买的】\n（无需采购，只是打饭时换个
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🛒 一周备餐采购
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w03-d0@nutrition.local
+UID:nudge-h1-w03-d0@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260810T154500
+DTEND;TZID=Asia/Shanghai:20260810T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w03-d1@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260811T154500
+DTEND;TZID=Asia/Shanghai:20260811T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w03-d2@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260812T154500
+DTEND;TZID=Asia/Shanghai:20260812T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w03-d3@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260813T154500
+DTEND;TZID=Asia/Shanghai:20260813T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w03-d4@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260814T154500
+DTEND;TZID=Asia/Shanghai:20260814T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h3-w03-d0@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260810T114500
 DTEND;TZID=Asia/Shanghai:20260810T115000
-SUMMARY:· 午餐改造 · 治本
+SUMMARY:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
  豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
  n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w03-d1@nutrition.local
+UID:nudge-h3-w03-d1@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260811T114500
 DTEND;TZID=Asia/Shanghai:20260811T115000
-SUMMARY:· 午餐改造 · 治本
+SUMMARY:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
  豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
  n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w03-d2@nutrition.local
+UID:nudge-h3-w03-d2@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260812T114500
 DTEND;TZID=Asia/Shanghai:20260812T115000
-SUMMARY:· 午餐改造 · 治本
+SUMMARY:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
  豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
  n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w03-d3@nutrition.local
+UID:nudge-h3-w03-d3@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260813T114500
 DTEND;TZID=Asia/Shanghai:20260813T115000
-SUMMARY:· 午餐改造 · 治本
+SUMMARY:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
  豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
  n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w03-d4@nutrition.local
+UID:nudge-h3-w03-d4@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260814T114500
 DTEND;TZID=Asia/Shanghai:20260814T115000
-SUMMARY:· 午餐改造 · 治本
+SUMMARY:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
  豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
  n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -495,8 +610,8 @@ DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:⚖️ 晨起称重 · 第 4 周（参考 66.9–67.3 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -519,93 +634,188 @@ DESCRIPTION:【本周要买的】\n（无需采购，只是打饭时换个
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🛒 一周备餐采购
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w04-d0@nutrition.local
+UID:nudge-h1-w04-d0@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260817T154500
+DTEND;TZID=Asia/Shanghai:20260817T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w04-d1@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260818T154500
+DTEND;TZID=Asia/Shanghai:20260818T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w04-d2@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260819T154500
+DTEND;TZID=Asia/Shanghai:20260819T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w04-d3@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260820T154500
+DTEND;TZID=Asia/Shanghai:20260820T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w04-d4@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260821T154500
+DTEND;TZID=Asia/Shanghai:20260821T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h3-w04-d0@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260817T114500
 DTEND;TZID=Asia/Shanghai:20260817T115000
-SUMMARY:· 午餐改造 · 治本
+SUMMARY:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
  豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
  n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w04-d1@nutrition.local
+UID:nudge-h3-w04-d1@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260818T114500
 DTEND;TZID=Asia/Shanghai:20260818T115000
-SUMMARY:· 午餐改造 · 治本
+SUMMARY:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
  豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
  n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w04-d2@nutrition.local
+UID:nudge-h3-w04-d2@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260819T114500
 DTEND;TZID=Asia/Shanghai:20260819T115000
-SUMMARY:· 午餐改造 · 治本
+SUMMARY:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
  豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
  n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w04-d3@nutrition.local
+UID:nudge-h3-w04-d3@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260820T114500
 DTEND;TZID=Asia/Shanghai:20260820T115000
-SUMMARY:· 午餐改造 · 治本
+SUMMARY:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
  豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
  n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w04-d4@nutrition.local
+UID:nudge-h3-w04-d4@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260821T114500
 DTEND;TZID=Asia/Shanghai:20260821T115000
-SUMMARY:· 午餐改造 · 治本
+SUMMARY:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
  豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
  n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍚 先菜后肉最后饭 · 饭后走 10 分钟
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -629,8 +839,8 @@ DESCRIPTION:【本阶段只改这一件事】晚上的甜饮料\n\n为什
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🎯 习惯 3：晚上的甜饮料
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -652,8 +862,8 @@ DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:⚖️ 晨起称重 · 第 5 周（参考 66.5–67.0 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -676,127 +886,222 @@ DESCRIPTION:【本周要买的】\n气泡水 / 无糖茶 ×12–14 瓶\n\n
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🛒 一周备餐采购
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w05-d0@nutrition.local
+UID:nudge-h1-w05-d0@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260824T154500
+DTEND;TZID=Asia/Shanghai:20260824T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w05-d1@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260825T154500
+DTEND;TZID=Asia/Shanghai:20260825T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w05-d2@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260826T154500
+DTEND;TZID=Asia/Shanghai:20260826T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w05-d3@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260827T154500
+DTEND;TZID=Asia/Shanghai:20260827T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w05-d4@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260828T154500
+DTEND;TZID=Asia/Shanghai:20260828T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h5-w05-d0@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260824T203000
 DTEND;TZID=Asia/Shanghai:20260824T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w05-d1@nutrition.local
+UID:nudge-h5-w05-d1@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260825T203000
 DTEND;TZID=Asia/Shanghai:20260825T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w05-d2@nutrition.local
+UID:nudge-h5-w05-d2@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260826T203000
 DTEND;TZID=Asia/Shanghai:20260826T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w05-d3@nutrition.local
+UID:nudge-h5-w05-d3@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260827T203000
 DTEND;TZID=Asia/Shanghai:20260827T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w05-d4@nutrition.local
+UID:nudge-h5-w05-d4@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260828T203000
 DTEND;TZID=Asia/Shanghai:20260828T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w05-d5@nutrition.local
+UID:nudge-h5-w05-d5@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260829T203000
 DTEND;TZID=Asia/Shanghai:20260829T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w05-d6@nutrition.local
+UID:nudge-h5-w05-d6@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260830T203000
 DTEND;TZID=Asia/Shanghai:20260830T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -818,8 +1123,8 @@ DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:⚖️ 晨起称重 · 第 6 周（参考 66.1–66.7 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -842,127 +1147,222 @@ DESCRIPTION:【本周要买的】\n气泡水 / 无糖茶 ×12–14 瓶\n\n
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🛒 一周备餐采购
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w06-d0@nutrition.local
+UID:nudge-h1-w06-d0@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260831T154500
+DTEND;TZID=Asia/Shanghai:20260831T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w06-d1@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260901T154500
+DTEND;TZID=Asia/Shanghai:20260901T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w06-d2@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260902T154500
+DTEND;TZID=Asia/Shanghai:20260902T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w06-d3@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260903T154500
+DTEND;TZID=Asia/Shanghai:20260903T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w06-d4@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260904T154500
+DTEND;TZID=Asia/Shanghai:20260904T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h5-w06-d0@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260831T203000
 DTEND;TZID=Asia/Shanghai:20260831T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w06-d1@nutrition.local
+UID:nudge-h5-w06-d1@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260901T203000
 DTEND;TZID=Asia/Shanghai:20260901T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w06-d2@nutrition.local
+UID:nudge-h5-w06-d2@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260902T203000
 DTEND;TZID=Asia/Shanghai:20260902T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w06-d3@nutrition.local
+UID:nudge-h5-w06-d3@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260903T203000
 DTEND;TZID=Asia/Shanghai:20260903T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w06-d4@nutrition.local
+UID:nudge-h5-w06-d4@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260904T203000
 DTEND;TZID=Asia/Shanghai:20260904T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w06-d5@nutrition.local
+UID:nudge-h5-w06-d5@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260905T203000
 DTEND;TZID=Asia/Shanghai:20260905T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w06-d6@nutrition.local
+UID:nudge-h5-w06-d6@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260906T203000
 DTEND;TZID=Asia/Shanghai:20260906T203500
-SUMMARY:· 晚上的甜饮料
+SUMMARY:🥤 换成气泡水 / 无糖茶
 DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
  檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
  周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🥤 换成气泡水 / 无糖茶
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -987,8 +1387,8 @@ DESCRIPTION:【本阶段只改这一件事】早餐加纤维\n\n为什么
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🎯 习惯 4：早餐加纤维
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1010,8 +1410,8 @@ DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:⚖️ 晨起称重 · 第 7 周（参考 65.7–66.4 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1034,88 +1434,183 @@ DESCRIPTION:【本周要买的】\n香蕉 / 苹果一周的量，放办公
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🛒 一周备餐采购
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w07-d0@nutrition.local
+UID:nudge-h1-w07-d0@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260907T154500
+DTEND;TZID=Asia/Shanghai:20260907T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w07-d1@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260908T154500
+DTEND;TZID=Asia/Shanghai:20260908T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w07-d2@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260909T154500
+DTEND;TZID=Asia/Shanghai:20260909T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w07-d3@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260910T154500
+DTEND;TZID=Asia/Shanghai:20260910T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w07-d4@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260911T154500
+DTEND;TZID=Asia/Shanghai:20260911T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h7-w07-d0@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260907T075000
 DTEND;TZID=Asia/Shanghai:20260907T075500
-SUMMARY:· 早餐加纤维
+SUMMARY:🍌 麦满分 + 一个水果
 DESCRIPTION:🍌 麦满分照吃，加一个水果或一盒无糖酸奶就
  行。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍌 麦满分 + 一个水果
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w07-d1@nutrition.local
+UID:nudge-h7-w07-d1@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260908T075000
 DTEND;TZID=Asia/Shanghai:20260908T075500
-SUMMARY:· 早餐加纤维
+SUMMARY:🍌 麦满分 + 一个水果
 DESCRIPTION:🍌 麦满分照吃，加一个水果或一盒无糖酸奶就
  行。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍌 麦满分 + 一个水果
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w07-d2@nutrition.local
+UID:nudge-h7-w07-d2@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260909T075000
 DTEND;TZID=Asia/Shanghai:20260909T075500
-SUMMARY:· 早餐加纤维
+SUMMARY:🍌 麦满分 + 一个水果
 DESCRIPTION:🍌 麦满分照吃，加一个水果或一盒无糖酸奶就
  行。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍌 麦满分 + 一个水果
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w07-d3@nutrition.local
+UID:nudge-h7-w07-d3@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260910T075000
 DTEND;TZID=Asia/Shanghai:20260910T075500
-SUMMARY:· 早餐加纤维
+SUMMARY:🍌 麦满分 + 一个水果
 DESCRIPTION:🍌 麦满分照吃，加一个水果或一盒无糖酸奶就
  行。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍌 麦满分 + 一个水果
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w07-d4@nutrition.local
+UID:nudge-h7-w07-d4@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260911T075000
 DTEND;TZID=Asia/Shanghai:20260911T075500
-SUMMARY:· 早餐加纤维
+SUMMARY:🍌 麦满分 + 一个水果
 DESCRIPTION:🍌 麦满分照吃，加一个水果或一盒无糖酸奶就
  行。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍌 麦满分 + 一个水果
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1137,8 +1632,8 @@ DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:⚖️ 晨起称重 · 第 8 周（参考 65.3–66.1 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1161,88 +1656,183 @@ DESCRIPTION:【本周要买的】\n香蕉 / 苹果一周的量，放办公
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🛒 一周备餐采购
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w08-d0@nutrition.local
+UID:nudge-h1-w08-d0@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260914T154500
+DTEND;TZID=Asia/Shanghai:20260914T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w08-d1@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260915T154500
+DTEND;TZID=Asia/Shanghai:20260915T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w08-d2@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260916T154500
+DTEND;TZID=Asia/Shanghai:20260916T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w08-d3@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260917T154500
+DTEND;TZID=Asia/Shanghai:20260917T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w08-d4@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260918T154500
+DTEND;TZID=Asia/Shanghai:20260918T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h7-w08-d0@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260914T075000
 DTEND;TZID=Asia/Shanghai:20260914T075500
-SUMMARY:· 早餐加纤维
+SUMMARY:🍌 麦满分 + 一个水果
 DESCRIPTION:🍌 麦满分照吃，加一个水果或一盒无糖酸奶就
  行。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍌 麦满分 + 一个水果
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w08-d1@nutrition.local
+UID:nudge-h7-w08-d1@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260915T075000
 DTEND;TZID=Asia/Shanghai:20260915T075500
-SUMMARY:· 早餐加纤维
+SUMMARY:🍌 麦满分 + 一个水果
 DESCRIPTION:🍌 麦满分照吃，加一个水果或一盒无糖酸奶就
  行。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍌 麦满分 + 一个水果
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w08-d2@nutrition.local
+UID:nudge-h7-w08-d2@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260916T075000
 DTEND;TZID=Asia/Shanghai:20260916T075500
-SUMMARY:· 早餐加纤维
+SUMMARY:🍌 麦满分 + 一个水果
 DESCRIPTION:🍌 麦满分照吃，加一个水果或一盒无糖酸奶就
  行。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍌 麦满分 + 一个水果
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w08-d3@nutrition.local
+UID:nudge-h7-w08-d3@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260917T075000
 DTEND;TZID=Asia/Shanghai:20260917T075500
-SUMMARY:· 早餐加纤维
+SUMMARY:🍌 麦满分 + 一个水果
 DESCRIPTION:🍌 麦满分照吃，加一个水果或一盒无糖酸奶就
  行。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍌 麦满分 + 一个水果
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:nudge-w08-d4@nutrition.local
+UID:nudge-h7-w08-d4@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260918T075000
 DTEND;TZID=Asia/Shanghai:20260918T075500
-SUMMARY:· 早餐加纤维
+SUMMARY:🍌 麦满分 + 一个水果
 DESCRIPTION:🍌 麦满分照吃，加一个水果或一盒无糖酸奶就
  行。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🍌 麦满分 + 一个水果
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1266,8 +1856,8 @@ DESCRIPTION:【本阶段只改这一件事】巩固期 · 不加新东西\n
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🎯 巩固期 · 不加新东西
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1289,8 +1879,8 @@ DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:⚖️ 晨起称重 · 第 9 周（参考 64.9–65.8 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1313,8 +1903,103 @@ DESCRIPTION:【本周要买的】\n维持前几周的清单即可\n\n把下
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🛒 一周备餐采购
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w09-d0@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260921T154500
+DTEND;TZID=Asia/Shanghai:20260921T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w09-d1@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260922T154500
+DTEND;TZID=Asia/Shanghai:20260922T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w09-d2@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260923T154500
+DTEND;TZID=Asia/Shanghai:20260923T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w09-d3@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260924T154500
+DTEND;TZID=Asia/Shanghai:20260924T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w09-d4@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260925T154500
+DTEND;TZID=Asia/Shanghai:20260925T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1336,8 +2021,8 @@ DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:⚖️ 晨起称重 · 第 10 周（参考 64.5–65.5 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1360,8 +2045,103 @@ DESCRIPTION:【本周要买的】\n维持前几周的清单即可\n\n把下
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🛒 一周备餐采购
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w10-d0@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260928T154500
+DTEND;TZID=Asia/Shanghai:20260928T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w10-d1@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260929T154500
+DTEND;TZID=Asia/Shanghai:20260929T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w10-d2@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260930T154500
+DTEND;TZID=Asia/Shanghai:20260930T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w10-d3@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261001T154500
+DTEND;TZID=Asia/Shanghai:20261001T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w10-d4@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261002T154500
+DTEND;TZID=Asia/Shanghai:20261002T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1383,8 +2163,8 @@ DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:⚖️ 晨起称重 · 第 11 周（参考 64.5–65.2 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1407,8 +2187,103 @@ DESCRIPTION:【本周要买的】\n维持前几周的清单即可\n\n把下
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🛒 一周备餐采购
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w11-d0@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261005T154500
+DTEND;TZID=Asia/Shanghai:20261005T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w11-d1@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261006T154500
+DTEND;TZID=Asia/Shanghai:20261006T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w11-d2@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261007T154500
+DTEND;TZID=Asia/Shanghai:20261007T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w11-d3@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261008T154500
+DTEND;TZID=Asia/Shanghai:20261008T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w11-d4@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261009T154500
+DTEND;TZID=Asia/Shanghai:20261009T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1430,8 +2305,8 @@ DESCRIPTION:⚖️ 晨起空腹称重，3 分钟。\n\n【怎么称才有
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:⚖️ 晨起称重 · 第 12 周（参考 64.5–64.9 kg）
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
@@ -1454,8 +2329,103 @@ DESCRIPTION:【本周要买的】\n维持前几周的清单即可\n\n把下
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
+TRIGGER:PT0S
+DESCRIPTION:🛒 一周备餐采购
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w12-d0@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261012T154500
+DTEND;TZID=Asia/Shanghai:20261012T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w12-d1@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261013T154500
+DTEND;TZID=Asia/Shanghai:20261013T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w12-d2@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261014T154500
+DTEND;TZID=Asia/Shanghai:20261014T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w12-d3@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261015T154500
+DTEND;TZID=Asia/Shanghai:20261015T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-h1-w12-d4@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20261016T154500
+DTEND;TZID=Asia/Shanghai:20261016T155000
+SUMMARY:🥜 吃蛋白质零食（别等饿了）
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n不是「忍住别吃」，是「提前吃对」。吃了就算今
+ 天做到了。\n\n（这条提醒会一直保留到计划结束；如果
+ 变成噪音，用 --snack-weeks 2 改短）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:PT0S
+DESCRIPTION:🥜 吃蛋白质零食（别等饿了）
 END:VALARM
 END:VEVENT
 END:VCALENDAR
