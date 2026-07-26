@@ -21,18 +21,24 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260727T083000
 DTEND;TZID=Asia/Shanghai:20260727T085000
-SUMMARY:🎯 习惯 1：晚上的甜饮料
-DESCRIPTION:【本阶段只改这一件事】晚上的甜饮料\n\n为什
- 么：\n液体糖几乎没有饱腹感——500ml 含糖饮料约 215 kcal
- ，\n等于你要跑 4km 才能抵消，但喝完 20 分钟又饿了。\n
- 这是全天最容易砍掉、又最不需要意志力的一项。\n\n怎
- 么做：\n1. 不是戒掉「晚上喝点什么」这个习惯，是换内
- 容。\n2. 备选：气泡水、无糖茶、柠檬水、黑咖啡（下午
-  3 点后慎喝）。\n3. 这周去超市一次性买够两周的量，放
- 冰箱——\n   想喝的时候手边就有，才不用靠意志力。\n\
- n如果你本来喝的就是无糖饮料，这条直接跳过，提前进
- 入习惯 2。\n\n前面已建立的习惯继续保持，不要一次改
- 两件事——同时改多项的失败率远高于逐个建立。
+SUMMARY:🎯 习惯 1：下午 15:45 主动加餐
+DESCRIPTION:【本阶段只改这一件事】下午 15:45 主动加餐\n\n
+ 为什么：\n你说「有时候提醒自己不要吃零食，但没忍住
+ 」——\n**问题不在你，在「忍」这个策略本身。**\n意志
+ 力一天里是递减的，下午 4 点正好是最低点；\n而且你已
+ 经在减米饭了，午餐能量本来就偏少，\n4 点是【真饿】
+ ，不是嘴馋。用意志力对抗真实的能量缺口，必输。\n\n
+ 正确做法不是不吃，是【提前吃对的东西】。\n15:45 主动
+ 吃一份蛋白质，好过 16:30 饿到失控去抢饼干。\n\n怎么做
+ ：\n1. 周日买好，周一带到公司，放在抽屉里——\n   饿
+ 的时候人不做理性决策，所以决策要提前到不饿时完成
+ 。\n2. 选蛋白质，不选碳水：饼干薯片 30 分钟后让你更
+ 饿，\n   蛋白质能撑到晚饭。同样是吃，结果完全不同。
+ \n3. 一小把坚果 = 20–25g，用小包装，别抓一大把。\n4. **
+ 允许自己吃。** 这周的目标不是少吃，是把「忍住」\n   
+ 换成「吃对」。做到了就是成功。\n\n前面已建立的习惯
+ 继续保持，不要一次改两件事——同时改多项的失败率
+ 远高于逐个建立。
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -70,16 +76,16 @@ SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260802T100000
 DTEND;TZID=Asia/Shanghai:20260802T103000
 SUMMARY:🛒 一周备餐采购
-DESCRIPTION:【本周要买的】\n气泡水 / 无糖茶 ×12–14 瓶\n\n
- 把下周要吃的先买好、分装好、放到手边——\n饿的时候
- 人不做理性决策，所以决策要提前到不饿的时候完成。\n
- 这是整套饮食调整里最省力也最有效的一招。\n\n【顺便
- ：周日长距离（19:30）当天怎么吃】\n· 17:00 左右正常吃
- 顿晚饭，别太油太辣，七分饱。\n· 你的距离（7–14km）
- 用不上跑前补糖，不需要能量胶。\n· 跑完 30–60 分钟内
- 补蛋白质 + 碳水（牛奶 + 香蕉最省事）。\n· 周末不吃早
- 餐没关系，但周日中午一定要吃够，\n  别空着肚子跑当
- 周最重要的一节课。
+DESCRIPTION:【本周要买的】\n无糖酸奶 ×5 / 坚果小包装 ×5 /
+  鸡蛋 / 即食鸡胸\n\n把下周要吃的先买好、分装好、放到
+ 手边——\n饿的时候人不做理性决策，所以决策要提前到
+ 不饿的时候完成。\n这是整套饮食调整里最省力也最有效
+ 的一招。\n\n【顺便：周日长距离（19:30）当天怎么吃】\n
+ · 17:00 左右正常吃顿晚饭，别太油太辣，七分饱。\n· 你
+ 的距离（7–14km）用不上跑前补糖，不需要能量胶。\n· 
+ 跑完 30–60 分钟内补蛋白质 + 碳水（牛奶 + 香蕉最省事
+ ）。\n· 周末不吃早餐没关系，但周日中午一定要吃够，
+ \n  别空着肚子跑当周最重要的一节课。
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -91,12 +97,12 @@ BEGIN:VEVENT
 UID:nudge-w01-d0@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260727T203000
-DTEND;TZID=Asia/Shanghai:20260727T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260727T154500
+DTEND;TZID=Asia/Shanghai:20260727T155000
+SUMMARY:· 下午 15:45 主动加餐
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -108,12 +114,12 @@ BEGIN:VEVENT
 UID:nudge-w01-d1@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260728T203000
-DTEND;TZID=Asia/Shanghai:20260728T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260728T154500
+DTEND;TZID=Asia/Shanghai:20260728T155000
+SUMMARY:· 下午 15:45 主动加餐
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -125,12 +131,12 @@ BEGIN:VEVENT
 UID:nudge-w01-d2@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260729T203000
-DTEND;TZID=Asia/Shanghai:20260729T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260729T154500
+DTEND;TZID=Asia/Shanghai:20260729T155000
+SUMMARY:· 下午 15:45 主动加餐
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -142,12 +148,12 @@ BEGIN:VEVENT
 UID:nudge-w01-d3@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260730T203000
-DTEND;TZID=Asia/Shanghai:20260730T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260730T154500
+DTEND;TZID=Asia/Shanghai:20260730T155000
+SUMMARY:· 下午 15:45 主动加餐
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -159,46 +165,12 @@ BEGIN:VEVENT
 UID:nudge-w01-d4@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260731T203000
-DTEND;TZID=Asia/Shanghai:20260731T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
-CATEGORIES:饮食
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:nudge-w01-d5@nutrition.local
-DTSTAMP:20260727T000000Z
-SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260801T203000
-DTEND;TZID=Asia/Shanghai:20260801T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
-CATEGORIES:饮食
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:nudge-w01-d6@nutrition.local
-DTSTAMP:20260727T000000Z
-SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260802T203000
-DTEND;TZID=Asia/Shanghai:20260802T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260731T154500
+DTEND;TZID=Asia/Shanghai:20260731T155000
+SUMMARY:· 下午 15:45 主动加餐
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -236,16 +208,16 @@ SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260809T100000
 DTEND;TZID=Asia/Shanghai:20260809T103000
 SUMMARY:🛒 一周备餐采购
-DESCRIPTION:【本周要买的】\n气泡水 / 无糖茶 ×12–14 瓶\n\n
- 把下周要吃的先买好、分装好、放到手边——\n饿的时候
- 人不做理性决策，所以决策要提前到不饿的时候完成。\n
- 这是整套饮食调整里最省力也最有效的一招。\n\n【顺便
- ：周日长距离（19:30）当天怎么吃】\n· 17:00 左右正常吃
- 顿晚饭，别太油太辣，七分饱。\n· 你的距离（7–14km）
- 用不上跑前补糖，不需要能量胶。\n· 跑完 30–60 分钟内
- 补蛋白质 + 碳水（牛奶 + 香蕉最省事）。\n· 周末不吃早
- 餐没关系，但周日中午一定要吃够，\n  别空着肚子跑当
- 周最重要的一节课。
+DESCRIPTION:【本周要买的】\n无糖酸奶 ×5 / 坚果小包装 ×5 /
+  鸡蛋 / 即食鸡胸\n\n把下周要吃的先买好、分装好、放到
+ 手边——\n饿的时候人不做理性决策，所以决策要提前到
+ 不饿的时候完成。\n这是整套饮食调整里最省力也最有效
+ 的一招。\n\n【顺便：周日长距离（19:30）当天怎么吃】\n
+ · 17:00 左右正常吃顿晚饭，别太油太辣，七分饱。\n· 你
+ 的距离（7–14km）用不上跑前补糖，不需要能量胶。\n· 
+ 跑完 30–60 分钟内补蛋白质 + 碳水（牛奶 + 香蕉最省事
+ ）。\n· 周末不吃早餐没关系，但周日中午一定要吃够，
+ \n  别空着肚子跑当周最重要的一节课。
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -257,12 +229,12 @@ BEGIN:VEVENT
 UID:nudge-w02-d0@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260803T203000
-DTEND;TZID=Asia/Shanghai:20260803T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260803T154500
+DTEND;TZID=Asia/Shanghai:20260803T155000
+SUMMARY:· 下午 15:45 主动加餐
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -274,12 +246,12 @@ BEGIN:VEVENT
 UID:nudge-w02-d1@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260804T203000
-DTEND;TZID=Asia/Shanghai:20260804T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260804T154500
+DTEND;TZID=Asia/Shanghai:20260804T155000
+SUMMARY:· 下午 15:45 主动加餐
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -291,12 +263,12 @@ BEGIN:VEVENT
 UID:nudge-w02-d2@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260805T203000
-DTEND;TZID=Asia/Shanghai:20260805T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260805T154500
+DTEND;TZID=Asia/Shanghai:20260805T155000
+SUMMARY:· 下午 15:45 主动加餐
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -308,12 +280,12 @@ BEGIN:VEVENT
 UID:nudge-w02-d3@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260806T203000
-DTEND;TZID=Asia/Shanghai:20260806T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260806T154500
+DTEND;TZID=Asia/Shanghai:20260806T155000
+SUMMARY:· 下午 15:45 主动加餐
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -325,46 +297,12 @@ BEGIN:VEVENT
 UID:nudge-w02-d4@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260807T203000
-DTEND;TZID=Asia/Shanghai:20260807T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
-CATEGORIES:饮食
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:nudge-w02-d5@nutrition.local
-DTSTAMP:20260727T000000Z
-SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260808T203000
-DTEND;TZID=Asia/Shanghai:20260808T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
-CATEGORIES:饮食
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT0M
-DESCRIPTION:饮食提醒
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:nudge-w02-d6@nutrition.local
-DTSTAMP:20260727T000000Z
-SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260809T203000
-DTEND;TZID=Asia/Shanghai:20260809T203500
-SUMMARY:· 晚上的甜饮料
-DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
- 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
- 周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260807T154500
+DTEND;TZID=Asia/Shanghai:20260807T155000
+SUMMARY:· 下午 15:45 主动加餐
+DESCRIPTION:🥜 到点了，现在就吃——不是等饿了再决定。\
+ n抽屉里的：无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸
+ 。\n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -378,17 +316,27 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260810T083000
 DTEND;TZID=Asia/Shanghai:20260810T085000
-SUMMARY:🎯 习惯 2：午餐顺序 + 主食减半
-DESCRIPTION:【本阶段只改这一件事】午餐顺序 + 主食减半\n\
- n为什么：\n你下午 4 点想吃零食，不是意志力问题，是
- 午餐结构问题。\n米饭多、蛋白少 → 血糖冲高再回落 →
-  3 点半开始发慌。\n先吃菜和蛋白质能把血糖曲线压平，
- 下午的饥饿感会自己消失。\n\n怎么做：\n1. 主食减半（
- 半碗米饭就够）。\n2. 蛋白质加量：多打一份肉、蛋或豆
- 腐。\n3. 顺序：蔬菜 → 肉蛋 → 米饭。\n**不用少吃，吃
- 到饱，只改顺序和比例。**\n\n前面已建立的习惯继续保
- 持，不要一次改两件事——同时改多项的失败率远高于
- 逐个建立。
+SUMMARY:🎯 习惯 2：午餐改造 · 治本
+DESCRIPTION:【本阶段只改这一件事】午餐改造 · 治本\n\n为
+ 什么：\n你 2 点犯困 + 4 点想吃零食，其实是同一件事：
+ 餐后血糖冲高再回落。\n\n**重要更正：别再继续减米饭
+ 了。**\n你已经在有意识减了，但只做了减法没做加法—
+ —\n总能量下降、蛋白质还是不足，下午的崩溃反而更明
+ 显。\n接下来要做的是把减掉的那部分【换成蛋白质和蔬
+ 菜】，不是继续减。\n\n怎么做：\n1. **加蛋白**：多打一
+ 份肉、蛋或豆腐。米饭维持你现在的量，别再减。\n2. **
+ 改顺序**：蔬菜 → 肉蛋 → 米饭。\n   同样的饭菜，换个
+ 顺序就能明显压平血糖曲线——\n   这一条对付「2 点犯
+ 困」比减量有效得多，而且零成本。\n3. **餐后走 10 分钟
+ **：饭后别马上坐下。绕办公楼走一圈，\n   对餐后血糖
+ 峰值的影响很明显，公司里就能做到。\n4. **黑咖啡挪到
+ 午饭后**：你早上喝的是黑咖啡（零热量，完全没问题）
+ 。\n   把其中一杯挪到 12:45，咖啡因 30–45 分钟起效，\n 
+   正好卡在 2 点犯困之前。零成本，只是换个时间。\n\n
+ ⚠️ 如果你每天睡不到 7 小时，2 点犯困靠吃是解决不
+ 了的。\n先保睡眠，再谈饮食。\n\n前面已建立的习惯继
+ 续保持，不要一次改两件事——同时改多项的失败率远
+ 高于逐个建立。
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -427,15 +375,15 @@ DTSTART;TZID=Asia/Shanghai:20260816T100000
 DTEND;TZID=Asia/Shanghai:20260816T103000
 SUMMARY:🛒 一周备餐采购
 DESCRIPTION:【本周要买的】\n（无需采购，只是打饭时换个
- 顺序）\n\n把下周要吃的先买好、分装好、放到手边——\
- n饿的时候人不做理性决策，所以决策要提前到不饿的时
- 候完成。\n这是整套饮食调整里最省力也最有效的一招。
- \n\n【顺便：周日长距离（19:30）当天怎么吃】\n· 17:00 左
- 右正常吃顿晚饭，别太油太辣，七分饱。\n· 你的距离（
- 7–14km）用不上跑前补糖，不需要能量胶。\n· 跑完 30–6
- 0 分钟内补蛋白质 + 碳水（牛奶 + 香蕉最省事）。\n· 周
- 末不吃早餐没关系，但周日中午一定要吃够，\n  别空着
- 肚子跑当周最重要的一节课。
+ 顺序和比例）\n\n把下周要吃的先买好、分装好、放到手
+ 边——\n饿的时候人不做理性决策，所以决策要提前到不
+ 饿的时候完成。\n这是整套饮食调整里最省力也最有效的
+ 一招。\n\n【顺便：周日长距离（19:30）当天怎么吃】\n· 
+ 17:00 左右正常吃顿晚饭，别太油太辣，七分饱。\n· 你的
+ 距离（7–14km）用不上跑前补糖，不需要能量胶。\n· 跑
+ 完 30–60 分钟内补蛋白质 + 碳水（牛奶 + 香蕉最省事）
+ 。\n· 周末不吃早餐没关系，但周日中午一定要吃够，\n 
+  别空着肚子跑当周最重要的一节课。
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -449,10 +397,10 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260810T114500
 DTEND;TZID=Asia/Shanghai:20260810T115000
-SUMMARY:· 午餐顺序 + 主食减半
-DESCRIPTION:🍚 打饭时：主食减半，多打一份肉/蛋/豆腐。\n
- 吃的顺序：先蔬菜 → 再肉蛋 → 最后米饭。\n\n（这条提
- 醒只出现两周，习惯建立后自动消失）
+SUMMARY:· 午餐改造 · 治本
+DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
+ 豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
+ n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -466,10 +414,10 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260811T114500
 DTEND;TZID=Asia/Shanghai:20260811T115000
-SUMMARY:· 午餐顺序 + 主食减半
-DESCRIPTION:🍚 打饭时：主食减半，多打一份肉/蛋/豆腐。\n
- 吃的顺序：先蔬菜 → 再肉蛋 → 最后米饭。\n\n（这条提
- 醒只出现两周，习惯建立后自动消失）
+SUMMARY:· 午餐改造 · 治本
+DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
+ 豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
+ n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -483,10 +431,10 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260812T114500
 DTEND;TZID=Asia/Shanghai:20260812T115000
-SUMMARY:· 午餐顺序 + 主食减半
-DESCRIPTION:🍚 打饭时：主食减半，多打一份肉/蛋/豆腐。\n
- 吃的顺序：先蔬菜 → 再肉蛋 → 最后米饭。\n\n（这条提
- 醒只出现两周，习惯建立后自动消失）
+SUMMARY:· 午餐改造 · 治本
+DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
+ 豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
+ n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -500,10 +448,10 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260813T114500
 DTEND;TZID=Asia/Shanghai:20260813T115000
-SUMMARY:· 午餐顺序 + 主食减半
-DESCRIPTION:🍚 打饭时：主食减半，多打一份肉/蛋/豆腐。\n
- 吃的顺序：先蔬菜 → 再肉蛋 → 最后米饭。\n\n（这条提
- 醒只出现两周，习惯建立后自动消失）
+SUMMARY:· 午餐改造 · 治本
+DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
+ 豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
+ n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -517,10 +465,10 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260814T114500
 DTEND;TZID=Asia/Shanghai:20260814T115000
-SUMMARY:· 午餐顺序 + 主食减半
-DESCRIPTION:🍚 打饭时：主食减半，多打一份肉/蛋/豆腐。\n
- 吃的顺序：先蔬菜 → 再肉蛋 → 最后米饭。\n\n（这条提
- 醒只出现两周，习惯建立后自动消失）
+SUMMARY:· 午餐改造 · 治本
+DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
+ 豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
+ n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -559,15 +507,15 @@ DTSTART;TZID=Asia/Shanghai:20260823T100000
 DTEND;TZID=Asia/Shanghai:20260823T103000
 SUMMARY:🛒 一周备餐采购
 DESCRIPTION:【本周要买的】\n（无需采购，只是打饭时换个
- 顺序）\n\n把下周要吃的先买好、分装好、放到手边——\
- n饿的时候人不做理性决策，所以决策要提前到不饿的时
- 候完成。\n这是整套饮食调整里最省力也最有效的一招。
- \n\n【顺便：周日长距离（19:30）当天怎么吃】\n· 17:00 左
- 右正常吃顿晚饭，别太油太辣，七分饱。\n· 你的距离（
- 7–14km）用不上跑前补糖，不需要能量胶。\n· 跑完 30–6
- 0 分钟内补蛋白质 + 碳水（牛奶 + 香蕉最省事）。\n· 周
- 末不吃早餐没关系，但周日中午一定要吃够，\n  别空着
- 肚子跑当周最重要的一节课。
+ 顺序和比例）\n\n把下周要吃的先买好、分装好、放到手
+ 边——\n饿的时候人不做理性决策，所以决策要提前到不
+ 饿的时候完成。\n这是整套饮食调整里最省力也最有效的
+ 一招。\n\n【顺便：周日长距离（19:30）当天怎么吃】\n· 
+ 17:00 左右正常吃顿晚饭，别太油太辣，七分饱。\n· 你的
+ 距离（7–14km）用不上跑前补糖，不需要能量胶。\n· 跑
+ 完 30–60 分钟内补蛋白质 + 碳水（牛奶 + 香蕉最省事）
+ 。\n· 周末不吃早餐没关系，但周日中午一定要吃够，\n 
+  别空着肚子跑当周最重要的一节课。
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -581,10 +529,10 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260817T114500
 DTEND;TZID=Asia/Shanghai:20260817T115000
-SUMMARY:· 午餐顺序 + 主食减半
-DESCRIPTION:🍚 打饭时：主食减半，多打一份肉/蛋/豆腐。\n
- 吃的顺序：先蔬菜 → 再肉蛋 → 最后米饭。\n\n（这条提
- 醒只出现两周，习惯建立后自动消失）
+SUMMARY:· 午餐改造 · 治本
+DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
+ 豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
+ n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -598,10 +546,10 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260818T114500
 DTEND;TZID=Asia/Shanghai:20260818T115000
-SUMMARY:· 午餐顺序 + 主食减半
-DESCRIPTION:🍚 打饭时：主食减半，多打一份肉/蛋/豆腐。\n
- 吃的顺序：先蔬菜 → 再肉蛋 → 最后米饭。\n\n（这条提
- 醒只出现两周，习惯建立后自动消失）
+SUMMARY:· 午餐改造 · 治本
+DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
+ 豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
+ n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -615,10 +563,10 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260819T114500
 DTEND;TZID=Asia/Shanghai:20260819T115000
-SUMMARY:· 午餐顺序 + 主食减半
-DESCRIPTION:🍚 打饭时：主食减半，多打一份肉/蛋/豆腐。\n
- 吃的顺序：先蔬菜 → 再肉蛋 → 最后米饭。\n\n（这条提
- 醒只出现两周，习惯建立后自动消失）
+SUMMARY:· 午餐改造 · 治本
+DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
+ 豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
+ n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -632,10 +580,10 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260820T114500
 DTEND;TZID=Asia/Shanghai:20260820T115000
-SUMMARY:· 午餐顺序 + 主食减半
-DESCRIPTION:🍚 打饭时：主食减半，多打一份肉/蛋/豆腐。\n
- 吃的顺序：先蔬菜 → 再肉蛋 → 最后米饭。\n\n（这条提
- 醒只出现两周，习惯建立后自动消失）
+SUMMARY:· 午餐改造 · 治本
+DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
+ 豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
+ n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -649,10 +597,10 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260821T114500
 DTEND;TZID=Asia/Shanghai:20260821T115000
-SUMMARY:· 午餐顺序 + 主食减半
-DESCRIPTION:🍚 打饭时：主食减半，多打一份肉/蛋/豆腐。\n
- 吃的顺序：先蔬菜 → 再肉蛋 → 最后米饭。\n\n（这条提
- 醒只出现两周，习惯建立后自动消失）
+SUMMARY:· 午餐改造 · 治本
+DESCRIPTION:🍚 别再减米饭了——把减掉的换成一份肉/蛋/
+ 豆腐。\n顺序：蔬菜 → 肉蛋 → 米饭。吃完走 10 分钟。\
+ n\n（这条提醒只出现两周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -666,17 +614,18 @@ DTSTAMP:20260727T000000Z
 SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260824T083000
 DTEND;TZID=Asia/Shanghai:20260824T085000
-SUMMARY:🎯 习惯 3：下午加餐换内容
-DESCRIPTION:【本阶段只改这一件事】下午加餐换内容\n\n为
- 什么：\n碳水零食（饼干、薯片、面包）30 分钟后让你更
- 饿；\n蛋白质零食能撑到晚饭。同样是吃，结果完全不同
- 。\n注意提醒设在 15:45——【饿之前】就吃，别等到发慌
- 才做决定。\n\n怎么做：\n1. 周日采购时买好，周一带到
- 公司，放在抽屉里。\n2. 一小把坚果 = 20–25g，别抓一大
- 把（坚果热量很高）。\n3. 关键是【提前放好】：饿的时
- 候人不做理性决策，\n   所以决策要提前到不饿的时候完
- 成。\n\n前面已建立的习惯继续保持，不要一次改两件事
- ——同时改多项的失败率远高于逐个建立。
+SUMMARY:🎯 习惯 3：晚上的甜饮料
+DESCRIPTION:【本阶段只改这一件事】晚上的甜饮料\n\n为什
+ 么：\n液体糖几乎没有饱腹感——500ml 含糖饮料约 215 kcal
+ ，\n等于你要跑 4km 才能抵消，但喝完 20 分钟又饿了。\n
+ 这是全天最容易砍掉、又最不需要意志力的一项。\n\n怎
+ 么做：\n1. 不是戒掉「晚上喝点什么」这个习惯，是换内
+ 容。\n2. 备选：气泡水、无糖茶、柠檬水。\n3. 这周去超
+ 市一次性买够两周的量，放冰箱——\n   想喝的时候手边
+ 就有，才不用靠意志力。\n\n如果你本来喝的就是无糖饮
+ 料，这条直接跳过，提前进入下一个习惯。\n\n前面已建
+ 立的习惯继续保持，不要一次改两件事——同时改多项
+ 的失败率远高于逐个建立。
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -714,16 +663,16 @@ SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260830T100000
 DTEND;TZID=Asia/Shanghai:20260830T103000
 SUMMARY:🛒 一周备餐采购
-DESCRIPTION:【本周要买的】\n无糖酸奶 ×5 / 混合坚果小包装
-  ×5 / 鸡蛋 / 即食鸡胸\n\n把下周要吃的先买好、分装好、
- 放到手边——\n饿的时候人不做理性决策，所以决策要提
- 前到不饿的时候完成。\n这是整套饮食调整里最省力也最
- 有效的一招。\n\n【顺便：周日长距离（19:30）当天怎么
- 吃】\n· 17:00 左右正常吃顿晚饭，别太油太辣，七分饱。
- \n· 你的距离（7–14km）用不上跑前补糖，不需要能量胶
- 。\n· 跑完 30–60 分钟内补蛋白质 + 碳水（牛奶 + 香蕉最
- 省事）。\n· 周末不吃早餐没关系，但周日中午一定要吃
- 够，\n  别空着肚子跑当周最重要的一节课。
+DESCRIPTION:【本周要买的】\n气泡水 / 无糖茶 ×12–14 瓶\n\n
+ 把下周要吃的先买好、分装好、放到手边——\n饿的时候
+ 人不做理性决策，所以决策要提前到不饿的时候完成。\n
+ 这是整套饮食调整里最省力也最有效的一招。\n\n【顺便
+ ：周日长距离（19:30）当天怎么吃】\n· 17:00 左右正常吃
+ 顿晚饭，别太油太辣，七分饱。\n· 你的距离（7–14km）
+ 用不上跑前补糖，不需要能量胶。\n· 跑完 30–60 分钟内
+ 补蛋白质 + 碳水（牛奶 + 香蕉最省事）。\n· 周末不吃早
+ 餐没关系，但周日中午一定要吃够，\n  别空着肚子跑当
+ 周最重要的一节课。
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -735,12 +684,12 @@ BEGIN:VEVENT
 UID:nudge-w05-d0@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260824T154500
-DTEND;TZID=Asia/Shanghai:20260824T155000
-SUMMARY:· 下午加餐换内容
-DESCRIPTION:🥜 快到点了。抽屉里的蛋白质零食拿出来——\
- n无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸。\n\n（这条
- 提醒只出现两周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260824T203000
+DTEND;TZID=Asia/Shanghai:20260824T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -752,12 +701,12 @@ BEGIN:VEVENT
 UID:nudge-w05-d1@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260825T154500
-DTEND;TZID=Asia/Shanghai:20260825T155000
-SUMMARY:· 下午加餐换内容
-DESCRIPTION:🥜 快到点了。抽屉里的蛋白质零食拿出来——\
- n无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸。\n\n（这条
- 提醒只出现两周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260825T203000
+DTEND;TZID=Asia/Shanghai:20260825T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -769,12 +718,12 @@ BEGIN:VEVENT
 UID:nudge-w05-d2@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260826T154500
-DTEND;TZID=Asia/Shanghai:20260826T155000
-SUMMARY:· 下午加餐换内容
-DESCRIPTION:🥜 快到点了。抽屉里的蛋白质零食拿出来——\
- n无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸。\n\n（这条
- 提醒只出现两周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260826T203000
+DTEND;TZID=Asia/Shanghai:20260826T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -786,12 +735,12 @@ BEGIN:VEVENT
 UID:nudge-w05-d3@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260827T154500
-DTEND;TZID=Asia/Shanghai:20260827T155000
-SUMMARY:· 下午加餐换内容
-DESCRIPTION:🥜 快到点了。抽屉里的蛋白质零食拿出来——\
- n无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸。\n\n（这条
- 提醒只出现两周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260827T203000
+DTEND;TZID=Asia/Shanghai:20260827T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -803,12 +752,46 @@ BEGIN:VEVENT
 UID:nudge-w05-d4@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260828T154500
-DTEND;TZID=Asia/Shanghai:20260828T155000
-SUMMARY:· 下午加餐换内容
-DESCRIPTION:🥜 快到点了。抽屉里的蛋白质零食拿出来——\
- n无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸。\n\n（这条
- 提醒只出现两周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260828T203000
+DTEND;TZID=Asia/Shanghai:20260828T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT0M
+DESCRIPTION:饮食提醒
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-w05-d5@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260829T203000
+DTEND;TZID=Asia/Shanghai:20260829T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT0M
+DESCRIPTION:饮食提醒
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-w05-d6@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260830T203000
+DTEND;TZID=Asia/Shanghai:20260830T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -846,16 +829,16 @@ SEQUENCE:0
 DTSTART;TZID=Asia/Shanghai:20260906T100000
 DTEND;TZID=Asia/Shanghai:20260906T103000
 SUMMARY:🛒 一周备餐采购
-DESCRIPTION:【本周要买的】\n无糖酸奶 ×5 / 混合坚果小包装
-  ×5 / 鸡蛋 / 即食鸡胸\n\n把下周要吃的先买好、分装好、
- 放到手边——\n饿的时候人不做理性决策，所以决策要提
- 前到不饿的时候完成。\n这是整套饮食调整里最省力也最
- 有效的一招。\n\n【顺便：周日长距离（19:30）当天怎么
- 吃】\n· 17:00 左右正常吃顿晚饭，别太油太辣，七分饱。
- \n· 你的距离（7–14km）用不上跑前补糖，不需要能量胶
- 。\n· 跑完 30–60 分钟内补蛋白质 + 碳水（牛奶 + 香蕉最
- 省事）。\n· 周末不吃早餐没关系，但周日中午一定要吃
- 够，\n  别空着肚子跑当周最重要的一节课。
+DESCRIPTION:【本周要买的】\n气泡水 / 无糖茶 ×12–14 瓶\n\n
+ 把下周要吃的先买好、分装好、放到手边——\n饿的时候
+ 人不做理性决策，所以决策要提前到不饿的时候完成。\n
+ 这是整套饮食调整里最省力也最有效的一招。\n\n【顺便
+ ：周日长距离（19:30）当天怎么吃】\n· 17:00 左右正常吃
+ 顿晚饭，别太油太辣，七分饱。\n· 你的距离（7–14km）
+ 用不上跑前补糖，不需要能量胶。\n· 跑完 30–60 分钟内
+ 补蛋白质 + 碳水（牛奶 + 香蕉最省事）。\n· 周末不吃早
+ 餐没关系，但周日中午一定要吃够，\n  别空着肚子跑当
+ 周最重要的一节课。
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -867,12 +850,12 @@ BEGIN:VEVENT
 UID:nudge-w06-d0@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260831T154500
-DTEND;TZID=Asia/Shanghai:20260831T155000
-SUMMARY:· 下午加餐换内容
-DESCRIPTION:🥜 快到点了。抽屉里的蛋白质零食拿出来——\
- n无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸。\n\n（这条
- 提醒只出现两周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260831T203000
+DTEND;TZID=Asia/Shanghai:20260831T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -884,12 +867,12 @@ BEGIN:VEVENT
 UID:nudge-w06-d1@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260901T154500
-DTEND;TZID=Asia/Shanghai:20260901T155000
-SUMMARY:· 下午加餐换内容
-DESCRIPTION:🥜 快到点了。抽屉里的蛋白质零食拿出来——\
- n无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸。\n\n（这条
- 提醒只出现两周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260901T203000
+DTEND;TZID=Asia/Shanghai:20260901T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -901,12 +884,12 @@ BEGIN:VEVENT
 UID:nudge-w06-d2@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260902T154500
-DTEND;TZID=Asia/Shanghai:20260902T155000
-SUMMARY:· 下午加餐换内容
-DESCRIPTION:🥜 快到点了。抽屉里的蛋白质零食拿出来——\
- n无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸。\n\n（这条
- 提醒只出现两周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260902T203000
+DTEND;TZID=Asia/Shanghai:20260902T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -918,12 +901,12 @@ BEGIN:VEVENT
 UID:nudge-w06-d3@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260903T154500
-DTEND;TZID=Asia/Shanghai:20260903T155000
-SUMMARY:· 下午加餐换内容
-DESCRIPTION:🥜 快到点了。抽屉里的蛋白质零食拿出来——\
- n无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸。\n\n（这条
- 提醒只出现两周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260903T203000
+DTEND;TZID=Asia/Shanghai:20260903T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -935,12 +918,46 @@ BEGIN:VEVENT
 UID:nudge-w06-d4@nutrition.local
 DTSTAMP:20260727T000000Z
 SEQUENCE:0
-DTSTART;TZID=Asia/Shanghai:20260904T154500
-DTEND;TZID=Asia/Shanghai:20260904T155000
-SUMMARY:· 下午加餐换内容
-DESCRIPTION:🥜 快到点了。抽屉里的蛋白质零食拿出来——\
- n无糖酸奶 / 一小把坚果 / 水煮蛋 / 即食鸡胸。\n\n（这条
- 提醒只出现两周，习惯建立后自动消失）
+DTSTART;TZID=Asia/Shanghai:20260904T203000
+DTEND;TZID=Asia/Shanghai:20260904T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT0M
+DESCRIPTION:饮食提醒
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-w06-d5@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260905T203000
+DTEND;TZID=Asia/Shanghai:20260905T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
+CATEGORIES:饮食
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT0M
+DESCRIPTION:饮食提醒
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nudge-w06-d6@nutrition.local
+DTSTAMP:20260727T000000Z
+SEQUENCE:0
+DTSTART;TZID=Asia/Shanghai:20260906T203000
+DTEND;TZID=Asia/Shanghai:20260906T203500
+SUMMARY:· 晚上的甜饮料
+DESCRIPTION:🥤 今晚想喝点什么？换成气泡水 / 无糖茶 / 柠
+ 檬水。\n仪式感保留，糖去掉。\n\n（这条提醒只出现两
+ 周，习惯建立后自动消失）
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -958,14 +975,15 @@ SUMMARY:🎯 习惯 4：早餐加纤维
 DESCRIPTION:【本阶段只改这一件事】早餐加纤维\n\n为什么
  ：\n先说清楚：**双层板烧麦满分本身没问题**——约 500 
  kcal、\n蛋白质 33g，对一个每周跑 5 次的人是合格早餐，
- 不用改。\n问题只有两个：纤维为零，钠约 1300mg（接近
- 每日上限的 2/3）。\n解决办法是【加】，不是【减】。\n
- \n怎么做：\n1. 加一根香蕉、一个苹果，或一盒无糖酸奶
- 。\n2. 钠高不用慌，但当天午晚餐口味清淡些，多喝水。
- \n3. 周五的图林根香肠保留——一周一次的仪式感，别动
- 。\n4. 周末不吃早餐也没问题，但见下方「周日长距离」
- 注意事项。\n\n前面已建立的习惯继续保持，不要一次改
- 两件事——同时改多项的失败率远高于逐个建立。
+ 不用改。\n黑咖啡也完全没问题（约 5 kcal）。\n唯一的短
+ 板是纤维为零，钠约 1300mg（接近每日上限的 2/3）。\n解
+ 决办法是【加】，不是【减】。\n\n怎么做：\n1. 加一根
+ 香蕉、一个苹果，或一盒无糖酸奶。\n2. 钠高不用慌，但
+ 当天午晚餐口味清淡些，多喝水。\n3. 周五的图林根香肠
+ 保留——一周一次的仪式感，别动。\n4. 周末不吃早餐也
+ 没问题，但见下方「周日长距离」注意事项。\n\n前面已
+ 建立的习惯继续保持，不要一次改两件事——同时改多
+ 项的失败率远高于逐个建立。
 CATEGORIES:饮食
 BEGIN:VALARM
 ACTION:DISPLAY
