@@ -1,0 +1,22 @@
+<gpx xmlns:ns3="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns2="http://www.garmin.com/xmlschemas/GpxExtensions/v3" creator="Garmin Connect" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/11.xsd">
+  <extensions>
+<distance>250.0</distance>
+<average_hr>126.0</average_hr>
+<average_speed>0.9359999895095825</average_speed>
+<start_time>2026-08-01T12:46:29+00:00</start_time>
+<end_time>2026-08-01T13:01:03.446000+00:00</end_time>
+<moving_time>267.224</moving_time>
+<elapsed_time>2224.92</elapsed_time>
+</extensions>
+<metadata>
+    <link href="connect.garmin.com">
+      <text>Garmin Connect</text>
+    </link>
+    <time>2026-08-01T12:46:29.000Z</time>
+  </metadata>
+  <trk>
+    <name>泳池游泳</name>
+    <type>lap_swimming</type>
+    <trkseg/>
+  </trk>
+</gpx>
