@@ -1,1 +1,4 @@
-/*    /index.html   200
+# Rewrite to / not /index.html. Pages strips .html and treats
+# /* -> /index.html as a loop, then drops the rule.
+/summary    /    200
+/progress   /    200
