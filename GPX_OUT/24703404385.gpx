@@ -1,0 +1,22 @@
+<gpx xmlns:ns3="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns2="http://www.garmin.com/xmlschemas/GpxExtensions/v3" creator="Garmin Connect" version="1.1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/11.xsd">
+  <extensions>
+<distance>4807.16</distance>
+<average_hr>162.0</average_hr>
+<average_speed>2.753000020980835</average_speed>
+<start_time>2026-10-12T23:39:14+00:00</start_time>
+<end_time>2026-10-13T00:08:20.197000+00:00</end_time>
+<moving_time>1702.0</moving_time>
+<elapsed_time>1767.71</elapsed_time>
+</extensions>
+<metadata>
+    <link href="connect.garmin.com">
+      <text>Garmin Connect</text>
+    </link>
+    <time>2026-10-12T23:39:14.000Z</time>
+  </metadata>
+  <trk>
+    <name>乳酸阈值</name>
+    <type>running</type>
+    <trkseg/>
+  </trk>
+</gpx>
